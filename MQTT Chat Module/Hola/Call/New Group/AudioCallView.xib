@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Century Gothic.ttf">
+            <string>CenturyGothic</string>
+        </array>
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioCallView" customModule="VybesClub" customModuleProvider="target">
+            <connections>
+                <outlet property="backImageView" destination="5E4-sW-GP6" id="zwQ-Jy-Uz4"/>
+                <outlet property="callTimerLbl" destination="bKT-hA-jsX" id="uca-th-bn2"/>
+                <outlet property="callTypeLbl" destination="wGH-CY-0qD" id="iX0-fd-It7"/>
+                <outlet property="contentView" destination="zuP-hB-g2n" id="RrO-gD-qcM"/>
+                <outlet property="endCallButton" destination="1Fx-Iy-1rJ" id="zXp-0f-HPp"/>
+                <outlet property="muteButton" destination="krM-pJ-Nik" id="Pwg-dO-7e6"/>
+                <outlet property="speakerButton" destination="CYL-BQ-sL7" id="dQP-ii-0Bb"/>
+                <outlet property="titleToNameConstant" destination="Ln7-pk-iMv" id="GbM-j4-IVB"/>
+                <outlet property="toplayOut" destination="6hW-di-WO3" id="OGA-Sz-JlR"/>
+                <outlet property="userImageView" destination="U9L-zx-EBB" id="ZAT-fx-vLo"/>
+                <outlet property="userNameLbl" destination="lxs-pb-7wI" id="qx7-Nv-D4e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zuP-hB-g2n">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giphyDefaultlogo" translatesAutoresizingMaskIntoConstraints="NO" id="5E4-sW-GP6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fx-Iy-1rJ">
+                    <rect key="frame" x="167" y="496.5" width="80" height="80"/>
+                    <state key="normal" image="voice_call_call_btn_off"/>
+                    <connections>
+                        <action selector="endAction:" destination="-1" eventType="touchUpInside" id="Cno-wK-L6j"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYL-BQ-sL7">
+                    <rect key="frame" x="60" y="354.5" width="85" height="85"/>
+                    <state key="normal" image="voice_call_speaker_icon_on"/>
+                    <state key="selected" image="voice_call_speaker_icon_off"/>
+                    <connections>
+                        <action selector="speakerAction:" destination="-1" eventType="touchUpInside" id="yhW-kU-h2c"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbn-s2-gEm">
+                    <rect key="frame" x="50.5" y="449.5" width="104" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="104" id="PSE-wj-i1e"/>
+                        <constraint firstAttribute="height" constant="15" id="jxs-t0-IvY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jayesh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxs-pb-7wI">
+                    <rect key="frame" x="10" y="90.5" width="394" height="37"/>
+                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PicoAdda AUDIO CALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGH-CY-0qD">
+                    <rect key="frame" x="102" y="35" width="210" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="210" id="26n-qb-eze"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKT-hA-jsX">
+                    <rect key="frame" x="10" y="142.5" width="394" height="23.5"/>
+                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giphyDefaultlogo" translatesAutoresizingMaskIntoConstraints="NO" id="wO7-W9-K9D">
+                    <rect key="frame" x="82" y="31.5" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="IyF-as-huR"/>
+                        <constraint firstAttribute="height" constant="25" id="ahC-QW-UMY"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="U9L-zx-EBB">
+                    <rect key="frame" x="144.5" y="196" width="125" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="0DX-Te-Lap"/>
+                        <constraint firstAttribute="height" constant="125" id="cDH-ce-MP8"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krM-pJ-Nik">
+                    <rect key="frame" x="269" y="354.5" width="85" height="85"/>
+                    <state key="normal" image="voice_call_record_icon_off"/>
+                    <state key="selected" image="voice_call_record_icon_on"/>
+                    <connections>
+                        <action selector="muteAction:" destination="-1" eventType="touchUpInside" id="oyU-ZA-iX5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeS-Wy-po5">
+                    <rect key="frame" x="290.5" y="449.5" width="42" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="ST9-Nm-Sbz"/>
+                        <constraint firstAttribute="width" constant="42" id="YAo-7b-yFJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                    <color key="textColor" systemColor="tableCellGroupedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.1450980392" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="U9L-zx-EBB" firstAttribute="top" secondItem="bKT-hA-jsX" secondAttribute="bottom" constant="30" id="05x-pn-JuE"/>
+                <constraint firstAttribute="bottom" secondItem="5E4-sW-GP6" secondAttribute="bottom" id="308-kV-Epm"/>
+                <constraint firstItem="wGH-CY-0qD" firstAttribute="top" secondItem="zuP-hB-g2n" secondAttribute="top" constant="35" id="6hW-di-WO3"/>
+                <constraint firstItem="CYL-BQ-sL7" firstAttribute="leading" secondItem="zuP-hB-g2n" secondAttribute="leading" constant="60" id="8so-54-DkT"/>
+                <constraint firstAttribute="trailing" secondItem="bKT-hA-jsX" secondAttribute="trailing" constant="10" id="9Xh-HR-23r"/>
+                <constraint firstItem="wGH-CY-0qD" firstAttribute="centerX" secondItem="zuP-hB-g2n" secondAttribute="centerX" id="AkM-0T-dw1"/>
+                <constraint firstItem="U9L-zx-EBB" firstAttribute="centerX" secondItem="zuP-hB-g2n" secondAttribute="centerX" id="Bn2-92-qzY"/>
+                <constraint firstItem="bKT-hA-jsX" firstAttribute="centerX" secondItem="zuP-hB-g2n" secondAttribute="centerX" id="FDG-G2-3y2"/>
+                <constraint firstItem="CYL-BQ-sL7" firstAttribute="centerX" secondItem="Lbn-s2-gEm" secondAttribute="centerX" id="FpW-Lv-IEt"/>
+                <constraint firstAttribute="trailing" secondItem="krM-pJ-Nik" secondAttribute="trailing" constant="60" id="H18-WC-AvZ"/>
+                <constraint firstItem="wGH-CY-0qD" firstAttribute="leading" secondItem="wO7-W9-K9D" secondAttribute="trailing" constant="-5" id="KUj-o2-MhY"/>
+                <constraint firstItem="lxs-pb-7wI" firstAttribute="top" secondItem="wO7-W9-K9D" secondAttribute="bottom" constant="34" id="Ln7-pk-iMv"/>
+                <constraint firstItem="bKT-hA-jsX" firstAttribute="leading" secondItem="zuP-hB-g2n" secondAttribute="leading" constant="10" id="NRk-DE-14t"/>
+                <constraint firstItem="JeS-Wy-po5" firstAttribute="top" secondItem="krM-pJ-Nik" secondAttribute="bottom" constant="10" id="Nrz-zC-2by"/>
+                <constraint firstItem="bKT-hA-jsX" firstAttribute="top" secondItem="lxs-pb-7wI" secondAttribute="bottom" constant="15" id="QT8-Bi-itn"/>
+                <constraint firstAttribute="trailing" secondItem="lxs-pb-7wI" secondAttribute="trailing" constant="10" id="XRI-F3-6qt"/>
+                <constraint firstItem="5E4-sW-GP6" firstAttribute="top" secondItem="zuP-hB-g2n" secondAttribute="top" id="dFm-r8-w9W"/>
+                <constraint firstItem="CYL-BQ-sL7" firstAttribute="top" secondItem="U9L-zx-EBB" secondAttribute="bottom" constant="33.5" id="dU3-0r-I5Y"/>
+                <constraint firstItem="wO7-W9-K9D" firstAttribute="centerY" secondItem="wGH-CY-0qD" secondAttribute="centerY" id="eoA-3C-t6Y"/>
+                <constraint firstItem="lxs-pb-7wI" firstAttribute="leading" secondItem="zuP-hB-g2n" secondAttribute="leading" constant="10" id="fYb-Ze-74p"/>
+                <constraint firstItem="krM-pJ-Nik" firstAttribute="top" secondItem="U9L-zx-EBB" secondAttribute="bottom" constant="33.5" id="ksa-2r-0Pm"/>
+                <constraint firstItem="Lbn-s2-gEm" firstAttribute="top" secondItem="CYL-BQ-sL7" secondAttribute="bottom" constant="10" id="oAp-Lg-wsy"/>
+                <constraint firstItem="1Fx-Iy-1rJ" firstAttribute="centerX" secondItem="zuP-hB-g2n" secondAttribute="centerX" id="p79-ES-wDb"/>
+                <constraint firstItem="1Fx-Iy-1rJ" firstAttribute="top" secondItem="Lbn-s2-gEm" secondAttribute="bottom" constant="32" id="psT-iK-dfo"/>
+                <constraint firstItem="krM-pJ-Nik" firstAttribute="centerX" secondItem="JeS-Wy-po5" secondAttribute="centerX" id="tLZ-Ai-X7Z"/>
+                <constraint firstItem="lxs-pb-7wI" firstAttribute="centerX" secondItem="zuP-hB-g2n" secondAttribute="centerX" id="tRf-GA-Axe"/>
+                <constraint firstItem="5E4-sW-GP6" firstAttribute="leading" secondItem="zuP-hB-g2n" secondAttribute="leading" id="toQ-9a-NKb"/>
+                <constraint firstAttribute="trailing" secondItem="5E4-sW-GP6" secondAttribute="trailing" id="xP9-Rq-sfv"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="defaultImage" width="62.5" height="62.5"/>
+        <image name="giphyDefaultlogo" width="512" height="512"/>
+        <image name="voice_call_call_btn_off" width="80" height="80"/>
+        <image name="voice_call_record_icon_off" width="85" height="85"/>
+        <image name="voice_call_record_icon_on" width="85" height="85"/>
+        <image name="voice_call_speaker_icon_off" width="85" height="85"/>
+        <image name="voice_call_speaker_icon_on" width="85" height="85"/>
+        <systemColor name="tableCellGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

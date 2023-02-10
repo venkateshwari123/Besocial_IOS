@@ -1,0 +1,1400 @@
+//
+//  SocialViewController.swift
+//  MQTT Chat Module
+//
+//  Created by Rahul Sharma on 27/08/18.
+//  Copyright © 2018 Rahul Sharma. All rights reserved.
+//
+
+import UIKit
+import Kingfisher
+import DGElasticPullToRefresh
+import Cloudinary
+import QuiltView
+import IJKMediaFramework
+import AVFoundation
+import AVKit
+
+class SocialViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet weak var socialCollectionView: UICollectionView!
+    @IBOutlet weak var profileImageButtonOutlet: UIImageView!
+    @IBOutlet weak var uploadingStatusLabel: UILabel!
+    @IBOutlet weak var uploadingPercentageLabel: UILabel!
+    @IBOutlet weak var newPostedImageView: UIImageView!
+    @IBOutlet weak var uploadingProgressView: UIProgressView!
+    @IBOutlet weak var uploadingViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var noPostView: UIView!
+    @IBOutlet weak var cameraContainerView: UIView!
+    @IBOutlet weak var cameraButtonOulet: UIButton!
+    
+    var isLoadedFirst: Bool = true
+    var postDetailsViewModel = PostDetailsViewModel()
+    var currentIndex: Int = -1
+    var visibleIP: IndexPath?
+    var aboutToBecomeInvisibleCell: Int = -1
+    var playingIndex: Int = -1
+    var player:IJKFFMoviePlayerController!
+    var isMuted: Bool = true
+    var isSelf:Bool?
+    var likeUpdate:Bool = false
+    var isBookMarkedDone: Bool = false
+    var savedCollectionObj:SavedCollectionModel? 
+    
+    struct cellIdentifier {
+        static let socialCollectionCell = "socialCollectionCell"
+        static let SocialStoriesCollectionViewCell = "SocialStoriesCollectionViewCell"
+        static let SocialInstaCollectionViewCell = "SocialInstaCollectionViewCell"
+    }
+    
+    struct Controlleridentifier {
+        static let postedByController = "postedByController"
+        static let commentsViewController = "commentsViewController"
+        static let profileViewController = "profileViewController"
+        static let SharePostViewController = "SharePostViewController"
+        static let ViewStoryID = "viewStoryID"
+        static let CameraViewController = "CameraViewController"
+        static let followViewController = "followViewController"
+    }
+    
+    struct segueidentifier {
+        static let postDetailsSegue = "postDetailsSegue"
+    }
+    
+    let socialViewModel = SocialViewModel()
+    
+    var canServiceCall: Bool = true
+    
+    let bottomEdge: CGFloat = 20.0
+    
+    //MARK:- View life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loadViewUI()
+        
+        let isNetwork = (UIApplication.shared.delegate as? AppDelegate)?.isNetworkThere
+        if isNetwork == false{
+            Helper.showAlertViewOnWindow("Oops", message: "Check Internet Connection")
+        }else{
+            self.homeServiceCall()
+        }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.showViewCollections), name: NSNotification.Name(rawValue: "showViewCollections"), object: nil)
+        
+        
+        addObserVerForNewPost()
+        //        self.addObserVerForCamera()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.layer.zPosition = 0;
+        self.navigationController?.navigationBar.isHidden = false
+        
+        self.stopVideoPlayer()
+        let isNetwork = (UIApplication.shared.delegate as? AppDelegate)?.isNetworkThere
+        if isNetwork == true{
+            //            self.followFollowingServiceCall()
+            //            self.getMyStoryService()
+            //            self.getOtherStoryService()
+            //            self.getUserProfile()
+        }
+        
+        
+        
+        if let userImage = UserDefaults.standard.value(forKey: AppConstants.UserDefaults.userImage) as? String{
+            self.profileImageButtonOutlet.setImageOn(imageUrl: userImage, defaultImage:#imageLiteral(resourceName: "defaultImage"))
+        }else{
+            self.profileImageButtonOutlet.image = #imageLiteral(resourceName: "defaultImage")
+        }
+        
+        isSelf = true
+        //        if isNetwork == false{
+        //            Helper.showAlertViewOnWindow("Oops", message: "Check Internet Connection")
+        //        }else{
+        //            self.homeServiceCall()
+        //        }
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.socialCollectionView.reloadData()
+        //IJKPlayer ovserver for status of player
+        let center = NotificationCenter.default
+        let mainQueue = OperationQueue.main
+        center.addObserver(forName: NSNotification.Name.IJKMPMoviePlayerPlaybackDidFinish, object: nil, queue: mainQueue) { [weak self] (notification) in
+            self?.startAgainPlaying()
+        }
+        //        NotificationCenter.default.addObserver(self, selector: #selector(self.startAgainPlaying), name: NSNotification.Name.IJKMPMoviePlayerPlaybackDidFinish, object: nil)
+        center.addObserver(forName: NSNotification.Name.IJKMPMoviePlayerPlaybackStateDidChange, object: nil, queue: mainQueue) { [weak self] (notification) in
+            self?.playingStateChange()
+        }
+        //        NotificationCenter.default.addObserver(self, selector: #selector(self.playingStateChange), name: NSNotification.Name.IJKMPMoviePlayerPlaybackStateDidChange, object: nil)
+        
+        // background event
+        center.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: mainQueue) { [weak self] (notification) in
+            self?.stopVideoPlayer()
+        }
+        //        NotificationCenter.default.addObserver(self, selector: #selector(stopVideoPlayer), name: UIApplication.didEnterBackgroundNotification, object: nil)
+        //
+        //        // foreground event
+        center.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: mainQueue) { [weak self] (notification) in
+            self?.startVideoPlayer()
+        }
+        //        NotificationCenter.default.addObserver(self, selector: #selector(startVideoPlayer), name: UIApplication.willEnterForegroundNotification, object: nil)
+        //
+        //        // add these 2 notifications to prevent freeze on long Home button press and back
+        center.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: mainQueue) { [weak self] (notification) in
+            self?.stopVideoPlayer()
+        }
+        //        NotificationCenter.default.addObserver(self, selector: #selector(stopVideoPlayer), name: UIApplication.willResignActiveNotification, object: nil)
+        //
+        center.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: mainQueue) { [weak self] (notification) in
+            self?.startVideoPlayer()
+        }
+        //        NotificationCenter.default.addObserver(self, selector: #selector(startVideoPlayer), name: UIApplication.didBecomeActiveNotification, object: nil)
+        addObserverForReload()
+        if likeUpdate {
+            self.refresh()
+        }
+        self.startVideoPlayer()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.stopVideoPlayer()
+        NotificationCenter.default.removeObserver(self)
+        self.addObserVerForNewPost()
+        addObserverForReload()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.showViewCollections), name: NSNotification.Name(rawValue: "showViewCollections"), object: nil)
+        isSelf = false
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    /// To load view with initial setup
+    func loadViewUI(){
+        let logo = UIImage(named: "StarChat")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+        self.profileImageButtonOutlet.makeCornerRadious(readious: self.profileImageButtonOutlet.frame.size.width / 2)
+        self.socialCollectionView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: bottomEdge, right: 0)
+        
+        // Initialize socialCollectionView
+        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+        socialCollectionView.tintColor = UIColor.white
+        socialCollectionView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            // Add your logic here
+            self?.socialViewModel.offset = -20
+            self?.homeServiceCall()
+            }, loadingView: loadingView)
+        socialCollectionView.dg_setPullToRefreshFillColor(Helper.hexStringToUIColor(hex: AppColourStr.secondoryAPPColor))
+        socialCollectionView.dg_setPullToRefreshBackgroundColor(socialCollectionView.backgroundColor!)
+        
+        self.uploadingProgressView.progress = 0
+        self.uploadingPercentageLabel.text = "0%"
+        self.uploadingViewHeightConstraint.constant = 0
+        
+        //Setting camera related UI's
+        //     self.cameraContainerView.makeCornerRadious(readious: cameraContainerView.frame.size.height / 2)
+        
+        self.cameraButtonOulet.makeCornerRadious(readious: cameraButtonOulet.frame.size.height / 2)
+        //        let leftColor = Helper.hexStringToUIColor(hex: AppColourStr.gradientLeftColor)
+        //        let rightColor = Helper.hexStringToUIColor(hex: AppColourStr.gradientRightColor)
+        //  self.cameraContainerView.makeLeftToRightGeadient(leftColor: leftColor, rightColor: rightColor)
+        self.socialCollectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 65, right: 0)
+    }
+    
+    
+    /// To setup no post view
+    private func setNoPostView(){
+        if self.socialViewModel.socialModelArray.count == 0 || self.socialViewModel.socialModelArray == nil{
+            self.noPostView.isHidden = false
+        }else{
+            self.noPostView.isHidden = true
+        }
+    }
+    
+    /// To start playing video from starting
+    @objc fileprivate func startVideoPlayer(){
+        if let play = self.player{
+            DispatchQueue.main.async{
+                if #available(iOS 10.0, *) {
+                    if play.playbackState == .paused{
+                        play.play()
+                    }
+                }else if !play.isPlaying(){
+                    play.play()
+                }
+            }
+        }
+    }
+    
+    @objc func showViewCollections(_ notification: NSNotification){
+        if let collectionModel = notification.object as? SavedCollectionModel {
+            self.savedCollectionObj = collectionModel
+        }
+        self.isBookMarkedDone = true
+        self.socialCollectionView.reloadData()
+    }
+    
+    /// To stop playing video
+    @objc fileprivate func stopVideoPlayer(){
+        if let play = self.player{
+            DispatchQueue.main.async{
+                if #available(iOS 10.0, *) {
+                    if play.playbackState == .playing{
+                        play.pause()
+                    }
+                }else if play.isPlaying(){
+                    play.pause()
+                }
+            }
+        }
+    }
+    
+    
+    /// To start again player which has finished
+    @objc func startAgainPlaying(){
+        print("stop playing")
+        guard let currentPlayer = self.player else{return}
+        DispatchQueue.main.async {
+            currentPlayer.prepareToPlay()
+            currentPlayer.play()
+        }
+    }
+    
+    /// To monitor player status changed
+    @objc func playingStateChange(){
+        guard let currentPlayer = self.player else{return}
+        switch currentPlayer.playbackState {
+        case .playing:
+            print("Start playing")
+            //            currentPlayer.play()
+            break
+        case .stopped:
+            print("Stop playing")
+            break
+        case .interrupted:
+            print("playing Interrupted")
+            break
+        case .paused:
+            print("playing pause")
+            break
+        case .seekingForward, .seekingBackward:
+            break
+        }
+    }
+    
+    
+    //    @objc func updateMystories(notification: NSNotification) {
+    //        if let updatedStories = notification.object as? userStory {
+    //            //            self.myStories = updatedStories
+    //            let model = self.socialViewModel
+    //            model.myStories = updatedStories
+    //            DispatchQueue.main.async {
+    //                self.socialCollectionView.reloadData()
+    //            }
+    //            //            self.storyTableView.reloadData()
+    //        }
+    //    }
+    
+    deinit {
+        if socialCollectionView != nil{
+            socialCollectionView.dg_removePullToRefresh()
+        }
+    }
+    
+    //MARK:- Button Action
+    @IBAction func searchButtonAction(_ sender: Any) {
+        self.presentSearchViewController()
+    }
+    
+    @IBAction func findFriendAction(_ sender: Any) {
+        //        self.presentSearchViewController()
+        
+        let mainStroyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let addContactsVC : AddContactsViewController = mainStroyBoard.instantiateViewController(withIdentifier: AppConstants.viewControllerIds.AddContactsVC) as! AddContactsViewController
+        addContactsVC.isFromNewFriendsVc = true
+        addContactsVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(addContactsVC, animated: true)
+    }
+    
+    @IBAction func profileAction(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: AppConstants.StoryBoardIds.mainStoryBoardId, bundle: nil)
+        guard let profileVC = storyBoard.instantiateViewController(withIdentifier: AppConstants.viewControllerIds.profileViewControllerId) as? ProfileViewController else {return}
+        profileVC.isSelf = true
+        profileVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(profileVC, animated: true)
+    }
+    
+    @IBAction func activityAction(_ sender: Any) {
+        let mainStoryboard = UIStoryboard(name: AppConstants.StoryBoardIds.mainStoryBoardId, bundle: nil)
+        let activityVc = mainStoryboard.instantiateViewController(withIdentifier: AppConstants.viewControllerIds.activityVcId) as! ActivityViewController
+        activityVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(activityVc, animated: true)
+    }
+    
+    /// To present search view controller
+    private func presentSearchViewController(){
+        if let trendingVC : TrendingViewController = ((self.tabBarController?.viewControllers![3] as? SwipeNavigationController)?.viewControllers.first) as? TrendingViewController{
+            trendingVC.showSearch = true
+        }
+        self.tabBarController?.selectedIndex = 3
+        
+        //        guard let searchViewController = storyboard?.instantiateViewController(withIdentifier: controllerIdentifierName.searchViewController) as? SearchViewController else {return}
+        //        searchViewController.delegate = self
+        //        let navController = UINavigationController.init(rootViewController: searchViewController)
+        //        self.present(navController, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func muteAndUnmuteAction(_ sender: Any) {
+        self.isMuted = !self.isMuted
+        guard let button = sender as? UIButton else{return}
+        let image = self.isMuted ? UIImage(named: "voice_call_speaker_icon_off") : UIImage(named: "voice_call_speaker_icon_on")
+        DispatchQueue.main.async{
+            button.setImage(image, for: .normal)
+            if let play = self.player{
+                play.playbackVolume = self.isMuted ? 0.0 : 1.0
+            }
+        }
+    }
+    
+    
+    @IBAction func openCameraButtonAction(_ sender: Any) {
+        self.presentCameraVC()
+    }
+    
+    
+    //MARK:- Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueidentifier.postDetailsSegue{
+            guard let postDetailsVC = segue.destination as? PostDetailsViewController else {return}
+            guard let index = sender as? Int else{return}
+            postDetailsVC.selectedIndex = index
+            postDetailsVC.currentIndex = index
+            postDetailsVC.delegate = self
+            postDetailsVC.isComingFromSocialPage = true
+            postDetailsVC.postDetailsViewModel.offset = self.socialViewModel.offset
+            postDetailsVC.postDetailsViewModel.socialModelArray = self.socialViewModel.socialModelArray
+            if self.socialViewModel.socialModelArray.count > index {
+                postDetailsVC.postId = self.socialViewModel.socialModelArray[index].postId
+            }
+            postDetailsVC.postDetailsViewModel.followersFolloweeModelArray = self.socialViewModel.followersFolloweeModelArray
+        }
+    }
+    
+    
+    //MARK:- Service call
+    func homeServiceCall(){
+        if self.isLoadedFirst{
+            self.isLoadedFirst = false
+            Helper.showPI()
+        }
+        socialViewModel.getHomeServiceData {[weak self] (success, error, canServiceCall) in
+<<<<<<< HEAD
+<<<<<<< HEAD
+            
+            self?.socialCollectionView.dg_stopLoading()
+            if success{
+                DispatchQueue.main.async {
+                    self?.setNoPostView()
+                    self?.socialCollectionView.dg_stopLoading()
+//                    self?.socialCollectionView.reloadData()
+                }
+            }else if let error = error{
+                self?.socialCollectionView.dg_stopLoading()
+                if error.code != 204{
+                    DispatchQueue.main.async {
+=======
+=======
+>>>>>>> Refactored home service api call
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                Helper.hidePI()
+                self.socialCollectionView.dg_stopLoading()
+                if success {
+                    self.setNoPostView()
+                    self.socialCollectionView.dg_stopLoading()
+                } else if let error = error {
+                    self.socialCollectionView.dg_stopLoading()
+                    // 204 - No data in server
+                    if error.code != 204 {
+<<<<<<< HEAD
+>>>>>>> Refactored home service api call
+=======
+>>>>>>> Refactored home service api call
+                        Helper.showAlertViewOnWindow(Strings.error.localized, message: error.localizedDescription)
+                    }
+                    self.socialViewModel.offset = self.socialViewModel.offset - 20
+                }
+<<<<<<< HEAD
+<<<<<<< HEAD
+                if let offset = self?.socialViewModel.offset {
+                    self?.socialViewModel.offset = offset - 20
+                }
+            }
+            self?.canServiceCall = canServiceCall
+            DispatchQueue.main.async {
+                self?.socialCollectionView.reloadData()
+                Helper.hidePI()
+=======
+                self.canServiceCall = canServiceCall
+                self.socialCollectionView.reloadData()
+>>>>>>> Refactored home service api call
+=======
+                self.canServiceCall = canServiceCall
+                self.socialCollectionView.reloadData()
+>>>>>>> Refactored home service api call
+            }
+        }
+    }
+    
+    func getMyStoryService() {
+        let strUrl = AppConstants.myStory
+        socialViewModel.storyServiceCall(strUrl: strUrl, storyType: .myStory) { [weak self] (success, error) in
+            guard let self = self else { return }
+            if self.socialViewModel.socialModelArray.count ?? 0 > 0 {
+                let index = IndexPath(item: 0, section: 0)
+                // self?.socialCollectionView.reloadItems(at: [index])
+            }
+            //            }
+        }
+    }
+    
+    func getOtherStoryService(){
+        let strUrl = AppConstants.story
+        socialViewModel.storyServiceCall(strUrl: strUrl, storyType: .otherStory) { [weak self] (success, error) in
+            //            print("success")
+            //            DispatchQueue.main.async {
+            if self?.socialViewModel.socialModelArray.count ?? 0 > 0{
+                let index = IndexPath(item: 0, section: 0)
+                //     self?.socialCollectionView.reloadItems(at: [index])
+            }
+            //            }
+        }
+    }
+    
+    
+    
+    /// To get follow and following user details to show in share screen
+    func followFollowingServiceCall(){
+        
+        let strURl: String = AppConstants.followersFollowee
+        socialViewModel.followFollowingServiceCall(strUrl: strURl)
+    }
+    
+}
+
+//MARK:- Collection view datasource and delegate
+extension SocialViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout/* UICollectionViewDataSourcePrefetching*/{
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if section == 0{
+            return 0
+        }else{
+            return self.socialViewModel.socialModelArray.count
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if indexPath.section == 0{
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier.SocialStoriesCollectionViewCell, for: indexPath) as? SocialStoriesCollectionViewCell else { fatalError() }
+            let model = self.socialViewModel
+            cell.setCellDataInStoryCell(storys: model.myStories, recStories: model.recentStories, viewStories: model.viewedStories)
+            cell.delegate = self
+            self.view.layoutIfNeeded()
+            return cell
+        }else{
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier.SocialInstaCollectionViewCell, for: indexPath) as? SocialInstaCollectionViewCell else{fatalError()}
+            if self.socialViewModel.socialModelArray.count > indexPath.item {
+                let data = self.socialViewModel.socialModelArray[indexPath.item]
+                cell.setSocialCellData(socialModel: data)
+                
+                if isBookMarkedDone {
+                    self.isBookMarkedDone = false
+                    guard let savedCollectionData = savedCollectionObj else {return UICollectionViewCell()}
+                    cell.showViewBookMark(socialModel: data, collectionModel: savedCollectionData)
+                }
+                
+                cell.index = indexPath.row
+                cell.btnOptions.tag = indexPath.row
+                cell.btnSaveToCollection.tag = indexPath.row
+                cell.delegate = self
+                cell.btnBookmark.isSelected = data.isBookMarked
+                let postUserId = data.userId!
+                if let userId = Utility.getUserid(){
+                    if postUserId == userId{
+                        cell.btnOptions.isHidden = false
+                    }else{
+                        cell.btnOptions.isHidden = true
+                    }
+                }
+                let image = self.isMuted ? UIImage(named: "voice_call_speaker_icon_off") : UIImage(named: "voice_call_speaker_icon_on")
+                cell.muteUnmuteButtonOutlet.setImage(image, for: .normal)
+                self.view.layoutIfNeeded()
+                
+            }
+            return cell
+        }
+     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if indexPath.section == 0 {
+            let width = self.view.frame.size.width
+            return CGSize(width: width, height: 140)
+        }else{
+            let width = self.view.frame.size.width
+            //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier.SocialInstaCollectionViewCell, for: indexPath) as! SocialInstaCollectionViewCell
+            var titleHeight: CGFloat = 0.0
+            var firstCommentHeight: CGFloat = 0.0
+            var secondCommentHeight: CGFloat = 0.0
+            var viewAllCommentHeight: CGFloat = 0.0
+            if self.socialViewModel.socialModelArray.count > indexPath.row {
+                    let data = self.socialViewModel.socialModelArray[indexPath.row]
+                    
+                    if data.title?.count != 0, let title =  data.title{
+                        titleHeight = title.height(withConstrainedWidth: width - 20
+                            , font: UIFont.init(name: "CenturyGothic", size: 12.0)!)
+                    }
+                    if data.commentModelArray.count > 0{
+                        let commentArray = data.commentModelArray
+                        let firstComment = commentArray[0].commentedBy! + "  " + commentArray[0].comment!
+                        firstCommentHeight = firstComment.height(withConstrainedWidth: width - 20, font: UIFont.init(name: "CenturyGothic", size: 12.0)!)
+                        if data.commentModelArray.count > 1{
+                            let secondComment = commentArray[1].commentedBy! + "  " + commentArray[1].comment!
+                            secondCommentHeight = secondComment.height(withConstrainedWidth: width - 20, font: UIFont.init(name: "CenturyGothic", size: 12.0)!)
+                        }
+                        if data.commentCount > 2{
+                            viewAllCommentHeight = 15.0
+                        }
+                    }
+                }
+            let height = 115 + 4 + titleHeight + firstCommentHeight + secondCommentHeight + viewAllCommentHeight + width
+                                        return CGSize(width: width, height: height + 30)
+                        }
+       
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if section == 0{
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        }else{
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.section == 0{
+            
+        }else{
+            guard let postCell = cell as? SocialInstaCollectionViewCell else{return}
+            if self.socialViewModel.socialModelArray.count > indexPath.row {
+                postCell.setImageInCell(social: self.socialViewModel.socialModelArray[indexPath.item], isPlaying: true)
+                let indexPassed: Bool = indexPath.item >= self.socialViewModel.socialModelArray.count - 10
+                if canServiceCall && indexPassed{
+                    canServiceCall = false
+                    homeServiceCall()
+                }
+            }
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.section == 0{
+            
+        }else{
+            self.performSegue(withIdentifier: segueidentifier.postDetailsSegue, sender: indexPath.item)
+        }
+    }
+    
+    
+    
+    @IBAction func btnSaveToCollection_Tapped(_ sender: UIButton) {
+        let addToCollectionVC : SaveToCollectionViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SaveToCollectionViewController") as! SaveToCollectionViewController
+        addToCollectionVC.definesPresentationContext = true
+        addToCollectionVC.modalPresentationStyle = .fullScreen
+        addToCollectionVC.postId = self.socialViewModel.socialModelArray[sender.tag].postId!
+        if self.socialViewModel.socialModelArray[sender.tag].imageUrl!.contains(".mp4"){
+            addToCollectionVC.imageUrl = self.socialViewModel.socialModelArray[sender.tag].thumbnailUrl!
+        }else {
+            addToCollectionVC.imageUrl = self.socialViewModel.socialModelArray[sender.tag].imageUrl!
+        }
+        addToCollectionVC.modalPresentationStyle = .overCurrentContext
+        
+        (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController!.present(addToCollectionVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func btnActions_Tapped(_ sender : UIButton){
+        
+//        let addToCollectionVC : SaveToCollectionViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SaveToCollectionViewController") as! SaveToCollectionViewController
+//        addToCollectionVC.definesPresentationContext = true
+//        addToCollectionVC.modalPresentationStyle = .fullScreen
+//        addToCollectionVC.postId = self.socialViewModel.socialModelArray[sender.tag].postId!
+//        addToCollectionVC.imageUrl = self.socialViewModel.socialModelArray[sender.tag].imageUrl!
+//        (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController!.present(addToCollectionVC, animated: true, completion: nil)
+//        
+//        return
+        guard let userId = Utility.getUserid() else {return}
+        let data = socialViewModel.socialModelArray[sender.tag]
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let postUserId = data.userId!
+        if postUserId == userId{
+            let edit = UIAlertAction(title: "Edit".localized, style: .default) { (action) in
+                self.editPostAction(sender.tag)
+            }
+            let delete = UIAlertAction(title: "Delete".localized, style: .default) { (action) in
+//                self.deletePostService(sender.tag)
+                self.deletePostConfirmationPopup(index: sender.tag)
+            }
+            alert.addAction(edit)
+            alert.addAction(delete)
+        }else{
+            let report = UIAlertAction(title: "Report Post".localized, style: .default) { (action) in
+                self.getReportReasons()
+            }
+            alert.addAction(report)
+        }
+        let cancel = UIAlertAction(title: "Cancel".localized, style: .cancel){ (action) in
+            self.startVideoPlayer()
+        }
+        alert.addAction(cancel)
+        self.present(alert, animated: true, completion: nil)
+    }
+    func getReportReasons(){
+        postDetailsViewModel.getReportReasonsService { (success, error) in
+            if success{
+                let reportView = ReportView.init(frame: CGRect.init(x: 0, y: 0, width: (appDelegetConstant.window.bounds.width), height: (appDelegetConstant.window.bounds.height)))
+                reportView.tag = 10
+                reportView.delegate  = self
+                reportView.reportReasonsArray = self.postDetailsViewModel.reportReasonArray
+                appDelegetConstant.window.addSubview(reportView)
+                reportView.popUpAnimation()
+            }else if let error = error{
+                if error.code != 204{
+                    Helper.showAlertViewOnWindow(Strings.error.localized, message: error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    func postReportReason(index: Int){
+        Helper.showPI()
+        postDetailsViewModel.postReportReasonService(reasonIndex: index, postIndex: currentIndex) { (success, error) in
+            if success{
+                DispatchQueue.main.async{
+                    let reportView = appDelegetConstant.window.viewWithTag(10)
+                    reportView?.popDownAnimation(animationDone: { (finished) in
+                        self.showPopUpForSuccessResponse()
+                    })
+                }
+            } else if let error = error{
+                if error.code != 204{
+                    DispatchQueue.main.async{
+                        Helper.showAlertViewOnWindow(Strings.error.localized, message: error.localizedDescription)
+                    }
+                }
+                self.startVideoPlayer()
+            }
+        }
+    }
+    
+    /// To show pop up and start playing video again
+    func showPopUpForSuccessResponse(){
+        let alert = UIAlertController(title: "Success".localized, message: "Thank you for your feedback. The post has been successfully reported.".localized, preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default) { (action) in
+            self.startVideoPlayer()
+        }
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    func deletePostConfirmationPopup(index: Int){
+        let alert = UIAlertController(title: nil, message: Strings.deletePostPopUp, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: Strings.ok, style: .default) { (action) in
+            self.deletePostService(index)
+        }
+        let cancelAction = UIAlertAction(title: Strings.cancel, style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    /// To delete user post
+    func deletePostService(_ index : Int){
+        let data = socialViewModel.socialModelArray[index]
+        guard let postId = data.postId else{return}
+        self.postDetailsViewModel.deletePostService(postId: postId) { (success, error) in
+            if success{
+                self.socialViewModel.socialModelArray.remove(at: index)
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "RefreshHomeScreen"), object: nil)
+                self.socialCollectionView.reloadData()
+            }else if let error = error{
+                Helper.showAlertViewOnWindow(Strings.error.localized, message: error.localizedDescription)
+            }
+        }
+    }
+    
+    func editPostAction(_ index : Int){
+        let data = socialViewModel.socialModelArray[index]
+        let mainStoryBoard = UIStoryboard(name:"Main", bundle:nil)
+        let shareVc = mainStoryBoard.instantiateViewController(withIdentifier: "CreatePostViewController") as! CreatePostViewController
+        self.navigationController?.isNavigationBarHidden = false
+        shareVc.mediaPath = data.imageUrl!
+//        shareVc.newPostDetails?.channel = data.
+        
+        if let businessPostTypeId = data.businessProfileObj?.businessPostType{
+            shareVc.postTypeId = businessPostTypeId
+        }
+        if let businessPostType = data.businessProfileObj?.businessPostTypeName {
+            shareVc.postType = businessPostType
+        }
+        if let businessLinkObj = data.businessProfileObj?.businessUrl {
+            shareVc.businessLink = businessLinkObj
+        }
+        
+        if let businessPriceObj = data.businessProfileObj?.businessPrice {
+            shareVc.productPrice = businessPriceObj
+        }
+        
+        if let businessButtonTextObj = data.businessProfileObj?.businessButtonText {
+            shareVc.businessButtonText = businessButtonTextObj
+        }
+        
+        if data.mediaType == 1{
+            shareVc.isForVideo = true
+            if let modelData = data.mediaData {
+                shareVc.selectedAudio = Audio(mediaModel: modelData)
+            }
+        }else{
+            shareVc.isForVideo = false
+        }
+        shareVc.isEdit = true
+        shareVc.socialModel = data
+        shareVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(shareVc, animated:true)
+    }
+    
+    //MARK:- Scroll view delegate
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+         let indexPaths = self.socialCollectionView.indexPathsForVisibleItems
+        var cells = [SocialInstaCollectionViewCell]()
+        for ip in indexPaths{
+            if let videoCell = self.socialCollectionView.cellForItem(at: ip) as? SocialInstaCollectionViewCell{
+                cells.append(videoCell)
+            }
+        }
+        let cellCount = cells.count
+        if cellCount == 0 {return}
+        if cellCount == 1{
+            if visibleIP != indexPaths[0]{
+                visibleIP = indexPaths[0]
+            }
+            if let videoCell = cells.last{
+                DispatchQueue.main.async {
+                   // self.playVideoOnTheCell(cell: videoCell, indexPath: indexPaths.last!)
+                }
+            }
+        }
+        if cellCount >= 2 {
+            for i in 0..<cellCount{
+                let attributes = self.socialCollectionView.layoutAttributesForItem(at: indexPaths[i])
+                let cellRect = attributes?.frame
+                let intersect = cellRect!.intersection(self.socialCollectionView.bounds)
+                //                curerntHeight is the height of the cell that
+                //                is visible
+                let currentHeight = intersect.height
+                let cellHeight = cells[i].frame.size.height
+                //                0.95 here denotes how much you want the cell to display
+                //                for it to mark itself as visible,
+                //                .51 denotes 51 percent,
+                //                you can change the values accordingly
+                if currentHeight > (cellHeight * 0.51){
+                    if visibleIP != indexPaths[i]{
+                        visibleIP = indexPaths[i]
+                        DispatchQueue.main.async {
+                      //      self.playVideoOnTheCell(cell: cells[i], indexPath: indexPaths[i])
+                        }
+                    }
+                }
+                else{
+                    if aboutToBecomeInvisibleCell != indexPaths[i].row{
+                        aboutToBecomeInvisibleCell = (indexPaths[i].row)
+                        self.stopPlayBack(cell: cells[i], indexPath: indexPaths[i])
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    /// To prepare and play video when cell is visiable
+    ///
+    /// - Parameters:
+    ///   - cell: visiable cell
+    ///   - indexPath: index path of visiable cell
+    private func playVideoOnTheCell(cell : SocialInstaCollectionViewCell, indexPath : IndexPath){
+        
+        if currentIndex == indexPath.row{
+            return
+        }
+//        print("*********************************************index: \(indexPath.item)**************************\n\n\n\n\n\n\n\n")
+        currentIndex = indexPath.row
+        if self.socialViewModel.socialModelArray.count > indexPath.row {
+            let data = self.socialViewModel.socialModelArray[indexPath.row]
+            //Pause video and remove player from super if mdeia is image
+            if data.mediaType == 0{
+                if self.player != nil{
+                    //                DispatchQueue.main.async {
+                    self.player.shutdown()
+                    self.player.view.removeFromSuperview()
+                    self.player = nil
+                    //                }
+                }
+                return
+            }
+            if let playerObj = self.player{
+                //            DispatchQueue.main.async {
+                playerObj.shutdown()
+                playerObj.view.removeFromSuperview()
+                self.player = nil
+                //            }
+            }
+            
+            guard let url = cell.videoUrl else{return}
+            //        DispatchQueue.main.async {
+                    var urlString = url.absoluteString
+                    urlString = urlString.replace(target: "upload/", withString: "upload/w_300,h_300,q_60/")
+                    
+            //            DispatchQueue.main.async {
+                    let transformedUrl = URL(string: urlString)
+            
+            self.play(transformedUrl, cell: cell)
+            self.player.prepareToPlay()
+            self.player.playbackVolume = self.isMuted ? 0.0 : 1.0
+            //        }
+        }
+     }
+    
+    /// To perform any operation when cell start moving from full frame
+    ///
+    /// - Parameters:
+    ///   - cell: cell which is moving
+    ///   - indexPath: index of that cell
+    func stopPlayBack(cell : SocialInstaCollectionViewCell, indexPath : IndexPath){
+        if self.playingIndex == indexPath.row{
+            self.stopPlayingCurrentVideo()
+            self.playingIndex = -1
+        }
+    }
+    
+    fileprivate func stopPlayingCurrentVideo(){
+        if let player = self.player{
+            DispatchQueue.main.async{
+                player.pause()
+                player.shutdown()
+                player.view.removeFromSuperview()
+                self.player = nil
+            }
+        }
+    }
+    fileprivate func play(_ url: URL?, cell: SocialInstaCollectionViewCell) {
+        let options = IJKFFOptions.byDefault()
+        
+        self.player = IJKFFMoviePlayerController(contentURL: url!, with: options)
+        self.player.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        self.player.view.frame = cell.postImageView.bounds
+//        self.player.scalingMode = .aspectFill
+        self.player.shouldAutoplay = true
+//        cell.autoresizesSubviews = true
+        cell.postImageView.addSubview((self.player.view)!)
+    }
+}
+
+
+extension SocialViewController: SocialInstaCollectionViewCellDelegate{
+    func viewCollection() {
+        let bookMarkedVC : BookMarkedPostsViewController = self.storyboard?.instantiateViewController(withIdentifier: "BookMarkedPostsViewController") as! BookMarkedPostsViewController
+        bookMarkedVC.collection = self.savedCollectionObj
+        bookMarkedVC.isCollectionDetails =  true
+//        bookMarkedVC.isAllPosts = indexPath.item == 0 ? true : false
+        bookMarkedVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(bookMarkedVC, animated: true)
+    }
+    
+    func openBusinessProductLink(productUrlStr: String,title:String) {
+//         if let businessProductUrlLink = URL(string: ("https://\(productUrlStr)" ) ) {
+//            UIApplication.shared.open(businessProductUrlLink, options: [:], completionHandler: nil)   //canOpenURL(businessWebsite)
+//        }
+         if  let webView =  UIStoryboard.init(name: AppConstants.StoryBoardIds.chat, bundle: nil).instantiateViewController(withIdentifier: "DocumentViewerViewController") as? DocumentViewerViewController{
+            webView.isComingfromSetting = true
+            webView.webURL = "https://\(productUrlStr)"
+            webView.titleName = title
+            webView.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(webView, animated: true)
+            self.navigationController?.navigationBar.isHidden = false
+        }
+      }
+    
+    func locationLblTap(index: Int) {
+        if self.socialViewModel.socialModelArray[index].place == "" {
+            return
+        }else {
+            let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+            guard let postedbyController = storyBoard.instantiateViewController(withIdentifier: AppConstants.viewControllerIds.postLocationViewController) as? PostsLocationViewController else {return}
+            let data = self.socialViewModel.socialModelArray[index]
+            postedbyController.hidesBottomBarWhenPushed = true
+            postedbyController.placeName = data.place
+            postedbyController.placeId = data.placeId ?? ""
+            postedbyController.lattitude = data.lattitude
+            postedbyController.longitude = data.longitude
+            self.navigationController?.pushViewController(postedbyController, animated: true)
+        }
+        
+    }
+    
+    func lblCommentTap(userId: String) {
+        guard let profileVC = storyboard?.instantiateViewController(withIdentifier: Controlleridentifier.profileViewController) as? ProfileViewController else {return}
+        profileVC.memberId = userId
+        self.navigationController?.pushViewController(profileVC, animated: true)
+    }
+    
+//    func singleTapOnCell(index: Int, cell: SocialInstaCollectionViewCell) {
+//        if self.playingIndex == index, let player = self.player, player.isPlaying(){
+//            //if video is already playing of that cell then stop playing that video
+//            self.stopPlayingCurrentVideo()
+//            self.playingIndex = -1
+//        }else{
+//            let data = self.socialViewModel.socialModelArray[index]
+//            guard let stringUrl = data.imageUrl else{return}
+//            let url = URL(string: stringUrl)
+//            self.play(url, cell: cell)
+//            self.player.prepareToPlay()
+//            self.playingIndex = index
+//        }
+//    }
+    
+    func commentButtonTap(index: Int) {
+        guard let commentVC = self.storyboard?.instantiateViewController(withIdentifier: Controlleridentifier.commentsViewController) as? CommentsViewController else{return}
+        guard let userID = Utility.getUserid() else { return }
+        let data = self.socialViewModel.socialModelArray[index]
+        commentVC.postId = data.postId
+        commentVC.userId = userID
+        commentVC.hidesBottomBarWhenPushed = true
+        commentVC.delegate = self
+        self.navigationController?.pushViewController(commentVC, animated: true)
+    }
+    
+    func shareInChatButtonTap(index: Int) {
+        
+        guard let sharePostVC = self.storyboard?.instantiateViewController(withIdentifier: Controlleridentifier.SharePostViewController) as? SharePostViewController else {return}
+        sharePostVC.sharePostViewModel.followersFolloweeModelArray = socialViewModel.followersFolloweeModelArray
+        let data = socialViewModel.socialModelArray[index]
+        sharePostVC.postDetails = data
+        sharePostVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        self.present(sharePostVC, animated: true, completion: nil)
+    }
+    
+    func shareThroughDeepLinkButtonTap(index: Int) {
+        if index >= self.socialViewModel.socialModelArray.count{
+            return
+        }
+        let data = socialViewModel.socialModelArray[index]
+        Helper.showPI()
+        Helper.createDeepLink(postModel: data) { (success, url) in
+            if success{
+                let items: [Any] = ["Hey! Check out this post on \(AppConstants.AppName) app", url as Any]
+                let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+                ac.completionWithItemsHandler = { (activityType, completed:Bool, returnedItems:[Any]?, error: Error?) in
+                }
+                self.present(ac, animated: true)
+                print("Success")
+            }else{
+                print("Failed")
+            }
+            Helper.hidePI()
+        }
+    }
+    
+    
+    func likeButtonTap(index: Int, isSelected: Bool, socialModel: SocialModel) {
+        self.socialViewModel.socialModelArray[index] = socialModel
+        self.socialViewModel.likeAndUnlikeService(index: index, isSelected: isSelected, complitation: {(success, error) in
+            if success{
+                print("like updated successfully")
+//                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "RefreshHomeScreen"), object: nil)
+//                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "RefreshProfileData"), object: nil)
+            }else{
+//                Helper.showAlertViewOnWindow("Message".localized, message: (error?.localizedDescription)!)
+                //                complitation(false,error as? CustomErrorStruct)
+            }
+        })
+    }
+    
+    func hastagOrProfileSelected(byTag: String) {
+        if byTag.hasPrefix("@"){
+            guard let profileVC = storyboard?.instantiateViewController(withIdentifier: controllerIdentifierName.profileViewController) as? ProfileViewController else {return}
+            profileVC.userNameTag = byTag
+            self.navigationController?.pushViewController(profileVC, animated: true)
+        }else{
+            guard let postedbyController = storyboard?.instantiateViewController(withIdentifier: Controlleridentifier.postedByController) as? PostedByViewController else {return}
+            postedbyController.hashTagName = byTag
+            
+            postedbyController.isHashTag = true
+            self.navigationController?.pushViewController(postedbyController, animated: true)
+        }
+    }
+    
+    func openProfileView(index: Int, userName: String?) {
+          let data = self.socialViewModel.socialModelArray[index]
+        if data.channelName != ""{
+            guard let postedbyController = storyboard?.instantiateViewController(withIdentifier: AppConstants.viewControllerIds.postedByController) as? PostedByViewController else {return}
+            postedbyController.isChannel = true
+            postedbyController.channelName = data.channelName
+            postedbyController.hashTagName = data.channelId
+            self.navigationController?.pushViewController(postedbyController, animated: true)
+        }else {
+            guard let profileVC = storyboard?.instantiateViewController(withIdentifier: Controlleridentifier.profileViewController) as? ProfileViewController else {return}
+            if data.userId == Utility.getUserid() {
+                profileVC.isSelf = true
+            }
+            if userName == nil{
+                profileVC.memberId = data.userId
+            }else{
+                profileVC.userNameTag = userName
+            }
+            self.navigationController?.pushViewController(profileVC, animated: true)
+        }
+        
+    }
+    
+    func viewCountButtonTap(index: Int){
+        guard let followVC = storyboard?.instantiateViewController(withIdentifier: Controlleridentifier.followViewController) as? FollowViewController else {return}
+        let data = self.socialViewModel.socialModelArray[index]
+        followVC.followListType = .viewListView
+        followVC.postOrUserId = data.postId
+        followVC.viewTitle = "Viewers".localized
+        self.navigationController?.pushViewController(followVC, animated: true)
+    }
+    
+    func likeCountButtonTap(index: Int){
+        guard let followVC = storyboard?.instantiateViewController(withIdentifier: Controlleridentifier.followViewController) as? FollowViewController else {return}
+        let data = self.socialViewModel.socialModelArray[index]
+        followVC.followListType = .likeListView
+        followVC.postOrUserId = data.postId
+        followVC.viewTitle = "Likes".localized
+        self.navigationController?.pushViewController(followVC, animated: true)
+    }
+}
+
+
+extension SocialViewController {
+    
+    @objc func uploadNewPost(_ notification: NSNotification) {
+//        DispatchQueue.main.async {
+//            self.tabBarController?.selectedIndex = 1
+//        }
+        if let newpost = notification.object as? NewPostModel {
+            DispatchQueue.main.async {
+                self.uploadingProgressView.progress = 0.0
+                self.uploadingPercentageLabel.text = "0%"
+            }
+             if newpost.isVideo {
+                DispatchQueue.main.async {
+                    self.uploadingStatusLabel.text = "Uploading  Video ... "
+                    self.uploadVideoToCloudinary(newPost:newpost)
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.uploadingStatusLabel.text = "Uploading  Image ..."
+                    self.uploadImageToCloudinary(newPost:newpost)
+                }
+            }
+        }
+    }
+    
+    
+    func getCurrentTimeStamp() -> String {
+        
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMddhhmmssa"
+        formatter.locale = Locale.current
+        let result = formatter.string(from: date)
+        return result
+    }
+    
+    //method to upload data to cloudinary.
+    func uploadImageToCloudinary(newPost:NewPostModel) {
+        
+        if newPost.isEdit{
+            self.newPostedImageView.setImageOn(imageUrl: newPost.mediaPath, defaultImage: #imageLiteral(resourceName: "defaultPicture"))
+            self.requestForUpdateAPost(post:newPost)
+            return
+        }
+        self.uploadingViewHeightConstraint.constant = 75
+        let image = UIImage(contentsOfFile:newPost.mediaPath)
+        self.newPostedImageView.image = image
+        let cloudinary = CLDCloudinary(configuration: CLDConfiguration(cloudName:AppConstants.CloudinaryConstant.CLOUD_NAME, secure: true))
+        
+        let params = CLDUploadRequestParams()
+        params.setResourceType(CLDUrlResourceType.image)
+        let data = image!.jpegData(compressionQuality: 1.0)
+        let timestamp = self.getCurrentTimeStamp()
+        params.setPublicId("\(timestamp)")
+        
+        cloudinary.createUploader().upload(data: data!, uploadPreset: AppConstants.CloudinaryConstant.Preset, params: params, progress:{ (progress) in
+            DispatchQueue.main.async {
+                let uploadedProgress = Float (Float(progress.completedUnitCount) / Float(progress.totalUnitCount))
+                let progress = Int(uploadedProgress * 100)
+                self.uploadingPercentageLabel.text = "\(progress)%"
+                self.uploadingProgressView.setProgress(uploadedProgress, animated: true)
+            }
+        }, completionHandler: { (result, error) in
+            //Helper.hideProgressIndicator()
+            DispatchQueue.main.async {
+                self.uploadingViewHeightConstraint.constant = 0
+                if error != nil {
+                    //self.uploadingMainView.isHidden = true
+                    
+                } else {
+                    
+                    if let result = result {
+                        var updatedPostObj = newPost
+                        updatedPostObj.mediaPath = result.url!;
+                        updatedPostObj.cloudinaryPublicID = result.publicId!;
+                        self.requestForCreateNewPost(newPost:updatedPostObj)
+                    }
+                }
+            }
+        })
+    }
+    
+    
+    //method to upload data to cloudinary.
+    func uploadVideoToCloudinary(newPost:NewPostModel) {
+        
+        if newPost.isEdit{
+            let url = newPost.mediaPath
+            let endIndex = url.index(url.endIndex, offsetBy: -3)
+            var truncated = url.substring(to: endIndex)
+            truncated = truncated + "jpg"
+            self.newPostedImageView.setImageOn(imageUrl: truncated, defaultImage: #imageLiteral(resourceName: "defaultPicture"))
+            self.requestForUpdateAPost(post:newPost)
+            return
+        }
+        self.uploadingViewHeightConstraint.constant = 75
+        self.newPostedImageView.image = newPost.image
+        let cloudinary = CLDCloudinary(configuration: CLDConfiguration(cloudName:AppConstants.CloudinaryConstant.CLOUD_NAME, secure: true))
+        
+        let params = CLDUploadRequestParams()
+        params.setResourceType(CLDUrlResourceType.video)
+//        let videoSavedUrl = URL(string: newPost.mediaPath)
+        let timestamp = self.getCurrentTimeStamp()
+        params.setPublicId("\(timestamp)")
+        cloudinary.createUploader().upload(url: URL(string: newPost.mediaPath)!, uploadPreset: AppConstants.CloudinaryConstant.Preset, params: params, progress:{ (progress) in
+            DispatchQueue.main.async {
+                let uploadedProgress = Float (Float(progress.completedUnitCount) / Float(progress.totalUnitCount))
+                let progress = Int(uploadedProgress * 100)
+                self.uploadingPercentageLabel.text = "\(progress)%"
+                self.uploadingProgressView.setProgress(uploadedProgress, animated:true)
+            }
+        }, completionHandler: { (result, error) in
+            //Helper.hideProgressIndicator()
+            DispatchQueue.main.async {
+                self.uploadingViewHeightConstraint.constant = 0
+                if error != nil {
+                    //self.uploadingMainView.isHidden = true
+                    
+                } else {
+                    
+                    if let result = result {
+                        var updatedPostObj = newPost
+                        updatedPostObj.mediaPath = result.url!;
+                        updatedPostObj.cloudinaryPublicID = result.publicId!;
+                        self.requestForCreateNewPost(newPost:updatedPostObj)
+                    }
+                }
+            }
+        })
+    }
+    
+    func requestForCreateNewPost(newPost:NewPostModel) {
+        let socialApi = SocialAPI()
+        socialApi.createNewPost(newpostDetails:newPost , complitation: { (isPosted) in
+            self.socialViewModel.offset = -20
+            self.homeServiceCall()
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "RefreshHomeScreen"), object: nil)
+        })
+    }
+    
+    func requestForUpdateAPost(post: NewPostModel){
+        let socialApi = SocialAPI()
+        socialApi.updatePost(newpostDetails: post) { (isUpdates) in
+            self.socialViewModel.offset = -20
+            self.homeServiceCall()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1, execute: {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "RefreshHomeScreen"), object: nil)
+            })
+        }
+    }
+ 
+    func addObserVerForNewPost() {
+        NotificationCenter.default.addObserver(self, selector: #selector(uploadNewPost(_:)), name: NSNotification.Name(rawValue: "createNewPost"), object: nil)
+    }
+    
+    func addObserverForReload(){
+        NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: NSNotification.Name(rawValue: "RefreshHomeScreen"), object: nil)
+      //  NotificationCenter.default.addObserver(self, selector: #selector(updateMystories(notification:)), name:NSNotification.Name(rawValue:"updateMyStories"), object: nil)
+    }
+    
+    @objc func refresh(){
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) {
+            self.socialViewModel.offset = -20
+//            self.socialViewModel.socialModelArray = []
+            self.homeServiceCall()
+//            self.followFollowingServiceCall()
+//            self.getMyStoryService()
+//            self.getOtherStoryService()
+//            self.getUserProfile()
+        }
+    }
+}
+
+//MARK:- Search view controller delegate
+extension SocialViewController: SearchViewControllerDelegate{
+    
+    func didFollowOrUnfollowUser() {
+        self.socialViewModel.offset = -20
+        self.homeServiceCall()
+        self.followFollowingServiceCall()
+    }
+}
+
+//MARK:- Post details view controller delegate
+extension SocialViewController: PostDetailsViewControllerDelegate{
+    func homeDataChanged() {
+        self.homeServiceCall()
+    }
+}
+
+//MARK:- Comment View Controller delegate
+extension SocialViewController: CommentsViewControllerDelegate{
+    func commentCount(count: Int) {
+        self.refresh()
+    }
+}
+
+//MARK:- Social Stories Collection View cell Delegate
+extension SocialViewController: SocialStoriesCollectionViewCellDelegate{
+    func cellDidSelect(index: IndexPath) {
+        switch index.section {
+        case 0:
+            if(self.socialViewModel.myStories.userStories.count == 0) {
+                //there is no stories avialble.
+                //so allow to add new story.
+                self.openCamera()
+            } else {
+                self.openMyStories()
+            }
+            break
+        case 1:
+            openOthersRecentStories(openAtIndex:index.row)
+            break
+        default:
+            openOthersVieWedStories(openAtIndex:index.row)
+            break
+        }
+    }
+    
+    func openStoryCamera(){
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let cameraAction = UIAlertAction(title: "Add to Your Story".localized, style: .default) { (action) in
+            DispatchQueue.main.async {
+                self.openCamera()
+            }
+        }
+        let cancel = UIAlertAction(title: "Cancel".localized, style: .cancel, handler: nil)
+        actionSheet.addAction(cameraAction)
+        actionSheet.addAction(cancel)
+        DispatchQueue.main.async {
+            self.present(actionSheet, animated: true, completion: nil)
+        }
+    }
+    
+    
+    func openCamera() {
+        let camVc = self.storyboard?.instantiateViewController(withIdentifier: Controlleridentifier.CameraViewController) as! CameraViewController
+        
+        let newNav = UINavigationController(rootViewController: camVc)
+        newNav.isNavigationBarHidden = true
+        camVc.isForStory = true
+        self.navigationController?.present(newNav, animated: true, completion:nil)
+    }
+    
+    func openMyStories() {
+        //open stories.
+//        openStoriesScreenWithStories(stories:[self.socialViewModel.myStories],isMystory:true, openAtIndex:0)
+        let storyboard = UIStoryboard(name: AppConstants.StoryBoardIds.mainStoryBoardId, bundle: nil)
+        guard let myStoriesVC = storyboard.instantiateViewController(withIdentifier: AppConstants.viewControllerIds.StoryListViewController) as? StoryListViewController else {return}
+        myStoriesVC.myStories = self.socialViewModel.myStories
+        self.navigationController?.pushViewController(myStoriesVC, animated: true)
+        
+    }
+    
+    func openOthersRecentStories(openAtIndex:Int) {
+        //open stories.
+        openStoriesScreenWithStories(stories:self.socialViewModel.recentStories,isMystory:false, openAtIndex:openAtIndex)
+    }
+    
+    func openOthersVieWedStories(openAtIndex:Int) {
+        //open stories.
+        openStoriesScreenWithStories(stories:self.socialViewModel.viewedStories,isMystory:false, openAtIndex:openAtIndex)
+    }
+    
+    func openStoriesScreenWithStories(stories:[userStory],isMystory:Bool,openAtIndex:Int) {
+        let viewStoryVc = self.storyboard?.instantiateViewController(withIdentifier:Controlleridentifier.ViewStoryID) as! ViewStoryViewController
+        viewStoryVc.allStories = stories
+        viewStoryVc.jumpToIndex = openAtIndex
+        viewStoryVc.isFromSocialView = true
+        viewStoryVc.isMyStory = isMystory
+        self.present(viewStoryVc, animated: true, completion:nil)
+    }
+    
+    func getUserProfile(){
+        let profileViewModel = ProfileViewModel()
+        profileViewModel.isSelf = true
+        let strUrl: String = AppConstants.userProfile
+        profileViewModel.userDetailsService(strUrl: strUrl, params: [:]) { (success, error, canServiceCall) in
+            if success{
+                
+            }else if let error = error{
+                if error.code != 204{
+                    Helper.showAlertViewOnWindow(Strings.error, message: error.localizedDescription)
+                }
+            }
+        }
+    }
+}
+
+extension SocialViewController: ReportViewDelegate{
+    
+    func reportSelectedAtIndex(index: Int) {
+        self.postReportReason(index: index)
+    }
+    
+    func onDismissView(){
+        //        self.startVideoPlayer()
+    }
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHIC.TTF">
+            <string>CenturyGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessCustomAlertView" customModule="Dub_ly" customModuleProvider="target">
+            <connections>
+                <outlet property="alertView" destination="7Zt-Kt-Tkm" id="NvM-sG-eZj"/>
+                <outlet property="backView" destination="PiU-64-ywZ" id="mva-VO-4zj"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="CGD-9o-rVu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiU-64-ywZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Zt-Kt-Tkm">
+                    <rect key="frame" x="28" y="243.5" width="319" height="180"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for registering your business , our business profile support team will get back with you shortly for any updates." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8y-oN-HBx">
+                            <rect key="frame" x="15" y="35" width="289" height="74"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
+                            <color key="textColor" name="settingTitlelabel"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-7b-pUY">
+                            <rect key="frame" x="144.5" y="124" width="30" height="41"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
+                            <state key="normal" title="Ok">
+                                <color key="titleColor" name="App base Color"/>
+                            </state>
+                            <connections>
+                                <action selector="letsStartBtnAction:" destination="-1" eventType="touchUpInside" id="Tfg-cK-6hs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="HOI-7b-pUY" secondAttribute="bottom" constant="15" id="5AM-QU-ImN"/>
+                        <constraint firstAttribute="trailing" secondItem="L8y-oN-HBx" secondAttribute="trailing" constant="15" id="JXA-5z-jJO"/>
+                        <constraint firstItem="HOI-7b-pUY" firstAttribute="centerX" secondItem="L8y-oN-HBx" secondAttribute="centerX" id="NRh-iW-AEv"/>
+                        <constraint firstAttribute="height" constant="180" id="Qj4-gH-2Ci"/>
+                        <constraint firstItem="L8y-oN-HBx" firstAttribute="top" secondItem="7Zt-Kt-Tkm" secondAttribute="top" constant="35" id="eYz-gC-FX3"/>
+                        <constraint firstItem="L8y-oN-HBx" firstAttribute="centerX" secondItem="7Zt-Kt-Tkm" secondAttribute="centerX" id="fwE-er-SNj"/>
+                        <constraint firstItem="HOI-7b-pUY" firstAttribute="top" secondItem="L8y-oN-HBx" secondAttribute="bottom" constant="15" id="ncV-mX-hJT"/>
+                        <constraint firstItem="L8y-oN-HBx" firstAttribute="leading" secondItem="7Zt-Kt-Tkm" secondAttribute="leading" constant="15" id="tml-aw-j7z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PiU-64-ywZ" secondAttribute="bottom" id="4cv-9U-xPY"/>
+                <constraint firstItem="PiU-64-ywZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Pu9-RQ-ESF"/>
+                <constraint firstItem="7Zt-Kt-Tkm" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="UCf-IJ-xMF"/>
+                <constraint firstItem="7Zt-Kt-Tkm" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="3.4/4" id="atb-NI-VJd"/>
+                <constraint firstItem="PiU-64-ywZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hWy-0Y-ZGU"/>
+                <constraint firstItem="7Zt-Kt-Tkm" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="rd3-Ja-Vzz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PiU-64-ywZ" secondAttribute="trailing" id="taR-86-9BB"/>
+            </constraints>
+            <point key="canvasLocation" x="356" y="117"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="App base Color">
+            <color red="0.70196078431372544" green="0.23529411764705882" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="settingTitlelabel">
+            <color red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

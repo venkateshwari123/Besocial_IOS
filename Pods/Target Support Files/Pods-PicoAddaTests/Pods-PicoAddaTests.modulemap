@@ -1,0 +1,6 @@
+framework module Pods_PicoAddaTests {
+  umbrella header "Pods-PicoAddaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

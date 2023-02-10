@@ -1,0 +1,253 @@
+//
+//  RechargeSuccessViewController.swift
+//  Yelo
+//
+//  Created by Rahul Sharma on 04/05/20.
+//  Copyright © 2020 rahulSharma. All rights reserved.
+//
+
+import UIKit
+
+protocol TransactionDetailViewControllerDelegate {
+    func donePressed()
+}
+
+class TransactionDetailViewController: BaseViewController {
+    
+    // these are used when money transfer is done for product
+    @IBOutlet var successTopView: UIView!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var walletRechargeStaticLabel: UILabel!
+    @IBOutlet weak var transactionIdStaicLabel: UILabel!
+    @IBOutlet weak var transactionId: UILabel!
+    @IBOutlet weak var rechargeModeStaticLabel: UILabel!
+    @IBOutlet weak var rechargeModeLabel: UILabel!
+    @IBOutlet weak var dateTimeLabelStaticLabel: UILabel!
+    @IBOutlet weak var dateTimeLabel: UILabel!
+    @IBOutlet weak var doneButton: UIButton!
+    @IBOutlet weak var successStackView: UIStackView!
+    
+    @IBOutlet weak var transactionModeViewOutlet: UIView!
+    // for details - these are used when recharge or withdrawl has been done
+    @IBOutlet weak var detailsTopView: UIView!
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var fromNameLabel: UILabel!
+    @IBOutlet weak var forProductLabel: UILabel!
+    @IBOutlet weak var detailsTransactionIdLabel: UILabel!
+    @IBOutlet weak var detailsFromLabel: UILabel!
+    @IBOutlet weak var detailsToLabel: UILabel!
+    @IBOutlet weak var detailsTimeLabel: UILabel!
+    @IBOutlet var detailsStaticLabel: [UILabel]!
+    @IBOutlet var detailsValueLabel: [UILabel]!
+    @IBOutlet weak var detailsStackView: UIStackView!
+    @IBOutlet weak var receiverImageView: UIImageView!
+    
+    let viewModel = TransactionDetailViewModel()
+    var delegate: TransactionDetailViewControllerDelegate?
+    
+    //Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setUp()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        unHideNavBar()
+        setNavigationLeftBarBackButton()
+        Helper.hidePI()
+    }
+    
+    
+    func setUp(){
+        setSuccessUI()
+        setDetailsUI()
+        setScreen()
+        if viewModel.needToCallApi{
+            viewModel.getWithdrawDetails { (success) in
+                self.insertData()
+            }
+        }
+        else{
+            insertData()
+        }
+    }
+    
+    func setSuccessUI() {
+        priceLabel.font = Theme.getInstance().walletRechargeAmountStyle.getFont()
+        priceLabel.textColor = Theme.getInstance().walletRechargeAmountStyle.getTextColor()
+        
+        walletRechargeStaticLabel.font = Theme.getInstance().rechargeSuccessPlaceHolderStyle.getFont()
+        walletRechargeStaticLabel.textColor = Theme.getInstance().rechargeSuccessPlaceHolderStyle.getTextColor()
+        
+        transactionIdStaicLabel.font = Theme.getInstance().rechargeSuccessDetailPlaceHolderStyle.getFont()
+        transactionIdStaicLabel.textColor = Theme.getInstance().rechargeSuccessDetailPlaceHolderStyle.getTextColor()
+        
+        transactionId.font = Theme.getInstance().rechargeSuccessDetailStyle.getFont()
+        transactionId.textColor = Theme.getInstance().rechargeSuccessDetailStyle.getTextColor()
+        
+        rechargeModeStaticLabel.font = Theme.getInstance().rechargeSuccessDetailPlaceHolderStyle.getFont()
+        rechargeModeStaticLabel.textColor = Theme.getInstance().rechargeSuccessDetailPlaceHolderStyle.getTextColor()
+        
+        rechargeModeLabel.font = Theme.getInstance().rechargeSuccessDetailStyle.getFont()
+        rechargeModeLabel.textColor = Theme.getInstance().rechargeSuccessDetailStyle.getTextColor()
+        
+        dateTimeLabelStaticLabel.font = Theme.getInstance().rechargeSuccessDetailPlaceHolderStyle.getFont()
+        dateTimeLabelStaticLabel.textColor = Theme.getInstance().rechargeSuccessDetailPlaceHolderStyle.getTextColor()
+        
+        dateTimeLabel.font = Theme.getInstance().rechargeSuccessDetailStyle.getFont()
+        dateTimeLabel.textColor = Theme.getInstance().rechargeSuccessDetailStyle.getTextColor()
+        
+        doneButton.titleLabel?.font = Theme.getInstance().promotionBuyButtonStyle.getFont()
+        doneButton.layer.cornerRadius = doneButton.frame.height/2
+
+        switch viewModel.selectedSuccessType {
+        case .recharge:
+            self.title = "Transaction Details"
+            rechargeModeStaticLabel.text = "Recharge Mode"
+<<<<<<< HEAD
+//            walletRechargeStaticLabel.text = "Wallet Recharged"
+        case .withdrawl:
+            self.title = "Withdraw Details"
+        rechargeModeStaticLabel.text = "Withdrawl Mode"
+//        walletRechargeStaticLabel.text = "Withdraw Successfully"
+=======
+            if viewModel.transaction.description != "" {
+                walletRechargeStaticLabel.text = viewModel.transaction.description
+            }else {
+                walletRechargeStaticLabel.text = "Wallet Recharged"
+            }
+            feeViewOutlet.isHidden = true
+        case .withdrawl:
+            self.title = "Withdraw Details"
+            rechargeModeStaticLabel.text = "Withdrawl Mode"
+            if viewModel.transaction.description != "" {
+                walletRechargeStaticLabel.text = viewModel.transaction.description
+            }else {
+                walletRechargeStaticLabel.text = "Withdraw Successfully"
+            }
+            feeViewOutlet.isHidden = false
+>>>>>>> 9d610039... refactored(Wallet):- Added more transaction details like android
+        }
+    }
+    
+    func setDetailsUI() {
+        profileImageView.makeCornerRadious(readious: profileImageView.frame.height / 2)
+        productImageView.makeCornerRadious(readious: productImageView.frame.height / 2)
+        
+        amountLabel.font = Theme.getInstance().rechargeDetailsAmountLabelStyle.getFont()
+        amountLabel.textColor = Theme.getInstance().rechargeDetailsAmountLabelStyle.getTextColor()
+        
+        fromNameLabel.font = Theme.getInstance().rechargeDetailsFromAndToNameStyle.getFont()
+        fromNameLabel.textColor = Theme.getInstance().rechargeDetailsFromAndToNameStyle.getTextColor()
+        
+        forProductLabel.font = Theme.getInstance().rechargeDetailsFromAndToNameStyle.getFont()
+        forProductLabel.textColor = Theme.getInstance().rechargeDetailsFromAndToNameStyle.getTextColor()
+        
+        for label in detailsStaticLabel{
+            label.font = Theme.getInstance().rechargeSuccessDetailPlaceHolderStyle.getFont()
+            label.textColor = Theme.getInstance().rechargeSuccessDetailPlaceHolderStyle.getTextColor()
+        }
+        
+        for label in detailsValueLabel{
+            label.font = Theme.getInstance().rechargeSuccessDetailStyle.getFont()
+            label.textColor = Theme.getInstance().rechargeSuccessDetailStyle.getTextColor()
+        }
+    }
+    
+    func setScreen() {
+        
+        switch viewModel.selectedTransactionType {
+        
+        case .productTransactionScreen:
+            
+            successTopView.isHidden = false
+            successStackView.isHidden = false
+            
+            doneButton.isHidden = viewModel.pushedFromTableViewCell
+            
+            detailsTopView.isHidden = true
+            detailsStackView.isHidden = true
+            
+        case .rechargeOrWithdrawlTransactionSuccess:
+            self.title = "Transfer Details"
+            successStackView.isHidden = true
+            successStackView.isHidden = true
+            
+            doneButton.isHidden = true
+            
+            detailsTopView.isHidden = false
+            detailsStackView.isHidden = false
+        }
+    }
+    
+    func insertData() {
+        self.receiverImageView.setImageOn(imageUrl: viewModel.transaction.receiverImage, defaultImage: #imageLiteral(resourceName: "success_icon"))
+        if viewModel.selectedTransactionType == .productTransactionScreen{
+            if viewModel.transaction.amount == "" {
+                priceLabel.text = "$ " + viewModel.transaction.withdrawalAmount // Utility.getCurrenySymbol() for dynamic
+            }else {
+                priceLabel.text = "$ " + viewModel.transaction.amount //// Utility.getCurrenySymbol() for ddynamic
+                
+            }
+<<<<<<< HEAD
+=======
+            if viewModel.transaction.fee == "" {
+                self.feeViewOutlet.isHidden = true
+            }else {
+            self.feeLabel.text = viewModel.transaction.fee + "%"
+            }
+>>>>>>> 9d610039... refactored(Wallet):- Added more transaction details like android
+            
+            if viewModel.transaction.txnid == "" {
+                transactionId.text = viewModel.transaction.withdrawid
+            }else {
+                transactionId.text = viewModel.transaction.txnid
+            }
+            
+            if viewModel.transaction.rechargemode != ""{
+                rechargeModeLabel.text = viewModel.transaction.rechargemode + "(\(viewModel.transaction.bank))"
+            }else if viewModel.transaction.accountNumber != "" {
+                self.rechargeModeStaticLabel.text = "Bank"
+                self.rechargeModeLabel.text = viewModel.transaction.accountNumber
+            }else  if viewModel.transaction.bank != "" {
+                self.rechargeModeStaticLabel.text = "Bank"
+                self.rechargeModeLabel.text = viewModel.transaction.bank
+            }else{
+                self.rechargeModeLabel.isHidden = true
+                self.rechargeModeStaticLabel.isHidden = true
+                self.transactionModeViewOutlet.isHidden = true
+            }
+<<<<<<< HEAD
+            else{
+                rechargeModeLabel.text = viewModel.transaction.bank + "(\(viewModel.transaction.rechargemode))"
+            }
+=======
+        }else {
+            self.detailsTransactionIdLabel.text = viewModel.transaction.txnid
+            self.detailsFromLabel.text = viewModel.transaction.userFrom
+            self.detailsToLabel.text = viewModel.transaction.userTo
+            self.detailsTimeLabel.text = Date().getDateFromTimeStamp(dateString: viewModel.transaction.txntimestamp, fromFormat : "yyyy-MM-dd'T'HH:mm:ss.SSSZ", toFormate: "dd MMM yyyy,HH:mm:ss")
+            self.amountLabel.text = "$ " + viewModel.transaction.amount
+            self.fromNameLabel.text = viewModel.transaction.description
+            self.profileImageView.setImageOn(imageUrl: viewModel.transaction.senderImage, defaultImage: #imageLiteral(resourceName: "success_icon"))
+            self.productImageView.setImageOn(imageUrl: viewModel.transaction.receiverImage, defaultImage: #imageLiteral(resourceName: "success_icon"))
+            
+        }
+        
+        
+        
+>>>>>>> 9d610039... refactored(Wallet):- Added more transaction details like android
+            dateTimeLabel.text = Date().getDateFromTimeStamp(dateString: viewModel.transaction.txntimestamp, fromFormat : "yyyy-MM-dd'T'HH:mm:ss.SSSZ", toFormate: "dd MMM yyyy,HH:mm:ss")
+            
+        }
+    
+    
+    
+    @IBAction func doneButtonAction(_ sender: Any) {
+        self.dismiss(animated: true)
+        delegate?.donePressed()
+    }
+}

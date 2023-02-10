@@ -1,0 +1,15 @@
+///* 
+//  InfoPlist.strings
+//  Picoadda
+//
+//  Created by Rahul Sharma on 19/08/21.
+//  Copyright © 2021 Rahul Sharma. All rights reserved.
+//*/
+//"NSAppleMusicUsageDescription" = "We would use your Media Library for sharing your photo and video" + ".";
+//"NSCameraUsageDescription" = "We would use your Camera for sharing your photo for you profile and share your post" + ".";
+//"NSContactsUsageDescription" = "$(PRODUCT_NAME) syncs only phone numbers from your address book to $(PRODUCT_NAME) servers to help you connect with other $(PRODUCT_NAME) users";
+//"NSLocationWhenInUseUsageDescription" = "We would use your location for location share and help you to search posts according to location" + ".";
+//"NSMicrophoneUsageDescription" = "We would use your Microphone for Audio, video calling and video recording" + ".";
+//"NSPhotoLibraryAddUsageDescription" = "We would use your photo Library for sharing your photo and video" + ".";
+//"NSPhotoLibraryUsageDescription" = "We would use your photo Library for sharing your photo and video" + ".";
+//

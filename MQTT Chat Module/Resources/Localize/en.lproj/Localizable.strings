@@ -1,0 +1,1597 @@
+// Reusables
+"Please enter" = "Please enter";
+"Please accept" = "Please accept";
+"Please select" = "Please select";
+"Please upload" = "Please upload";
+"Please choose" = "Please choose";
+"Please" = "Please";
+"You do not have" = "You do not have";
+"Are you sure want to" = "Are you sure want to";
+"this transaction" = "this transaction";
+"I agree to the" = "I agree to the";
+"Search" = "Search";
+"Edit" = "Edit";
+"valid" = "valid";
+"already exists" = "already exists";
+"Entered" = "Entered";
+"User" = "User";
+"Successfully" = "Successfully";
+"a new" = "a new";
+"try again" = "try again";
+"new" = "new";
+"NEW" = "NEW";
+"TRANSFERRED" = "TRANSFERRED";
+"APPROVED" = "APPROVED";
+"PENDING" = "PENDING";
+"REJECTED" = "REJECTED";
+"FAILED" = "FAILED";
+"CANCELLED" = "CANCELLED";
+"This" = "This";
+"Login with" = "Login with";
+"is not" = "is not";
+"registered on" = "registered on";
+"Reset" = "Reset";
+"Check out" = "Check out";
+"Are you sure you want to" = "Are you sure you want to";
+"delete this collection" = "delete this collection";
+"Transaction" = "Transaction";
+"ago" = "ago";
+"Ago" = "Ago";
+"Enter" = "Enter";
+"enter" = "enter";
+"check" = "check";
+"confirm" = "confirm";
+
+// Welcome View Conreoller
+"Tap" = "Tap";
+"Agree" = "Agree";
+"Continue" = "Continue";
+"to accept the" = "to accept the";
+"Terms of Service" = "Terms of Service";
+"Terms Of Service" = "Terms Of Service";
+"Privice Policy" = "Privice Policy";
+"and" = "and";
+
+// Phone Number View Controller
+"Check Internet Connection" = "Check Internet Connection";
+"Your phone number is not correct" = "Your phone number is not correct";
+"Phone number is too long" = "Phone number is too long";
+
+// Verifyi OTP
+"your OTP first" = "your OTP first";
+"Verification code" = "Verification code";
+"has been sent to" = "has been sent to";
+"Didn't get code" = "Didn't get code";
+"invalid" = "invalid";
+"OTP" = "OTP";
+"expired" = "expired";
+"has been send to" = "has been send to";
+"The verificaiton code has been resent to" = "The verificaiton code has been resent to";
+
+//Dubly Home Page
+"Uploading  Video" = "Uploading  Video";
+"Uploading  Image" = "Uploading  Image";
+"Follow User" = "Follow User";
+"followed anyone" = "followed anyone";
+"Follow some users to see their posts here" = "Follow some users to see their posts here";
+"Find people to follow" = "Find people to follow";
+"Save to Collection" = "Save to Collection";
+"Save to collection" = "Save to collection";
+"Post removed from collection" = "Post removed from collection";
+"View Saved" = "View Saved";
+"View" = "View";
+"tips" = "tips";
+"Liked by" = "Liked by";
+"No Plans Yet" = "No Plans Yet";
+"coin plans" = "coin plans";
+"Xclusive Post" = "Xclusive Post";
+"Unlock this post for" = "Unlock this post for";
+"Subscribe for" = "Subscribe for";
+"Are you sure you want to stop subscribing to" = "Are you sure you want to stop subscribing to";
+"Following" = "Following";
+"Trending" = "Trending";
+"Xclusive" = "Xclusive";
+"Bookmark" = "Bookmark";
+"Bookmarked" = "Bookmarked";
+"Duet" = "Duet";
+"Forward" = "Forward";
+"Download" = "Download";
+"Gif" = "Gif";
+"Copy Link" = "Copy Link";
+"Share Post" = "Share Post";
+"share post" = "share post";
+"More" = "More";
+"Share Profile" = "Share Profile";
+"CopyLink" = "CopyLink";
+"Record" = "Record";
+"EditPost" = "EditPost";
+"DeletePost" = "DeletePost";
+"Report" = "Report";
+"Follow" = "Follow";
+"Comments" = "Comments";
+"Use Audio" = "Use Audio";
+"Send Tip" = "Send Tip";
+"Get More" = "Get More";
+"Get more" = "Get more";
+"Tip Amount" = "Tip Amount";
+"Sent Tip Successfully" = "Sent Tip Successfully";
+"Insufficient coins" = "Insufficient coins";
+"please recharge" = "please recharge";
+"Add Coins" = "Add Coins";
+"Tip sent to" = "Tip sent to";
+"Subscription to" = "Subscription to";
+"failed due to lack of coin balance" = "failed due to lack of coin balance";
+"you will not be able to enjoy unlimited access to all of" = "you will not be able to enjoy unlimited access to all of";
+"content" = "content";
+"You will have to subscribe to" = "You will have to subscribe to";
+"again to gain access to their content" = "again to gain access to their content";
+"You have successfully purchased this post" = "You have successfully purchased this post";
+"Thank you for subscribing to" = "Thank you for subscribing to";
+"No Comments yet" = "No Comments yet";
+"No Likes yet" = "No Likes yet";
+"subcribers" = "subcribers";
+"Facebook" = "Facebook";
+"Instagram" = "Instagram";
+"Deeplink" = "Deeplink";
+"You have already cancelled the subscription" = "You have already cancelled the subscription";
+"Your current billing cycle ends on" = "Your current billing cycle ends on";
+"so subscription will remain active till then and it will stop there after" = "so subscription will remain active till then and it will stop there after";
+"Post needs to be unlocked first to enable custom action" = "Post needs to be unlocked first to enable custom action";
+
+//Picoadda HomePage
+"years" = "years";
+"year" = "year";
+"months" = "months";
+"month" = "month";
+"weeks" = "weeks";
+"week" = "week";
+"days" = "days";
+"hours" = "hours";
+"hour" = "hour";
+"minutes" = "minutes";
+"minute" = "minute";
+"seconds" = "seconds";
+"second" = "second";
+"Comments are disabled for this post" = "Comments are disabled for this post";
+"Now you are following" = "Now you are following";
+"More Options" = "More Options";
+"Delete Post" = "Delete Post";
+"Downloading is disabled for this post" = "Downloading is disabled for this post";
+"Ago" = "Ago";
+"Add Story" = "Add Story";
+"You have not followed anyone" = "You have not followed anyone";
+"Follow some users to see their posts here" = "Follow some users to see their posts here";
+"Find friends to follow" = "Find friends to follow";
+
+//DublyFollowViewController
+"Likes" = "Likes";
+"No user is following you" = "No user is following you";
+"You are not following any user" = "You are not following any user";
+"You have not any subscribers" = "You have not any subscribers";
+"following" = "following";
+"followers" = "followers";
+"People" = "People";
+"Write a comment" = "Write a comment";
+
+//Explore Page
+"There is no trending post" = "There is no trending post";
+"people" = "people";
+"hashtags" = "hashtags";
+"place" = "place";
+"Hashtag" = "Hashtag";
+"Places" = "Places";
+"posts" = "posts";
+"Public posts" = "Public posts";
+"Request" = "Request";
+"Requested" = "Requested";
+"REQUESTED" = "REQUESTED";
+"Subscribe" = "Subscribe";
+"Subscribed" = "Subscribed";
+"known as" = "known as";
+"Known as" = "Known as";
+
+//MARK:- Profile Page
+"Profile updated" = "Profile updated";
+"Activity" = "Activity";
+"Subscribers" = "Subscribers";
+"Posts" = "Posts";
+"Followers" = "Followers";
+"No posts to show" = "No posts to show";
+"No purchased posts to show" = "No purchased posts to show";
+"No liked posts to show" = "No liked posts to show";
+"No tagged posts to show" = "No tagged posts to show";
+"No stream videos to show" = "No stream videos to show";
+"You have not created any channel" = "You have not created any channel";
+"No stories to show" = "No stories to show";
+"Subscribe to" = "Subscribe to";
+"for" = "for";
+"Cancel Subscription" = "Cancel Subscription";
+"Read Less" = "Read Less";
+"Read More" = "Read More";
+"This Account is Private" = "This Account is Private";
+"Follow this account to see their photos and videos" = "Follow this account to see their photos and videos";
+"Change Photo" = "Change Photo";
+"Bio" = "Bio";
+"Private Information" = "Private Information";
+"Public Business Information" = "Public Business Information";
+"Contact options" = "Contact options";
+"Business Bio" = "Business Bio";
+"Private Account" = "Private Account";
+"To switch to a business account" = "To switch to a business account";
+"your account must be Public" = "your account must be Public";
+"Category" = "Category";
+"User Status" = "User Status";
+"No users found" = "No users found";
+"Setting" = "Setting";
+"User reported successfully" = "User reported successfully";
+"This number is taken by other user please try again with different number" = "This number is taken by other user please try again with different number";
+"Take Photo" = "Take Photo";
+"Choose Photo" = "Choose Photo";
+"Uploading" = "Uploading";
+"Alert" = "Alert";
+"Name" = "Name";
+"Username" = "Username";
+"Status" = "Status";
+"Email Address" = "Email Address";
+"email address" = "email address";
+"Contact Number" = "Contact Number";
+"Business About" = "Business About";
+"Business User Name" = "Business User Name";
+"Business Name" = "Business Name";
+"Business Email" = "Business Email";
+"Business Phone" = "Business Phone";
+"Business UserName" = "Business UserName";
+"business username" = "business username";
+"Business Location" = "Business Location";
+"About Business" = "About Business";
+"First Name" = "First Name";
+"Email" = "Email";
+"Phone" = "Phone";
+"User Name" = "User Name";
+"Full Name" = "Full Name";
+"Known As" = "Known As";
+"Enter Password" = "Enter Password";
+"Account Holder's Name" = "Account Holder's Name";
+"IFSC Code" = "IFSC Code";
+"ifsc code" = "ifsc code";
+"Amount" = "Amount";
+"Street Address" = "Street Address";
+"City/Town" = "City/Town";
+"Zip Code" = "Zip Code";
+"viaMobile" = "viaMobile";
+"viaEmail" = "viaEmail";
+"Verified" = "Verified";
+"verified" = "verified";
+"Confirm and verify" = "Confirm and verify";
+"Sent On Email" = "Sent On Email";
+"We have send you the link to" = "We have send you the link to";
+"mobile no" = "mobile no";
+"different" = "different";
+"Not verified" = "Not verified";
+"is already registered" = "is already registered";
+"new business username" = "new business username";
+"about the business" = "about the business";
+"About The Business" = "About The Business";
+"Edit Bio" = "Edit Bio";
+"business website" = "business website";
+"The confirm password does not match the new password entered" = "The confirm password does not match the new password entered";
+"Password changed successfully" = "Password changed successfully";
+"User Not Found" = "User Not Found";
+"Exceed Maximum Number Of Selection" = "Exceed Maximum Number Of Selection";
+
+// Coin Wallet
+"Buy Coins" = "Buy Coins";
+"My Balance" = "My Balance";
+"Select Plan" = "Select Plan";
+"Transactions" = "Transactions";
+"All" = "All";
+"Credit" = "Credit";
+"Debit" = "Debit";
+"No transactions yet" = "No transactions yet";
+"Trans ID" = "Trans ID";
+"Coin Transactions" = "Coin Transactions";
+
+// Wallet
+"Reason" = "Reason";
+"Transfer to a friend" = "Transfer to a friend";
+"Processing fee" = "Processing fee";
+"Received amount" = "Received amount";
+"Sent amount" = "Sent amount";
+"Date" = "Date";
+"Time" = "Time";
+"Bank" = "Bank";
+"Transfer Details" = "Transfer Details";
+"Gift Transfer Details" = "Gift Transfer Details";
+"Withdrawal Details" = "Withdrawal Details";
+"Recharge Details" = "Recharge Details";
+"Payment Details" = "Payment Details";
+"Withdrawl Mode" = "Withdrawl Mode";
+"Wallet Recharged" = "Wallet Recharged";
+"Recharge Mode" = "Recharge Mode";
+"Withdrawal Request Submitted Sucessfully" = "Withdrawal Request Submitted Sucessfully";
+"Are you sure you want to recharge the wallet with" = "Are you sure you want to recharge the wallet with";
+"Recharge Amount" = "Recharge Amount";
+"Withdraw Amount" = "Withdraw Amount";
+"withdrawal fee deducted" = "withdrawal fee deducted";
+"Receiving Account" = "Receiving Account";
+"Add Account" = "Add Account";
+"Stripe Account" = "Stripe Account";
+"Bank Details" = "Bank Details";
+"Wallet" = "Wallet";
+"wallet" = "wallet";
+"Recharge" = "Recharge";
+"Withdraw" = "Withdraw";
+"Sorry" = "Sorry";
+"KYC" = "KYC";
+"Kyc" = "Kyc";
+"this device has no camera" = "this device has no camera";
+"Recent Transactions" = "Recent Transactions";
+"All Transactions" = "All Transactions";
+"Pending Transactions" = "Pending Transactions";
+"Debit Transactions" = "Debit Transactions";
+"Credit Transactions" = "Credit Transactions";
+"Welcome to the" = "Welcome to the";
+"Tap Agree to active your wallet" = "Tap Agree to active your wallet";
+"Use your wallet balance to spend and send your cash securely using your" = "Use your wallet balance to spend and send your cash securely using your";
+"Add Your Bank Account" = "Add Your Bank Account";
+"Select Card" = "Select Card";
+"Are you sure you want to remove this card" = "Are you sure you want to remove this card";
+"Add Card" = "Add Card";
+"advertisement" = "advertisement";
+"Please fill mandatory fields" = "Please fill mandatory fields";
+"Info" = "Info";
+"DocumentId should be 9 characters" = "DocumentId should be 9 characters";
+"SSN should be last 4 digits of documentId" = "SSN should be last 4 digits of documentId";
+"Add Stripe Account" = "Add Stripe Account";
+"Choose image" = "Choose image";
+"You don't have camera" = "You don't have camera";
+"No Saved Cards" = "No Saved Cards";
+"Saved Cards" = "Saved Cards";
+"Wallet Balance" = "Wallet Balance";
+"Amount to be Paid" = "Amount to be Paid";
+"Secure checkout" = "Secure checkout";
+"Choose any option to pay" = "Choose any option to pay";
+"Pay" = "Pay";
+"Account Number" = "Account Number";
+"account number" = "account number";
+"Nick Name" = "Nick Name";
+"Account Holder Name" = "Account Holder Name";
+"Routing Number" = "Routing Number";
+"Account Holer Name" = "Account Holer Name";
+"Bank Accounts" = "Bank Accounts";
+"Suggestion" = "Suggestion";
+"Delete Account" = "Delete Account";
+"I Agree" = "I Agree";
+"Complete Identification" = "Complete Identification";
+"Upload Doc" = "Upload Doc";
+"Front Side" = "Front Side";
+"Back Side" = "Back Side";
+"Verify" = "Verify";
+"KYC Application" = "KYC Application";
+"document type" = "document type";
+"Document Type" = "Document Type";
+"Name On Document" = "Name On Document";
+"Document Number" = "Document Number";
+"License Holder Name" = "License Holder Name";
+"front Image" = "front Image";
+"back Image" = "back Image";
+"License Number" = "License Number";
+"Notifications not allowed" = "Notifications not allowed";
+"Gallery" = "Gallery";
+"Wallet Activation" = "Wallet Activation";
+"KYC application submitted and pending review, we will let you know the status of your KYC via email and notification" = "KYC application submitted and pending review, we will let you know the status of your KYC via email and notification";
+"Okay!" = "Okay!";
+"Withdraw Requst Submitted Successfully" = "Withdraw Requst Submitted Successfully";
+"Transaction id" = "Transaction id";
+"WITHDRAWAL AMOUNT" = "WITHDRAWAL AMOUNT";
+"Withdrawal Amount" = "Withdrawl Amount";
+"Confirm" = "Confirm";
+"Pending KYC verification" = "Pending KYC verification";
+"KYC Verification" = "KYC Verification";
+"No Bank Account" = "No Bank Account";
+"ADD" = "ADD";
+"BANK ACCOUNTS" = "BANK ACCOUNTS";
+"Add" = "Add";
+"Bank Accounts" = "Bank Accounts";
+"BALANCE AMOUNT" = "BALANCE AMOUNT";
+"Balance Amount" = "Balance Amount";
+"WITHDRAW LOGS" = "WITHDRAW LOGS";
+"Withdraw Logs" = "Withdraw Logs";
+"Pending" = "Pending";
+"No Withdrawal Logs" = "No Withdrawal Logs";
+"Withdrawal Logs" = "Withdrawal Logs";
+"Select any of the payment receiving method to withdraw the money." = "Select any of the payment receiving method to withdraw the money.";
+"Withdraw Methods" = "Withdraw Methods";
+"Notes" = "Notes";
+"Photo ID" = "Photo ID";
+"Last Name" = "Last Name";
+"Date of Birth" = "Date of Birth";
+"SSN" = "SSN";
+"Address" = "Address";
+"City" = "City";
+"State" = "State";
+"Zipcode" = "Zipcode";
+"Country" = "Country";
+"Business Website" = "Business Website";
+"Business Category" = "Business Category";
+
+
+// UpdateStatusViewController
+"Status can't be empty" = "Status can't be empty";
+"Status must have atleast 4 charecters" = "Status must have atleast 4 charecters";
+
+// Setting Page
+"Change Language" = "Change Language";
+"Choose your language" = "Choose your language";
+"INVITE" = "INVITE";
+"FOLLOW PEOPLE" = "FOLLOW PEOPLE";
+"Invite" = "Invite";
+"Follow People" = "Follow People";
+"SETTINGS" = "SETTINGS";
+"Settings" = "Settings";
+"SUPPORT" = "SUPPORT";
+"ABOUT" = "ABOUT";
+"Support" = "Support";
+"About" = "About";
+"Subscription Settings" = "Subscription Settings";
+"Request has already been made to this user" = "Request has already been made to this user";
+"You already subscribed this user" = "You already subscribed this user";
+"This fee is taken by the processor to transfer the money and for any currency conversion that might be necessary" = "This fee is taken by the processor to transfer the money and for any currency conversion that might be necessary";
+"the monthly subscription cost" = "the monthly subscription cost";
+"Set monthly value" = "Set monthly value";
+"You will get" = "You will get";
+"App will get" = "App will get";
+"My Subscriptions" = "My Subscriptions";
+"Enter Business User Name" = "Enter Business User Name";
+"Active" = "Active";
+"Cancelled" = "Cancelled";
+"Remove" = "Remove";
+"Renew" = "Renew";
+"Subscription cancelled on" = "Subscription cancelled on";
+"active till" = "active till";
+"coins charged on the" = "coins charged on the";
+"of every month" = "of every month";
+"No active subscriptions yet" = "No active subscriptions yet";
+"No cancelled subscriptions yet" = "No cancelled subscriptions yet";
+"Invite Friends" = "Invite Friends";
+"Facebook Friends" = "Facebook Friends";
+"Find Contacts" = "Find Contacts";
+"Data Uses" = "Data Uses";
+"Blocked Users" = "Blocked Users";
+"Report a Problem" = "Report a Problem";
+"About" = "About";
+"Money" = "Money";
+"Privacy Policy" = "Privacy Policy";
+"Star Pages Terms and Conditions" = "Star Pages Terms and Conditions";
+"Thank you for submitting your request" = "Thank you for submitting your request";
+"Our review team will go through your application and you will recieve an email to confirm if your profile has been accepted or denied" = "Our review team will go through your application and you will recieve an email to confirm if your profile has been accepted or denied";
+"Log Out" = "Log Out";
+"Hey" = "Hey";
+"I'm using" = "I'm using";
+"join me on" = "join me on";
+"This cool new social app" = "This cool new social app";
+"Oops" = "Oops";
+"Failed to send Mail" = "Failed to send Mail";
+"Mail sent" = "Mail sent";
+"Mail services are not available" = "Mail services are not available";
+"year ago" = "year ago";
+"month ago" = "month ago";
+"months ago" = "months ago";
+"days ago" = "days ago";
+"day ago" = "day ago";
+"hours ago" = "hours ago";
+"hour ago" = "hour ago";
+"minutes ago" = "minutes ago";
+"minute ago" = "minute ago";
+"a moment ago" = "a moment ago";
+"seconds ago" = "seconds ago";
+"second ago" = "second ago";
+"weeks ago" = "weeks ago";
+"week ago" = "week ago";
+"Approved" = "Approved";
+"Apply for verify badge that appears next to a" = "Apply for verify badge that appears next to a";
+"account's name to indicate that the account is the authentic presence of a notable Public figure,celebrity,global brand or entity it Represents" = "account's name to indicate that the account is the authentic presence of a notable Public figure,celebrity,global brand or entity it Represents";
+"Submitting a request for verification does not guarantee that your account will be verified" = "Submitting a request for verification does not guarantee that your account will be verified";
+"Verify Category" = "Verify Category";
+"Please attach your photo of ID" = "Please attach your photo of ID";
+"Choose file" = "Choose file";
+"We require a government-issued photo ID that shows your name and date of birth (e.g driver's lilcense,passport or national identification card) of official business documents (tax filling ,recent utility bill, article of incorporation) in order to review your request." = "We require a government-issued photo ID that shows your name and date of birth (e.g driver's lilcense,passport or national identification card) of official business documents (tax filling ,recent utility bill, article of incorporation) in order to review your request.";
+"Star terms and conditions for verify profile" = "Star terms and conditions for verify profile";
+"Verify Profile" = "Verify Profile";
+"for a verify user" = "for a verify user";
+"Star terms and conditions" = "Star terms and conditions";
+"star terms and conditions" = "star terms and conditions";
+"pending" = "pending";
+"approved" = "approved";
+"Please select the image Source" = "Please select the image Source";
+"Loging Out" = "Loging Out";
+"Are you sure you want to log out" = "Are you sure you want to log out";
+"Are you sure you want to delete Account" = "Are you sure you want to delete Account";
+"Logging Out" = "Logging Out";
+"Edit or remove any information that you do not wish to display" = "Edit or remove any information that you do not wish to display";
+"People will be able to email" = "People will be able to email";
+"call and get directions to your Business from new button and links on your profile" = "call and get directions to your Business from new button and links on your profile";
+"Go to Settings and allow" = "Go to Settings and allow";
+"with us" = "with us";
+"Business Number" = "Business Number";
+"Search Results" = "Search Results";
+"Search Address" = "Search Address";
+"No Results Found" = "No Results Found";
+"Current Location" = "Current Location";
+"Use my current location" = "Use my current location";
+"Submit" = "Submit";
+"Search Countries" = "Search Countries";
+"Select Countries" = "Select Countries";
+"for your smartphone.Download it today from" = "for your smartphone.Download it today from";
+"Are you sure you want to change language" = "Are you sure you want to change language";
+"Are you sure you want to change language" = "Are you sure you want to change language";
+"Japanese" = "Japanese";
+"Your new password cannot be the same as your current password" = "Your new password cannot be the same as your current password";
+"Dark Mode" = "Dark Mode";
+"Theme" = "Theme";
+
+//Chat Screen
+"Chats" = "Chats";
+"chat" = "chat";
+"You have got an image" = "You have got an image";
+"You sent an image" = "You sent an image";
+"You have got a video" = "You have got a video";
+"You sent a video" = "You sent a video";
+"You have got a location" = "You have got a location";
+"You sent a location" = "You sent a location";
+"You have got a contact" = "You have got a contact";
+"You sent a contact" = "You sent a contact";
+"You have got an audio" = "You have got an audio";
+"You sent an audio" = "You sent an audio";
+"You have got a sticker" = "You have got a sticker";
+"You sent a sticker" = "You sent a sticker";
+"You have got a doodle" = "You have got a doodle";
+"You sent a doodle" = "You sent a doodle";
+"You have got a gif" = "You have got a gif";
+"You sent a gif" = "You sent a gif";
+"You have got a document" = "You have got a document";
+"You sent a document" = "You sent a document";
+"You have got a post" = "You have got a post";
+"You sent a post" = "You sent a post";
+"You missed a call" = "You missed a call";
+"You missed an audio call" = "You missed an audio call";
+"You missed a video call" = "You missed a video call";
+"You sent a payment" = "You sent a payment";
+"You have got a payment" = "You have got a payment";
+"This message was deleted" = "This message was deleted";
+"You created group" = "You created group";
+"created group" = "created group";
+"Created" = "Created";
+"Delete Chat" = "Delete Chat";
+"kyc and does not have an active wallet" = "kyc and does not have an active wallet";
+"Sorry you cannot send any payment to this user as this user has not completed" = "Sorry you cannot send any payment to this user as this user has not completed";
+"his" = "his";
+"her" = "her";
+"Please provide Camera permission" = "Please provide Camera permission";
+"Please provide Audio permission" = "Please provide Audio permission";
+"give Camera permission" = "give Camera permission";
+"Goto" = "Goto";
+"give Audio permission" = "give Audio permission";
+"Please enable the phone contact permissions for" = "Please enable the phone contact permissions for";
+"at the following path" = "at the following path";
+"Enable contact sharing" = "Enable contact sharing";
+"You cannot message stars directly" = "You cannot message stars directly";
+"Current Balance" = "Current Balance";
+"minimum amount" = "minimum amount";
+"will receive" = "will receive";
+"Insufficient balance" = "Insufficient balance";
+"to" = "to";
+"Sent" = "Sent";
+"Received" = "Received";
+"tranfer" = "tranfer";
+"Add to Existing Contact" = "Add to Existing Contact";
+"Contact Details" = "Contact Details";
+"You paid" = "You paid";
+"Slide to cancel" = "Slide to cancel";
+"Map" = "Map";
+"Hybrid" = "Hybrid";
+"Satelite" = "Satelite";
+"Group Info" = "Group Info";
+"Admin" = "Admin";
+"Select Participants" = "Select Participants";
+"Add to existing Group" = "Add to existing Group";
+"None" = "None";
+"Add" = "Add";
+"Message Info" = "Message Info";
+"Tap here to change" = "Tap here to change";
+"Camera Roll" = "Camera Roll";
+"No albums" = "No albums";
+"You added" = "You added";
+"added" = "added";
+"You removed" = "You removed";
+"removed" = "removed";
+"You made" = "You made";
+"group admin" = "group admin";
+"made" = "made";
+"You changed the subject to" = "You changed the subject to";
+"changed the subject to" = "changed the subject to";
+"changed this group's icon" = "changed this group's icon";
+"You left" = "You left";
+"left" = "left";
+"You missed a call" = "You missed a call";
+"Call" = "Call";
+"You are added in a group" = "You are added in a group";
+"You created a group" = "You created a group";
+"You added to a secret chat" = "You added to a secret chat";
+"You created a secret chat" = "You created a secret chat";
+"Delete for Everyone" = "Delete for Everyone";
+"Delete for Me" = "Delete for Me";
+"Your not allowed to share message with" = "Your not allowed to share message with";
+"Sorry you cannot send any payment to this user as this user has not completed his/her kyc and does not have an active wallet" = "Sorry you cannot send any payment to this user as this user has not completed his/her kyc and does not have an active wallet";
+"Recent updates" = "Recent updates";
+"Viewed updates" = "Viewed updates";
+"Tap to add story update" = "Tap to add story update";
+"My story" = "My story";
+"New Friends" = "New Friends";
+"Fetching Chats" = "Fetching Chats";
+"Create New Group" = "Create New Group";
+"Contacts" = "Contacts";
+"Deleting" = "Deleting";
+"You cannot delete the group" = "You cannot delete the group";
+"My Story" = "My Story";
+"Star Pages" = "Star Pages";
+"LastSeen" = "LastSeen";
+"you can't send message" = "you can't send message";
+"to this user" = "to this user";
+"Reply" = "Reply";
+"Copy" = "Copy";
+"Delete messsage" = "Delete messsage";
+"Destruct timer set to" = "Destruct timer set to";
+"Audio call at" = "Audio call at";
+"Duration" = "Duration";
+"Video call at" = "Video call at";
+"Missed audio call at" = "Missed audio call at";
+"Missed video call at" = "Missed video call at";
+"Blocked contacts will no longer be able to call you or send you messages" = "Blocked contacts will no longer be able to call you or send you messages";
+"Please complete your kyc to start sending payments" = "Please complete your kyc to start sending payments";
+"The receiver has to complete their kyc for you to send them money" = "The receiver has to complete their kyc for you to send them money";
+"Camera is not available in your device" = "Camera is not available in your device";
+"Message" = "Message";
+"Typing" = "Typing";
+"Online" = "Online";
+"Offline" = "Offline";
+"Unknown" = "Unknown";
+"No Number" = "No Number";
+"Can't send video greater than 50MB" = "Can't send video greater than 50MB";
+"Messenger for your smartphone" = "Messenger for your smartphone";
+"Download it today from App Store" = "Download it today from App Store";
+"No internet connection" = "No internet connection";
+"You have no active chats" = "You have no active chats";
+"Single" = "Single";
+"Group" = "Group";
+"Send a payment to" = "Send a payment to";
+"Add Note" = "Add Note";
+"Delete this story update" = "Delete this story update";
+"It will also be deleted for everyone who received it" = "It will also be deleted for everyone who received it";
+
+// PostDetailsViewController
+"Reported" = "Reported";
+"Thank you for your feedback" = "Thank you for your feedback";
+"The post has been successfully reported" = "The post has been successfully reported";
+//MARK:- Home StoryBoard
+"Viewers" = "Viewers";
+"please confirm if you are sure you want to delete this post" = "please confirm if you are sure you want to delete this post";
+"This action is not reversible" = "This action is not reversible";
+
+
+/* CreateChannelViewController */
+"channel name of atleast 3 character" = "channel name of atleast 3 character";
+// Alerts Messages
+"Alerts" = "Alerts";
+"a category" = "a category";
+"Channel created successfully" = "Channel created successfully";
+// Discover View Controller
+"started following you" = "started following you";
+"not following" = "not following";
+
+
+// Social View Controller
+"Add to Your Story" = "Add to Your Story";
+
+
+// Group
+"Add Participant" = "Add Participant";
+
+/* UserProfileViewController */
+"Your public user name" = "Your public user name";
+"User upto 25 characters" = "User upto 25 characters";
+"By default your profile privacy is public" = "By default your profile privacy is public";
+"tap to make it private" = "tap to make it private";
+
+// DiscoverPeopleViewController
+"Discover People" = "Discover People";
+"Next" = "Next";
+"Find Facebook Friends" = "Find Facebook Friends";
+"You chose which friend to follow" = "You chose which friend to follow";
+"we will never post to facebook without your permission" = "we will never post to facebook without your permission";
+"Follow Facebook Friends" = "Follow Facebook Friends";
+
+// EntertainmentPostsViewController
+"There is no posts available" = "There is no posts available";
+
+// CurrentLocationListViewController
+"Nearby" = "Nearby";
+
+/* PlaceInfoViewController */
+"Price" = "Price";
+
+/* SharePostViewController */
+"Share" = "Share";
+"Done" = "Done";
+"DONE" = "DONE";
+"No views yet" = "No views yet";
+
+// PostedByMusicViewController
+"Favourite" = "Favourite";
+"Videos" = "Videos";
+// PostedByViewController
+"Posts tagged" = "Posts tagged";
+"will show up here" = "will show up here";
+
+// VNHCountryPicker
+"Choose a country" = "Choose a country";
+
+// AcceptOrDeleteViewController
+"There is no following activity" = "There is no following activity";
+"Accept" = "Accept";
+"Deny" = "Deny";
+"Channel Request" = "Channel Request";
+"Follow Request" = "Follow Request";
+"Edit Phone Number" = "Edit Phone Number";
+
+//ReplyView
+"There is no follow activity" = "There is no follow activity";
+
+// ActivityTableViewCell
+"Follow Requests" = "Follow Requests";
+"Accept or deny requests" = "Accept or deny requests";
+"Subscription Request" = "Subscription Request";
+"Approve or ignore requests" = "Approve or ignore requests";
+
+// TextStoryViewController
+"Enter status" = "Enter status";
+
+// BusinessEditContactOptionsViewController
+"Business Information" = "Business Information";
+
+// SwitchToBusinessViewController
+"Set up Your Business Account" = " Set up Your Business Account";
+"Business Details" = "Business Details";
+"People Will be able to email" = "People Will be able to email";
+"call and get direction to your business from contact button and links on your profile" = "call and get direction to your business from contact button and links on your profile";
+"Edit or remove any information that you don't want to be displayed on City smart" = "Edit or remove any information that you don't want to be displayed on City smart";
+"You can always edit this at any time in setting" = "You can always edit this at any time in setting";
+
+// BusinessPhoneNumberEditViewController
+"Your Phone Number" = "Your Phone Number";
+"NEXT" = "NEXT";
+"Phone Number" = "Phone Number";
+// UpdateStatusListViewController
+"Update Bio" = "Update Bio";
+"Your current status" = "Your current status";
+"Select your current status" = "Select your current status";
+
+"EditPhoneNumberViewController" = "EditPhoneNumberViewController";
+// EditNumberVarificationViewController
+"Verifyi Phone Number" = "Verifyi Phone Number";
+"Enter 4 digit varification code we sent to" = "Enter 4 digit varification code we sent to";
+"Enter 4 digit varification code we sent to " = "Enter 4 digit varification code we sent to ";
+// CreateChannelViewController
+"Create Channel" = "Create Channel";
+"Save" = "Save";
+
+"Upload Photo" = "Upload Photo";
+"Channel Name" = "Channel Name";
+"Select Category" = "Select Category";
+"Private Channel" = "Private Channel";
+
+"Select" = "Select";
+
+// CallHistoryTableViewController
+"You have no calls" = "You have no calls";
+
+// SavedCollectionsViewController
+"Nothing saved yet" = "Nothing saved yet";
+"Save photos and videos that you want to see again" = "Save photos and videos that you want to see again";
+"No one is notified" = "No one is notified";
+"and only you can see what you’ve saved" = "and only you can see what you’ve saved";
+"All Posts" = "All Posts";
+"Select album" = "Select album";
+
+/* AddNewCollectionViewController */
+"Change Cover" = "Change Cover";
+"Collection name" = "Collection name";
+"Manage" = "Manage";
+"Add from bookmarks" = "Add from bookmarks";
+
+// CreatePostViewController
+"Write a caption" = "Write a caption";
+"Select category" = "Select category";
+"Add to my channel" = "Add to my channel";
+"Allow Comments" = "Allow Comments";
+"Allow Downloads" = "Allow Downloads";
+"Edit Post" = "Edit Post";
+"contact" = "contact";
+"Share To" = "Share To";
+"Share to" = "Share to";
+"Tag Location" = "Tag Location";
+"Paid Post" = "Paid Post";
+"Business post details" = "Business post details";
+"Select Location" = "Select Location";
+"Choose your coin" = "Choose your coin";
+
+// StoryListViewController
+"Your story updates will disappear after 24 hours" = "Your story updates will disappear after 24 hours";
+"My Stories" = "My Stories";
+"No stories" = "No stories";
+
+/* MobileConfigurationViewController */
+"Star Configuration" = "Star Configuration";
+//EmailConfigurationViewController
+"If disabled" = "If disabled";
+"other users cannot contact you" = "other users cannot contact you";
+
+// BookMarkedPostsViewController
+"Start Saving" = "Start Saving";
+"Save photos and videos to your collection" = "Save photos and videos to your collection";
+"Add to Collection" = "Add to Collection";
+// SaveToCollectionViewController
+"Save To" = "Save To";
+"New Collection" = "New Collection";
+
+// TrendingViewController
+"Explore" = "Explore";
+
+
+
+// WelcomeViewController
+"Log In" = "Log In";
+//SignUpViewController
+"Sign Up" = "Sign Up";
+"Continue As Guest" = "Continue As Guest";
+"Select Language" = "Select Language";
+"Get Started" = "Get Started";
+"Choose Your Language" = "Choose Your Language";
+
+// LoginViewController
+"Region" = "Region";
+"Welcome to" = "Welcome to";
+"account on" = "account on";
+"account" = "account";
+"OR" = "OR";
+"Email address is not registered" = "Email address is not registered";
+"By Login" = "By Login";
+"LOG IN" = "LOG IN";
+"you agree to our" = "you agree to our";
+"Entered passwords do not match" = "Entered passwords do not match";
+// Sign up
+"SMS Code" = "SMS Code";
+"Mobile number" = "Mobile number";
+"Enter Phone Number" = "Enter Phone Number";
+"Login via OTP" = "Login via OTP";
+"Login via Password" = "Login via Password";
+"Login via Phone Number" = "Login via Phone Number";
+"Manage your account" = "Manage your account";
+"check notification" = "check notification";
+"comment on videos and more" = "comment on videos and more";
+"Enter the correct password for" = "Enter the correct password for";
+"ID/UserName" = "ID/UserName";
+"Password" = "Password";
+"Login via" = "Login via";
+"By Signup" = "By Signup";
+"Forgot password" = "Forgot password";
+"Not a member yet" = "Not a member yet";
+"Phone number not registered" = "Phone number not registered";
+"a valid phone number" = "a valid phone number";
+"Please enter the registered email address to which we can send you the verification code" = "Please enter the registered email address to which we can send you the verification code";
+"You have entered same phone number 3 or more times" = "You have entered same phone number 3 or more times";
+"Please try a new number" = "Please try a new number";
+"Abuse of device" = "Abuse of device";
+"duplicate" = "duplicate";
+"You don't have sufficient balance to make payment" = "You don't have sufficient balance to make payment";
+"session Expired" = "session Expired";
+"No Contacts found in" = "No Contacts found in";
+"Something went wrong" = "Something went wrong";
+"No Contact Found" = "No Contact Found";
+"Setup failed" = "Setup failed";
+"Setup canceled" = "Setup canceled";
+
+// ForgotPasswordViewController
+"Email Verification" = "Email Verification";
+"the registered email address to which we can send you the verification code" = "the registered email address to which we can send you the verification code";
+// ResetPasswordViewController
+"Reset Password" = "Reset Password";
+"Set New Password" = "Set New Password";
+"Confirm Password" = "Confirm Password";
+"Current password" = "Current password";
+"New password" = "New password";
+"Re-enter new password" = "Re-enter new password";
+"The confirm password does not match the password set" = "The confirm password does not match the password set";
+"Set new password for your account" = "Set new password for your account";
+"The password you will set will be changed for your account" = "The password you will set will be changed for your account";
+"Enter the phone number you registered with and we shall send you a verification code to reset your password" = "Enter the phone number you registered with and we shall send you a verification code to reset your password";
+"with a new email id or register as a new user" = "with a new email id or register as a new user";
+"Enter New Password" = "Enter New Password";
+"Send Code" = "Send Code";
+"Login" = "Login";
+"Enter the email address you registered with and we shall send you the  instructions to reset your password" = "Enter the email address you registered with and we shall send you the  instructions to reset your password";
+"We have sent you an email with the instructions to set a new password" = "We have sent you an email with the instructions to set a new password";
+"please look out for this email" = "please look out for this email";
+"the link will be valid only 60 minutes" = "the link will be valid only 60 minutes";
+"Check Your Mail" = "Check Your Mail";
+
+// PhoneNumberViewController
+"Forgot Password" = "Forgot Password";
+"will send you an SMS to verify the phone number that you enter below" = "will send you an SMS to verify the phone number that you enter below";
+"phone number" = "phone number";
+
+// AddContactsViewController
+"None of your contacts are on" = "None of your contacts are on";
+"Invite them to" = "Invite them to";
+"FIND FRIENDS" = "FIND FRIENDS";
+"Find Friends" = "Find Friends";
+"Add Contacts" = "Add Contacts";
+"Skip" = "Skip";
+"Available" = "Available";
+"Busy" = "Busy";
+"At School" = "At School";
+"At work" = "At work";
+"Battery about to die" = "Battery about to die";
+"Can't talk" = "Can't talk";
+"only" = "only";
+"In a metting" = "In a metting";
+"Sleeping" = "Sleeping";
+"Urgent calls only" = "Urgent calls only";
+"Please allow the app to access your contacts through the Settings" = "Please allow the app to access your contacts through the Settings";
+"More Actions" = "More Actions";
+
+// FriendRequestViewController
+"Send Request" = "Send Request";
+"Requests i sent" = "Requests i sent";
+"Friend Requests" = "Friend Requests";
+
+"Public" = "Public";
+"Private" = "Private";
+"Accept the" = "Accept the";
+"Terms Of Service and Privacy Policy" = "Terms Of Service and Privacy Policy";
+"Permission Denied" = "Permission Denied";
+"Already a Member" = "Already a Member";
+
+// VerifyOTPViewController
+"Enter verification code" = "Enter verification code";
+"To complete your phone number verification" = "To complete your phone number verification";
+"the 4-digit verification code" = "the 4-digit verification code";
+"Resend" = "Resend";
+// ExploreStarPagesViewController
+"Top 10 Most Influential Stars" = "Top 10 Most Influential Stars";
+"Top 50 Best Actors" = "Top 50 Best Actors";
+"Top 50 Best Actresses" = "Top 50 Best Actresses";
+
+// Helper
+"This user is a Private User" = "This user is a Private User";
+"Download Will be available in your device gallery shortly" = "Download Will be available in your device gallery shortly";
+"download completed" = "download completed";
+"Video download failed" = "Video download failed";
+"off" = "off";
+"Second" = "Second";
+"Seconds" = "Seconds";
+"Minute" = "Minute";
+"Minutes" = "Minutes";
+"Hour" = "Hour";
+"Hours" = "Hours";
+"Day" = "Day";
+"Days" = "Days";
+"Week" = "Week";
+"1" = "1";
+"2" = "2";
+"3" = "3";
+"4" = "4";
+"5" = "5";
+"6" = "6";
+"7" = "7";
+"8" = "8";
+"9" = "9";
+"10" = "10";
+"15" = "15";
+"30" = "30";
+
+// BlockedUsersViewController
+"You have not blocked any users yet" = "You have not blocked any users yet";
+"Unblock" = "Unblock";
+// RequestStarProfileViewController
+"Terms and Conditions for verify profile" = "Terms and Conditions for verify profile";
+"Chat" = "Chat";
+
+/* BusinessAddressViewController */
+"Please add a valid address so people can navigate to your location in maps" = "Please add a valid address so people can navigate to your location in maps";
+"Remove Address" = "Remove Address";
+
+// QrCodeViewControllerx
+"Scan the QR Code to add me on" = "Scan the QR Code to add me on";
+
+// QrScannerViewController
+"QR Code" = "QR Code";
+
+// InviteContactsViewController
+"Invite Contact" = "Invite Contact";
+"Invite" = "Invite";
+"for your smartphone" = "for your smartphone";
+"Download it today from" = "Download it today from";
+// CreateBusinessProfileViewController
+"BUSINESS PROFILE" = "BUSINESS PROFILE";
+"Add a phone number" = "Add a phone number";
+"email address or location so that a customer can reach you directly by clicking a button on your profile" = "email address or location so that a customer can reach you directly by clicking a button on your profile";
+"Create New Account" = "Create New Account";
+"INSIGHTS" = "INSIGHTS";
+"PRODUCTS" = "PRODUCTS";
+"SERVICES" = "SERVICES";
+"Learn about your followers and get insights on how your posts are performing" = "Learn about your followers and get insights on how your posts are performing";
+"Post products and services and allow your customers to buy them by a simple click" = "Post products and services and allow your customers to buy them by a simple click";
+
+// VerificationViewController
+"Enter OTP Sent on your registered phone number" = "Enter OTP Sent on your registered phone number";
+"Resend OTP" = "Resend OTP";
+
+"Uploading  Image " = "Uploading  Image ";
+"Trending" = "Trending";
+"No post to show" = "No post to show";
+"You have not followed anyone Click on the Find people to follow button to see them here" = "You have not followed anyone Click on the Find people to follow button to see them here";
+"subscribe this post for" = "subscribe this post for";
+"View all" = "View all";
+"Saved to" = "Saved to";
+"Veiw Saved" = "Veiw Saved";
+"Report Post" = "Report Post";
+"Delete" = "Delete";
+"comments" = "comments";
+"Liked by " = "Liked by ";
+"Hey" = "Hey";
+"Check out this post on" = "Check out this post on";
+"Check out this profile on" = "Check out this profile on";
+"app" = "app";
+
+// MARK:- live storyBoard
+"Live Users" = "Live Users";
+"No live users found" = "No live users found";
+"Please check after some time" = "Please check after some time";
+"You don't have any viewers yet" = "You don't have any viewers yet";
+"No live users found
+Please check after some time" = "No live users found
+Please check after some time";
+"Go live" = "Go live";
+"You are live now" = "You are live now";
+"Start Streaming" = "Start Streaming";
+"Could not connect" = "Could not connect";
+"Not enough coins" = "Not enough coins";
+"please rechange and try again" = "please rechange and try again";
+"Choose Currency" = "Choose Currency";
+"Chat here" = "Chat here";
+"Live" = "Live";
+"Categories" = "Categories";
+"Gift Box" = "Gift Box";
+"Money Earned" = "Money Earned";
+"View count" = "View count";
+"hello" = "hello";
+"Connecting to" = "Connecting to";
+"Check for more details" = "Check for more details";
+"Mode" = "Mode";
+"Your balance" = "Your balance";
+"Live Stream Ended" = "Live Stream Ended";
+"Live stream ended" = "Live stream ended";
+"Live video ended" = "Live video ended";
+"Coins" = "Coins";
+"Coin" = "Coin";
+"Views" = "Views";
+"Gifts" = "Gifts";
+"Live Time :" = "Live Time :";
+"Save your video under your profile for your followers to watch" = "Save your video under your profile for your followers to watch";
+"Live video paused" = "Live video paused";
+"Connecting to live stream" = "Connecting to live stream";
+"Your broadcast will start soon" = "Your broadcast will start soon";
+"You are live now!" = "You are live now!";
+"End" = "End";
+"End Live Video" = "End Live Video";
+"When you delete this collection" = "When you delete this collection";
+"the photos and videos will still be saved" = "the photos and videos will still be saved";
+"Are you sure you want to delete last segment" = "Are you sure you want to delete last segment";
+"Reshoot" = "Reshoot";
+"Image Saved" = "Image Saved";
+"Image successfully saved to Photos library" = "Image successfully saved to Photos library";
+"Snap cover photo" = "Snap cover photo";
+"We will display your snap as your live stream cover photo" = "We will display your snap as your live stream cover photo";
+"Live on" = "Live on";
+"We will notify your followers so that they will not miss this live session" = "We will notify your followers so that they will not miss this live session";
+"Start Live Stream" = "Start Live Stream";
+
+// WalletCustomeAlertViewController
+"Wallet is not created please create wallet to transfer the money" = "Wallet is not created please create wallet to transfer the money";
+"Create" = "Create";
+
+// Contact Info
+"Contact Info" = "Contact Info";
+
+// MediaCollectionViewController
+"Media" = "Media";
+"Links" = "Links";
+"Hybrid" = "Hybrid";
+"Satelite" = "Satelite";
+
+// EditSubjectTableViewController
+"Subject" = "Subject";
+"Group Name" = "Group Name";
+"mobile" = "mobile";
+"Send" = "Send";
+
+// FavoriteTableViewController
+"New Secret Chat" = "New Secret Chat";
+"by User Name" = "by User Name";
+"Add Participants" = "Add Participants";
+// CreatnewGroupViewController
+"New Group" = "New Group";
+"Enter Group Name" = "Enter Group Name";
+"Please provide a group subject and optional group icon" = "Please provide a group subject and optional group icon";
+"edit" = "edit";
+"PARTICIPANTS:" = "PARTICIPANTS:";
+"256" = "256";
+"Delete Photo" = "Delete Photo";
+"Creating" = "Creating";
+
+// GroupChatDeliveryStatusCVCell
+"remaining" = "remaining";
+"Read by" = "Read by";
+"Delivered to" = "Delivered to";
+"Read" = "Read";
+"Deliverd" = "Deliverd";
+
+// ContactInfoTableViewController
+"Report Spam" = "Report Spam";
+"Report spam this contact" = "Report spam this contact";
+"Block Contact" = "Block Contact";
+"Create New Contact" = "Create New Contact";
+"View Profile" = "View Profile";
+"Last Seen" = "Last Seen";
+"last seen" = "last seen";
+"Block" = "Block";
+"Your Last Seen is" = "Your Last Seen is";
+"Do you want to" = "Do you want to";
+"Disable" = "Disable";
+"Enable" = "Enable";
+"id" = "id";
+"profilePic" = "profilePic";
+"firstName" = "firstName";
+"lastName" = "lastName";
+"userName" = "userName";
+"status" = "status";
+"Unblock Contact" = "Unblock Contact";
+
+// DataUsageTableViewController
+"Wi-Fi" = "Wi-Fi";
+"Never" = "Never";
+"Wi-Fi and Cellular" = "Wi-Fi and Cellular";
+"Photos" = "Photos";
+"Audio" = "Audio";
+"Network Usage" = "Network Usage";
+"Storage Usage" = "Storage Usage";
+"MEDIA AUTO - DOWNLOAD" = "MEDIA AUTO - DOWNLOAD";
+
+"Post" = "Post";
+"Transfer" = "Transfer";
+// TransferToFriendViewController
+"Transfer To Friend" = "Transfer To Friend";
+"Paying" = "Paying";
+"Payment" = "Payment";
+"Pay to" = "Pay to";
+"Pay Now" = "Pay Now";
+"Transaction Details" = "Transaction Details";
+"Transaction Id" = "Transaction Id";
+"From" = "From";
+"To" = "To";
+"Payment will be refunded if not confirmed within 24 hours" = "Payment will be refunded if not confirmed within 24 hours";
+
+
+// GroupInfoTableViewController
+"Export Chat" = "Export Chat";
+"Clear Chat" = "Clear Chat";
+"Created by" = "Created by";
+"Created by You" = "Created by You";
+"Today" = "Today";
+"Yesterday" = "Yesterday";
+"you are no longer participant in this group" = "you are no longer participant in this group";
+"Exit Group" = "Exit Group";
+"Delete Group" = "Delete Group";
+"Exit" = "Exit";
+"Delete messages" = "Delete messages";
+"Delete all messages" = "Delete all messages";
+"Without Media" = "Without Media";
+"Group member info" = "Group member info";
+"Remove from Group" = "Remove from Group";
+"Remove From Admin" = "Remove From Admin";
+"Make an Admin" = "Make an Admin";
+"Removing" = "Removing";
+"Loading" = "Loading";
+"Updating" = "Updating";
+"Downloading " = "Downloading ";
+"You" = "You";
+"Message Chat" = "Message Chat";
+"here is message chat history please find Attachment" = "here is message chat history please find Attachment";
+
+
+/* MARK:- Camera Storyboard */
+"Add a sound" = "Add a sound";
+"Add a Sound" = "Add a sound";
+"Shoot a video" = "Shoot a video";
+"Grant Camera access to shoot" = "Grant Camera access to shoot";
+"Allow access to camera" = "Allow access to camera";
+"Allow access to gallery" = "Allow access to gallery";
+"Grant gallery access to pick photo and video" = "Grant gallery access to pick photo and video";
+"Grant Camera access to shoot" = "Grant Camera access to shoot";
+"Allow access to microphone" = "Allow access to microphone";
+"font" = "font";
+"Mask" = "Mask";
+"Masks" = "Masks";
+"Effects" = "Effects";
+"Clear All" = "Clear All";
+"You do not have followed anyone" = "You do not have followed anyone";
+"Follow some users to see their posts here" = "Follow some users to see their posts here";
+"Normal Camera" = "Normal Camera";
+"AR Camera" = "AR Camera";
+"Timer" = "Timer";
+"Adjust" = "Adjust";
+"Highlights" = "Highlights";
+"Shadows" = "Shadows";
+"Saturation" = "Saturation";
+"Contrast" = "Contrast";
+"Blur" = "Blur";
+"Temperature" = "Temperature";
+"Brightness" = "Brightness";
+"Vignette" = "Vignette";
+"Mute" = "Mute";
+"SHARE" = "SHARE";
+"Effect" = "Effect";
+"Filters" = "Filters";
+"Filter" = "Filter";
+"Clarity" = "Clarity";
+"Clear" = "Clear";
+"Clarendon" = "Clarendon";
+"Inkwell" = "Inkwell";
+"Sutro" = "Sutro";
+"Lofi" = "Lofi";
+"Earlybird" = "Earlybird";
+"Oslo" = "Oslo";
+"Ginza" = "Ginza";
+"Dogpatch" = "Dogpatch";
+"Sharpen" = "Sharpen";
+"Hefe" = "Hefe";
+"Aden" = "Aden";
+"Moon" = "Moon";
+"Nashville" = "Nashville";
+"Perpetua" = "Perpetua";
+"Clarendon" = "Clarendon";
+"Lark" = "Lark";
+"Lofi" = "Lofi";
+"HOT SONGS" = "HOT SONGS";
+"MY FAVOURITES" = "MY FAVOURITES";
+"DUB WITH THIS SOUND" = "DUB WITH THIS SOUND";
+"Selection of dubbing sound cancelled" = "Selection of dubbing sound cancelled";
+"Your Story" = "Your Story";
+"Custom Sound" = "Custom Sound";
+"Video Saved" = "Video Saved";
+"Video successfully saved to Photos library" = "Video successfully saved to Photos library";
+"Failed" = "Failed";
+"Video Failed to save in Photos library" = "Video Failed to save in Photos library";
+"Albums" = "Albums";
+"Photo" = "Photo";
+"15s" = "15s";
+"60s" = "60s";
+"Library" = "Library";
+"No Audio Found" = "No Audio Found";
+"Normal" = "Normal";
+"Mono" = "Mono";
+"Tonal" = "Tonal";
+"Noir" = "Noir";
+"Fade" = "Fade";
+"Chrome" = "Chrome";
+"Process" = "Process";
+"Instant" = "Instant";
+"Sepia" = "Sepia";
+"Tone" = "Tone";
+"Linear" = "Linear";
+"N" = "N";
+"M" = "M";
+"T" = "T";
+"F" = "F";
+"C" = "C";
+"P" = "P";
+"I" = "I";
+"S" = "S";
+"Edit Photo" = "Edit Photo";
+
+
+// MARK:- CallKit StoryBoard
+"Voice Call" = "Voice Call";
+"is busy on other call" = "is busy on other call";
+"call not answered" = "call not answered";
+"call ended" = "call ended";
+"Incoming Video Call" = "Incoming Video Call";
+"Incoming Audio Call" = "Incoming Audio Call";
+"Calling" = "Calling";
+"Video Call" = "Video Call";
+
+// MARK:- Strings
+"token" = "token";
+"authorization" = "authorization";
+"lang" = "lang";
+"postsViewers" = "postsViewers";
+"Public Account" = "Public Account";
+"Cancel" = "Cancel";
+"business category" = "business category";
+"Website" = "Website";
+"your transfer money succesfully" = "your transfer money succesfully";
+"correct Amout" = "correct Amout";
+
+"Thank you for submitting your requestOur review team will go through your application and you will recieve an email to confirm if your profile has been accepted or denied" = "Thank you for submitting your requestOur review team will go through your application and you will recieve an email to confirm if your profile has been accepted or denied";
+"Ok" = "Ok";
+"OK" = "OK";
+"Warning" = "Warning";
+"Error" = "Error";
+"Address cannot be empty" = "Address cannot be empty";
+"please fill all required fields" = "please fill all required fields";
+"Full name should be More than three characters" = "Full name should be More than three characters";
+"business name" = "business name";
+
+"country Code" = "country Code";
+"street" = "street";
+"city" = "city";
+"zipcode" = "zipcode";
+"category" = "category";
+"website" = "website";
+"business bio" = "business bio";
+"id proof" = "id proof";
+"Are you sure you want to un-block this user" = "Are you sure you want to un-block this user";
+"Something Went wrong" = "Something Went wrong";
+"correct OTP" = "correct OTP";
+"We have successfully Updated your Phone Number" = "We have successfully Updated your Phone Number";
+"We have successfully updated your email address" = "We have successfully updated your email address";
+"Correct Otp" = "Correct Otp";
+"The verification code has been resent to" = "The verification code has been resent to";
+"The verification code has been resent" = "The verification code has been resent";
+"please check your inbox" = "please check your inbox";
+"If you have not received the verification code" = "If you have not received the verification code";
+"please get a new one by clicking on the RESEND button" = "please get a new one by clicking on the RESEND button";
+"Request Sent Successfully" = "Request Sent Successfully";
+"Added as friend successfully" = "Added as friend successfully";
+"Location Service Disabled" = "Location Service Disabled";
+"To re-enable" = "To re-enable";
+"please go to Settings and turn on Location Service for this app" = "please go to Settings and turn on Location Service for this app";
+"Profile needs to be public for the business setup to happen successfully" = "Profile needs to be public for the business setup to happen successfully";
+"Report User" = "Report User";
+"This profile has been deleted" = "This profile has been deleted";
+"Mobile number is not registered" = "Mobile number is not registered";
+"Do you want to Sign up with this number" = "Do you want to Sign up with this number";
+"Change" = "Change";
+"Signup" = "Signup";
+"Otp sent" = "Otp sent";
+"Otp verified succesfully" = "Otp verified succesfully";
+"Remote stream is no longer available" = "Remote stream is no longer available";
+"Caution!" = "Caution!";
+"Dismiss" = "Dismiss";
+"Delete Collection" = "Delete Collection";
+"Change Password" = "Change Password";
+"Report A Problem" = "Report A Problem";
+"Report a problem" = "Report a problem";
+"viewers" = "viewers";
+
+// Navigation Titles
+"Withdraw Money" = "Withdraw Money";
+"Transaction History" = "Transaction History";
+"Payment Security" = "Payment Security";
+"Help Center" = "Help Center";
+"Cards" = "Cards";
+"Debit Card" = "Debit Card";
+"Credit Card" = "Credit Card";
+"Net Banking" = "Net Banking";
+
+// camera Alert strings
+"Choose Source" = "Choose Source";
+"the image Source" = "the image Source";
+"Camera" = "Camera";
+"Photo and Video Library" = "Photo and Video Library";
+"Photo Library" = "Photo Library";
+"Saved Album" = "Saved Album";
+"Channel" =  "Channel";
+"Giphy" = "Giphy";
+"Image" = "Image";
+"Video" = "Video";
+"Contact" = "Contact";
+"Sticker" = "Sticker";
+"Doodle" = "Doodle";
+"Document" = "Document";
+"Documents" = "Documents";
+"Location" = "Location";
+
+// Business buttons
+"a business button text" = "a business button text";
+
+
+// settingsTitles
+
+"Balance" = "Balance";
+"Get Verified Profile" = "Get Verified Profile";
+"Business Profile" = "Business Profile";
+"Switch to business profile" = "Switch to business profile";
+"Switch to personal profile" = "Switch to personal profile";
+"Business Configuration" = "Business Configuration";
+"Blocked Contacts" = "Blocked Contacts";
+"Invite Contacts" = "Invite Contacts";
+"General" = "General";
+"Help" = "Help";
+"Feedback" = "Feedback";
+"Services" = "Services";
+"Logout" = "Logout";
+"Verified Configuration" = "Verified Configuration";
+
+/* settingsHeaderTitles */
+"Account" = "Account";
+"Support" = "Support";
+"Referral Code" = "Referral Code";
+"Enter Your Name*" = "Enter Your Name*";
+"Enter User Name*" = "Enter User Name*";
+"Enter Password*" = "Enter Password*";
+"Enter Referral Code*" = "Enter Referral Code*";
+"Enter your email*" = "Enter your email*";
+"Confirm your password*" = "Confirm your password*";
+"Choose Currency" = "Choose Currency";
+"Add Money" = "Add Money";
+"Saved" = "Saved";
+"Terms And Conditions" = "Terms And Conditions";
+"Help and Feedback" = "Help and Feedback";
+"Verification" = "Verification";
+"My QR Code" = "My QR Code";
+"Setup Business Profile" = "Setup Business Profile";
+"Create Collection" = "Create Collection";
+"Edit Collection" = "Edit Collection";
+"Add Link" = "Add Link";
+"Link here" = "Link here";
+"Add Price" = "Add Price";
+"Action Button" = "Action Button";
+// PermissionMessage
+"Permission denied" = "Permission denied";
+"camera permission" = "camera permission";
+"gallery permission" = "gallery permission";
+"microphone permission" = "microphone permission";
+
+// FollowListStrings
+"followList" = "followList";
+"New Message" = "New Message";
+"Secret Chat" = "Secret Chat";
+"Forward To" = "Forward To";
+
+
+// ContactInfoStrings
+"Thank you for your feedback The user has been successfully reported" = "Thank you for your feedback The user has been successfully reported";
+
+
+
+
+// / Alert Messages
+"If you want to Switch to business profile" = "If you want to Switch to business profile";
+"Make sure your account should be public account" = "Make sure your account should be public account";
+"any linked business account" = "any linked business account";
+"This email id is not linked with any" = "This email id is not linked with any";
+"please register your business by clicking on the Register Business button" = "please register your business by clicking on the Register Business button";
+"UnBlocked" = "UnBlocked";
+"Unfriend" = "Unfriend";
+"blocked" = "blocked";
+"Success" = "Success";
+"Yes" = "Yes";
+"No" = "No";
+"Register Now" = "Register Now";
+"Switch To Personal Profile" = "Switch To Personal Profile";
+"Switch To Business Profile" = "Switch To Business Profile";
+
+"masklayer" = "masklayer";
+"emailId" = "emailId";
+
+
+"Edit Profile" = "Edit Profile";
+"Remove Photo" = "Remove Photo";
+"your Name" = "your Name";
+"Your device doesn't support Camera" = "Your device doesn't support Camera";
+"other option" = "other option";
+"If you switch to the private account" = "If you switch to the private account";
+"your business account would no longer be active" = "your business account would no longer be active";
+"Business bio cannot be empty" = "Business bio cannot be empty";
+
+"private" = "private";
+"profileCoverImage" = "profileCoverImage";
+"BusinessName" = "BusinessName";
+"BusinessAddress" = "BusinessAddress";
+"BusinessWebsite" = "BusinessWebsite";
+"bussinessEmail" = "bussinessEmail";
+"bussinessPhone" = "bussinessPhone";
+"Bussiness Phone" = "Bussiness Phone";
+"Bussiness Email" = "Bussiness Email";
+"bussinessCountryCode" = "bussinessCountryCode";
+"bussinessCategoryId" = "bussinessCategoryId";
+"bussinessBio" = "bussinessBio";
+"Contact Options" = "Contact Options";
+
+"CallingCodes" = "CallingCodes";
+"dial_code" = "dial_code";
+"plist" = "plist";
+"code" = "code";
+"isVisible" = "isVisible";
+
+
+// MARK:- FollowViewController Strings
+"No Comments yet!" = "No Comments yet!";
+"No Likes yet!" = "No Likes yet!";
+
+/* / Alert Strings */
+"Verifying" = "Verifying";
+"numberChanged" = "Number Changed";
+"Your mobile number has been changed successfully" = "Your mobile number has been changed successfully";
+"Sending" = "Sending";
+"Loading filters" = "Loading filters";
+"Adding to story" = "Adding to story";
+"Updating profile" = "Updating profile";
+"Downloading" = "Downloading";
+"Syncing contacts" = "Syncing contacts";
+"Exporting" = "Exporting";
+"otp" = "otp";
+"image" = "image";
+
+
+"email id" = "emailid";
+
+
+
+// MARK:- View Model Texts
+
+// MARK:- Create Post Strings
+"Post type" = "Post type";
+"Link" = "Link";
+"Link Copied" = "Link Copied";
+"Action button" = "Action button";
+"Read More" = "Read More";
+"SignUp" = "SignUp";
+"Buy now" = "Buy now";
+"url" = "url";
+"Buy Now" = "Buy Now";
+"Shop Now" = "Shop Now";
+"Book" = "Book";
+"Product Type" = "Product Type";
+"Regular" = "Regular";
+"Maximum of 100 characters" = "Maximum of 100 characters";
+"Please enter link" = "Please enter link";
+"Please choose button text" = "Please choose button text";
+"Privacy Settings" = "Privacy Settings";
+
+// PaymentStatus
+"Payment pending" = "Payment pending";
+"Payment accepted" = "Payment accepted";
+"Payment denied" = "Payment denied";
+"Payment canceled" = "Payment canceled";
+"Payment timeout" = "Payment timeout";
+
+
+// TransferConfirmationMessage
+"cancel" = "cancel";
+"accept" = "accept";
+"reject" = "reject";
+"delete" = "delete";
+
+// Error Message
+"Enter valid phone number" = "Enter valid phone number";
+"Username should be more than three characters" = "Username should be more than three characters";
+"email" = "email";
+"password" = "password";
+"Please confirm your password" = "Please confirm your password";
+"Password and Confirm password does not match" = "Password and Confirm password does not match";
+"referal code" = "referal code";
+"terms and conditions" = "terms and conditions";
+"Internal Server Error" = "Internal Server Error";

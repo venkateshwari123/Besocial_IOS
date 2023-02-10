@@ -1,0 +1,6 @@
+framework module LatLongToTimezone {
+  umbrella header "LatLongToTimezone-umbrella.h"
+
+  export *
+  module * { export * }
+}

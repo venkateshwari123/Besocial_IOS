@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CenturyGothic-Regular.ttf">
+            <string>CenturyGothic-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view tag="100" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReplyView" customModule="Citysmart_Life" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZL-GM-smi">
+                    <rect key="frame" x="0.0" y="0.0" width="403" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ot-fT-FwU">
+                            <rect key="frame" x="0.0" y="0.0" width="5" height="60"/>
+                            <color key="backgroundColor" name="App base Color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="5" id="O1b-CD-bC3"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBs-5V-jXy">
+                            <rect key="frame" x="355" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="0eq-gp-c9q"/>
+                                <constraint firstAttribute="height" constant="40" id="xD7-1a-KId"/>
+                            </constraints>
+                            <state key="normal" image="close_btn"/>
+                            <connections>
+                                <action selector="crossButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="68T-bL-xXx"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDF-Ba-KfU">
+                            <rect key="frame" x="13" y="8" width="284" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Yd9-hV-PjO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CenturyGothic-Regular" family="CenturyGothic" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuo-Rc-pNc">
+                            <rect key="frame" x="13" y="30" width="284" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="R70-xO-Gvn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CenturyGothic-Regular" family="CenturyGothic" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPicture" translatesAutoresizingMaskIntoConstraints="NO" id="bPj-5c-nrF">
+                            <rect key="frame" x="305" y="14" width="42" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="42" id="ZCr-B5-tCn"/>
+                                <constraint firstAttribute="height" constant="32" id="mfh-Rc-jtB"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hBs-5V-jXy" firstAttribute="centerY" secondItem="ZZL-GM-smi" secondAttribute="centerY" id="4Xi-8o-YDS"/>
+                        <constraint firstAttribute="bottom" secondItem="2Ot-fT-FwU" secondAttribute="bottom" id="9D3-hi-gg3"/>
+                        <constraint firstItem="hBs-5V-jXy" firstAttribute="leading" secondItem="bPj-5c-nrF" secondAttribute="trailing" constant="8" id="F5h-AM-NDy"/>
+                        <constraint firstItem="hBs-5V-jXy" firstAttribute="leading" secondItem="cDF-Ba-KfU" secondAttribute="trailing" constant="58" id="HoK-DB-SvZ"/>
+                        <constraint firstAttribute="bottom" secondItem="nuo-Rc-pNc" secondAttribute="bottom" constant="8" id="J7R-20-3gt"/>
+                        <constraint firstItem="2Ot-fT-FwU" firstAttribute="top" secondItem="ZZL-GM-smi" secondAttribute="top" id="LVi-9G-rJy"/>
+                        <constraint firstItem="cDF-Ba-KfU" firstAttribute="top" secondItem="ZZL-GM-smi" secondAttribute="top" constant="8" id="MdZ-9t-qI5"/>
+                        <constraint firstItem="hBs-5V-jXy" firstAttribute="leading" secondItem="nuo-Rc-pNc" secondAttribute="trailing" constant="58" id="MqN-M8-V9E"/>
+                        <constraint firstItem="2Ot-fT-FwU" firstAttribute="leading" secondItem="ZZL-GM-smi" secondAttribute="leading" id="MwS-gA-oEN"/>
+                        <constraint firstItem="cDF-Ba-KfU" firstAttribute="leading" secondItem="ZZL-GM-smi" secondAttribute="leading" constant="13" id="T8U-9V-eFO"/>
+                        <constraint firstAttribute="bottom" secondItem="bPj-5c-nrF" secondAttribute="bottom" constant="14" id="X7f-W7-4CK"/>
+                        <constraint firstAttribute="trailing" secondItem="hBs-5V-jXy" secondAttribute="trailing" constant="8" id="aTs-bA-q9O"/>
+                        <constraint firstItem="bPj-5c-nrF" firstAttribute="top" secondItem="ZZL-GM-smi" secondAttribute="top" constant="14" id="qHb-r7-LvK"/>
+                        <constraint firstItem="nuo-Rc-pNc" firstAttribute="leading" secondItem="ZZL-GM-smi" secondAttribute="leading" constant="13" id="umd-ja-aSH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZZL-GM-smi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="D70-Z5-pyp"/>
+                <constraint firstItem="ZZL-GM-smi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JvW-j1-HzP"/>
+                <constraint firstAttribute="bottom" secondItem="ZZL-GM-smi" secondAttribute="bottom" id="a93-QK-kIw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZZL-GM-smi" secondAttribute="trailing" id="xzF-HI-6e5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="msgImageViewOutlet" destination="bPj-5c-nrF" id="9WX-Yb-vXb"/>
+                <outlet property="repliedMessageOutlet" destination="nuo-Rc-pNc" id="mpa-zP-YT6"/>
+                <outlet property="userNameOutlet" destination="cDF-Ba-KfU" id="kPK-VD-trE"/>
+            </connections>
+            <point key="canvasLocation" x="20.5" y="-312"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_btn" width="128" height="128"/>
+        <image name="defaultPicture" width="120" height="120"/>
+        <namedColor name="App base Color">
+            <color red="0.83137254901960789" green="0.66666666666666663" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

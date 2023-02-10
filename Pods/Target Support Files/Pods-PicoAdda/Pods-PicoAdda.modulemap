@@ -1,0 +1,6 @@
+framework module Pods_PicoAdda {
+  umbrella header "Pods-PicoAdda-umbrella.h"
+
+  export *
+  module * { export * }
+}

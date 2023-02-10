@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7de-RE-9Ot" customClass="JSQMessagesToolbarContentView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrH-99-oqf" userLabel="Left button container">
+                    <rect key="frame" x="8" y="4" width="46" height="46"/>
+                    <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="1Ma-NB-2ar"/>
+                        <constraint firstAttribute="height" constant="46" id="p6f-2S-2c8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C44-4N-2Th" userLabel="Right button container">
+                    <rect key="frame" x="262" y="4" width="50" height="46"/>
+                    <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="IYh-Q4-xe4"/>
+                        <constraint firstAttribute="width" constant="50" id="SMQ-yd-r9a"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v4x-yf-K0c" customClass="JSQMessagesComposerTextView">
+                    <rect key="frame" x="62" y="7" width="192" height="40"/>
+                    <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="Pr9-yY-fwN"/>
+                        <constraint firstAttribute="height" constant="40" id="fMB-xJ-92c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="C44-4N-2Th" secondAttribute="trailing" constant="8" id="9dz-Bf-rcu"/>
+                <constraint firstItem="C44-4N-2Th" firstAttribute="leading" secondItem="v4x-yf-K0c" secondAttribute="trailing" constant="8" id="Lld-wr-jX4"/>
+                <constraint firstItem="vrH-99-oqf" firstAttribute="leading" secondItem="7de-RE-9Ot" secondAttribute="leading" constant="8" id="Seh-Q5-Yka"/>
+                <constraint firstItem="C44-4N-2Th" firstAttribute="centerY" secondItem="v4x-yf-K0c" secondAttribute="centerY" id="V38-IS-Cp1"/>
+                <constraint firstItem="v4x-yf-K0c" firstAttribute="centerY" secondItem="7de-RE-9Ot" secondAttribute="centerY" id="Z6S-Tu-K3i"/>
+                <constraint firstItem="vrH-99-oqf" firstAttribute="centerY" secondItem="v4x-yf-K0c" secondAttribute="centerY" id="nww-Ay-pTn"/>
+                <constraint firstItem="v4x-yf-K0c" firstAttribute="leading" secondItem="vrH-99-oqf" secondAttribute="trailing" constant="8" id="rZ5-D0-HZY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftBarButtonContainerView" destination="vrH-99-oqf" id="Nq5-Ig-NBm"/>
+                <outlet property="leftBarButtonContainerViewWidthConstraint" destination="1Ma-NB-2ar" id="8Oy-av-Hb7"/>
+                <outlet property="leftHorizontalSpacingConstraint" destination="Seh-Q5-Yka" id="8SI-ha-4BV"/>
+                <outlet property="rightBarButtonContainerView" destination="C44-4N-2Th" id="F2f-i5-tps"/>
+                <outlet property="rightBarButtonContainerViewWidthConstraint" destination="SMQ-yd-r9a" id="r5N-SS-YPV"/>
+                <outlet property="rightHorizontalSpacingConstraint" destination="9dz-Bf-rcu" id="6xl-yE-lNB"/>
+                <outlet property="textView" destination="v4x-yf-K0c" id="oRN-8I-21q"/>
+            </connections>
+            <point key="canvasLocation" x="388.40579710144931" y="366.96428571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

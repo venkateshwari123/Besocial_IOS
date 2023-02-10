@@ -1,0 +1,1577 @@
+// Reusables
+"Please enter" = "Tafadhali ingiza";
+"Please accept" = "Tafadhali kukubali";
+"Please select" = "Tafadhali chagua";
+"Please upload" = "Tafadhali pakia";
+"Please choose" = "Tafadhali chagua";
+"Please" = "Tafadhali";
+"You do not have" = "Hauna";
+"Are you sure want to" = "Je, Una uhakika unataka";
+"this transaction" = "Shughuli hii";
+"I agree to the" = "Nakubaliana na huyo";
+"Search" = "Utafutaji";
+"Edit" = "Hariri";
+"valid" = "Halali";
+"already exists" = "tayari ipo";
+"Entered" = "Imeingia";
+"User" = "Mtumiaji";
+"Successfully" = "Inafanikiwa";
+"a new" = "mpya";
+"try again" = "jaribu tena";
+"new" = "mpya";
+"NEW" = "mpya";
+"TRANSFERRED" = "IMEHAMISHWA";
+"APPROVED" = "IMEKUBALIWA";
+"PENDING" = "INASUBIRI";
+"REJECTED" = "IMEKATAA";
+"FAILED" = "IMESHINDWA";
+"CANCELLED" = "IMEFUTWA";
+"This" = "Hii";
+"Login with" = "Ingia na";
+"is not" = "sio";
+"registered on" = "Imesajiliwa ";
+"Reset" = "Rekebisha";
+"Check out" = "Angalia";
+"Are you sure you want to" = "Una uhakika unataka";
+"delete this collection" = "Futa mkusanyiko huu";
+"Transaction" = "Shughuli";
+"ago" = "iliyopita";
+"Ago" = "iliyopita";
+"Enter" = "Ingiza";
+"enter" = "Ingiza";
+"check" = "Angalia";
+"confirm" = "Thibitisha";
+
+// Welcome View Conreoller
+"Tap" = "Gonga";
+"Agree" = "Kubali";
+"Continue" = "Endelea";
+"to accept the" = "kukubali";
+"Terms of Service" = "Masharti ya Huduma";
+"Terms Of Service" = "Masharti ya Huduma";
+"Privice Policy" = "Sera ya faragha";
+"and" = "Na";
+
+// Phone Number View Controller
+"Check Internet Connection" = "Angalia uhusiano wa internet";
+"Your phone number is not correct" = "Nambari yako ya simu si sahihi";
+"Phone number is too long" = "Nambari ya simu ni muda mrefu sana";
+
+// Verifyi OTP
+"your OTP first" = "OTP yako ya kwanza";
+"Verification code" = "Kanuni ya Uhakikisho";
+"has been sent to" = "imetumwa kwa";
+"Didn't get code" = "Hakuwa na code";
+"invalid" = "batili";
+"OTP" = "OTP";
+"expired" = "mpya";
+"has been send to" = "imetumwa kwa";
+"The verificaiton code has been resent to" = "Msimbo wa Verfificiaton umekuwa hasira kwa";
+
+// Dubly Home Page
+"Uploading  Video" = "Kupakia video";
+"Uploading  Image" = "Kupakia picha";
+"Follow User" = "Fuata mtumiaji";
+"followed anyone" = "ikifuatiwa na mtu yeyote";
+"Follow some users to see their posts here" = "Fuata watumiaji wengine ili kuona machapisho yao hapa";
+"Find people to follow" = "Tafuta watu kufuata";
+"Save to Collection" = "Hifadhi kwa kukusanya";
+"Save to collection" = "Hifadhi kwa kukusanya";
+"Post removed from collection" = "Chapisho limeondolewa kwenye mkusanyiko";
+"View Saved" = "Tazama kuokolewa";
+"View" = "Tazama";
+"tips" = "Vidokezo";
+"Liked by" = "Walipenda na";
+"No Plans Yet" = "Hakuna mipango bado";
+"coin plans" = "Mipango ya sarafu";
+"Xclusive Post" = "Xclusive post";
+"Unlock this post for" = "Fungua chapisho hili kwa";
+"Subscribe for" = "Jiandikishe kwa";
+"Following" = "Zifuatazo";
+"For You" = "Kwa ajili yako";
+"Xclusive" = "Xclusive";
+"Bookmark" = "Alamisho";
+"Bookmarked" = "Imewekwa alama";
+"Duet" = "Duet";
+"Forward" = "Mbele";
+"Download" = "Pakua";
+"Gif" = "GIF";
+"Copy Link" = "Nakala Link";
+"Share Post" = "Shiriki Post";
+"share post" = "Shiriki Post";
+"More" = "Zaidi";
+"Share Profile" = "Shiriki profile";
+"CopyLink" = "mpya";
+"Record" = "Rekodi";
+"EditPost" = "EditPost";
+"DeletePost" = "Deletepost";
+"Report" = "Ripoti";
+"Follow" = "Fuata";
+"Comments" = "Maoni";
+"Use Audio" = "Tumia sauti";
+"Send Tip" = "Tuma Tip";
+"Get More" = "Pata zaidi";
+"Get more" = "Pata zaidi";
+"Tip Amount" = "Kiasi cha ncha";
+"Sent Tip Successfully" = "Imepelekwa ncha kwa mafanikio";
+"Insufficient coins" = "Sarafu haitoshi";
+"please recharge" = "Tafadhali recharge";
+"Add Coins" = "Ongeza sarafu";
+"Tip sent to" = "Tip imetumwa kwa";
+"Subscription to" = "Usajili kwa";
+"failed due to lack of coin balance" = "Imeshindwa kutokana na ukosefu wa usawa wa sarafu";
+"you will not be able to enjoy unlimited access to all of" = "Huwezi kufurahia upatikanaji usio na ukomo kwa wote";
+"content" = "CONTENT";
+"You will have to subscribe to" = "Utahitaji kujiunga na";
+"again to gain access to their content" = "tena kupata upatikanaji wa maudhui yao";
+"You have successfully purchased this post" = "Umefanikiwa kununulia chapisho hili";
+"Thank you for subscribing to" = "Asante kwa kujiandikisha";
+"No Comments yet" = "Hakuna maoni bado";
+"No Likes yet" = "Hakuna kupenda bado";
+"subcribers" = "Waachizi";
+"Facebook" = "Facebook";
+"Instagram" = "Instagram";
+"Deeplink" = "Deeplink";
+"You have already cancelled the subscription" = "Tayari umefuta usajili";
+"Your current billing cycle ends on" = "Mzunguko wako wa sasa wa bili unamalizika";
+"so subscription will remain active till then and it will stop there after" = "hivyo usajili utabaki kazi mpaka kisha itaacha hapo baada";
+"Post needs to be unlocked first to enable custom action" = "Chapisho inahitaji kufunguliwa kwanza ili kuwezesha hatua ya desturi";
+
+// Picoadda HomePage
+"years" = "mpya";
+"year" = "Mwaka";
+"months" = "miezi";
+"month" = "mwezi";
+"weeks" = "wiki";
+"week" = "wiki";
+"days" = "siku";
+"hours" = "Masaa";
+"hour" = "saa";
+"minutes" = "dakika";
+"minute" = "dakika";
+"seconds" = "sekunde";
+"second" = "Pili";
+"Comments are disabled for this post" = "Maoni yamezimwa kwa chapisho hili";
+"Now you are following" = "Sasa unafuata";
+"More Options" = "Chaguo zaidi";
+"Delete Post" = "Futa chapisho";
+"Downloading is disabled for this post" = "Kupakua ni walemavu kwa chapisho hili";
+"Add Story" = "Ongeza hadithi";
+"You have not followed anyone" = "Hukufuata mtu yeyote";
+"Find friends to follow" = "Tafuta marafiki kufuata";
+
+// DublyFollowViewController
+"Likes" = "Anapenda";
+"No user is following you" = "Hakuna mtumiaji anayekufuata";
+"You are not following any user" = "Huna kufuata mtumiaji yeyote";
+"You have not any subscribers" = "Huna mteja yeyote";
+"following" = "zifuatazo";
+"followers" = "Wafuasi";
+"People" = "Watu";
+"Write a comment" = "Andika maoni";
+
+// Explore Page
+"There is no trending post" = "Hakuna post iliyofuata";
+"people" = "Watu";
+"hashtags" = "lebo za reli";
+"place" = "Maeneo";
+"Hashtag" = "Alama ya reli";
+"Places" = "Maeneo";
+"posts" = "machapisho";
+"Public posts" = "Machapisho ya umma";
+"Request" = "Ombi";
+"Requested" = "Aliomba";
+"REQUESTED" = "Aliomba";
+"Subscribe" = "Jisajili";
+"Subscribed" = "Imesajiliwa";
+"known as" = "inayojulikana kama";
+"Known as" = "inayojulikana kama";
+
+// MARK:- Profile Page
+"Profile updated" = "Wasifu umesasishwa";
+"Activity" = "Shughuli";
+"Subscribers" = "Wanachama";
+"Posts" = "machapisho";
+"Followers" = "Wafuasi";
+"No posts to show" = "Hakuna machapisho ya kuonyesha";
+"No purchased posts to show" = "Hakuna machapisho yaliyotunuliwa ya kuonyesha";
+"No liked posts to show" = "Hakuna machapisho yaliyopendekezwa kuonyesha";
+"No tagged posts to show" = "Hakuna tagged posts kuonyesha";
+"No stream videos to show" = "Hakuna video za mkondo kuonyesha";
+"You have not created any channel" = "Hujaumba kituo chochote";
+"No stories to show" = "Hakuna hadithi za kuonyesha";
+"Subscribe to" = "Kujiunga na";
+"for" = "Kwa maana";
+"Cancel Subscription" = "Futa usajili";
+"Read Less" = "Soma chini";
+"Read More" = "Soma zaidi";
+"This Account is Private" = "Akaunti hii ni ya faragha";
+"Follow this account to see their photos and videos" = "Fuata akaunti hii ili uone picha na video zao";
+"Change Photo" = "BADILISHA picha";
+"Bio" = "Bio";
+"Private Information" = "Maelezo ya kibinafsi";
+"Public Business Information" = "Maelezo ya biashara ya umma";
+"Contact options" = "Chaguzi za mawasiliano";
+"Business Bio" = "mpya";
+"Private Account" = "Akaunti ya kibinafsi";
+"To switch to a business account" = "Ili kubadili akaunti ya biashara";
+"your account must be Public" = "Akaunti yako lazima iwe ya umma";
+"Category" = "Jamii";
+"User Status" = "Hali ya mtumiaji";
+"No users found" = "Hakuna watumiaji waliopatikana";
+"Setting" = "Kuweka";
+"User reported successfully" = "Mtumiaji aliripoti kwa mafanikio";
+"This number is taken by other user please try again with different number" = "Nambari hii inachukuliwa na mtumiaji mwingine tafadhali jaribu tena kwa idadi tofauti";
+"Take Photo" = "Piga picha";
+"Choose Photo" = "Chagua picha";
+"Uploading" = "Kupakia";
+"Alert" = "Tahadhari";
+"Name" = "Jina";
+"Username" = "Jina la mtumiaji";
+"Status" = "Hali";
+"Email Address" = "Barua pepe";
+"email address" = "Barua pepe";
+"Contact Number" = "Namba ya mawasiliano";
+"Business About" = "Biashara kuhusu";
+"Business User Name" = "Jina la mtumiaji wa biashara";
+"Business Name" = "Jina la biashara";
+"Business Email" = "Barua pepe ya Biashara";
+"Business Phone" = "Simu ya Biashara";
+"Business UserName" = "Jina la mtumiaji wa biashara";
+"business username" = "Jina la mtumiaji wa biashara";
+"Business Location" = "Eneo la Biashara";
+"About Business" = "Kuhusu Biashara";
+"First Name" = "Jina la kwanza";
+"Email" = "Barua pepe";
+"Phone" = "Simu";
+"User Name" = "Jina la mtumiaji";
+"Full Name" = "Jina kamili";
+"Known As" = "Inayojulikana kama";
+"Enter Password" = "Ingiza nenosiri";
+"Account Holder's Name" = "mpya";
+"IFSC Code" = "IFSC code";
+"ifsc code" = "IFSC code";
+"Amount" = "Kiasi";
+"Street Address" = "Anuani ya mtaa";
+"City/Town" = "Mji / mji";
+"Zip Code" = "Namba ya Posta";
+"viaMobile" = "Viamobile";
+"viaEmail" = "viaemail";
+"Verified" = "Kuthibitishwa";
+"verified" = "Kuthibitishwa";
+"Confirm and verify" = "Thibitisha na uhakikishe";
+"Sent On Email" = "Imetumwa kwa barua pepe";
+"We have send you the link to" = "Tumekupeleka kiungo kwa";
+"mobile no" = "Simu ya Mkono ya simu";
+"different" = "tofauti";
+"Not verified" = "Si kuthibitishwa";
+"is already registered" = "tayari imesajiliwa";
+"new business username" = "Jina la mtumiaji mpya wa biashara";
+"about the business" = "Kuhusu biashara";
+"About The Business" = "Kuhusu biashara";
+"Edit Bio" = "Badilisha bio";
+"business website" = "Tovuti ya Biashara";
+"The confirm password does not match the new password entered" = "Nenosiri la kuthibitisha hailingani na nenosiri jipya limeingia";
+"Password changed successfully" = "Neno la siri limebadilishwa kwa mafanikio";
+"User Not Found" = "Mtumiaji haipatikani";
+"Exceed Maximum Number Of Selection" = "Kuzidi idadi kubwa ya uteuzi";
+
+// Coin Wallet
+"Buy Coins" = "Nunua sarafu";
+"My Balance" = "Usawa wangu";
+"Select Plan" = "Chagua Mpango";
+"Transactions" = "Shughuli";
+"All" = "Wote";
+"Credit" = "Mikopo";
+"Debit" = "Debit";
+"No transactions yet" = "Hakuna shughuli bado";
+"Trans ID" = "mpya";
+"Coin Transactions" = "Shughuli za sarafu";
+
+// Wallet
+"Reason" = "Sababu";
+"Transfer to a friend" = "Hamisha kwa rafiki";
+"Processing fee" = "Ada ya usindikaji";
+"Received amount" = "Kiasi kilichopokelewa";
+"Sent amount" = "Pesa iliyotumwa";
+"Date" = "tarehe";
+"Time" = "wakati";
+"Bank" = "Benki";
+"Transfer Details" = "Transfer Details";
+"Gift Transfer Details" = "Maelezo ya Uhamisho";
+"Withdrawal Details" = "Maelezo ya uondoaji";
+"Recharge Details" = "Maelezo ya Kuchaji upya";
+"Payment Details" = "Maelezo ya malipo";
+"Withdrawl Mode" = "Njia ya kujiondoa";
+"Wallet Recharged" = "Pochi Imechajiwa upya";
+"Recharge Mode" = "Njia ya Kuchaji upya";
+"Withdrawal Request Submitted Sucessfully" = "Ombi la Kujitoa Limewasilishwa Kwa Mafanikio";
+"Are you sure you want to recharge the wallet with" = "Una uhakika unataka kuchaji tena pochi";
+"Recharge Amount" = "Kiasi cha malipo tena";
+"Withdraw Amount" = "Toa Kiasi";
+"withdrawal fee deducted" = "ada ya kujiondoa imekatwa";
+"Receiving Account" = "Kupokea Akaunti";
+"Stripe Account" = "Akaunti ya Stripe";
+"Add Account" = "Ongeza Akaunti";
+"Bank Details" = "Taarifa za benki";
+"Wallet" = "Wallet";
+"wallet" = "Wallet";
+"Recharge" = "Recharge";
+"Withdraw" = "Kutoa";
+"Sorry" = "Sorry";
+"KYC" = "Kyc";
+"Kyc" = "Kyc";
+"this device has no camera" = "Kifaa hiki hakina kamera";
+"Recent Transactions" = "Shughuli za hivi karibuni";
+"All Transactions" = "Shughuli zote";
+"Pending Transactions" = "Inasubiri shughuli";
+"Debit Transactions" = "Shughuli za Debit";
+"Credit Transactions" = "Shughuli za mikopo";
+"Welcome to the" = "Karibu kwa";
+"Tap Agree to active your wallet" = "Gonga Kukubali kufanya kazi ya mkoba wako";
+"Use your wallet balance to spend and send your cash securely using your" = "Tumia usawa wako wa mkoba kutumia na kutuma fedha zako kwa kutumia yako";
+"Add Your Bank Account" = "Ongeza akaunti yako ya benki";
+"Select Card" = "Chagua Kadi";
+"Are you sure you want to remove this card" = "Una uhakika unataka kuondoa kadi hii";
+"Add Card" = "Ongeza kadi";
+"advertisement" = "matangazo";
+"Please fill mandatory fields" = "Tafadhali jaza mashamba ya lazima";
+"Info" = "Maelezo";
+"DocumentId should be 9 characters" = "Hati ya hati inapaswa kuwa wahusika 9";
+"SSN should be last 4 digits of documentId" = "SSN inapaswa kuwa tarakimu nne za hati";
+"Add Stripe Account" = "Ongeza Akaunti ya Stripe";
+"Choose image" = "Chagua picha";
+"You don't have camera" = "Huna kamera";
+"No Saved Cards" = "Hakuna kadi zilizohifadhiwa";
+"Saved Cards" = "Kadi zilizohifadhiwa";
+"Wallet Balance" = "Mizani ya Wallet";
+"Amount to be Paid" = "Kiasi cha kulipwa";
+"Secure checkout" = "Checkout salama";
+"Choose any option to pay" = "Chagua chaguo lolote kulipa";
+"Pay" = "mpya";
+"Account Number" = "Nambari ya Akaunti";
+"account number" = "Nambari ya Akaunti";
+"Nick Name" = "Jina la Nick";
+"Account Holder Name" = "Jina la mmiliki wa akaunti";
+"Routing Number" = "Nambari ya uendeshaji";
+"Account Holer Name" = "Jina la Akaunti Jina";
+"Bank Accounts" = "Akaunti ya benki";
+"Suggestion" = "Ushauri";
+"Delete Account" = "Futa akaunti";
+"I Agree" = "Nakubali";
+"Complete Identification" = "Utambulisho kamili";
+"Upload Doc" = "Pakia Doc";
+"Front Side" = "Upande wa mbele";
+"Back Side" = "Upande wa nyuma";
+"Verify" = "Thibitisha";
+"KYC Application" = "Maombi ya KYC";
+"document type" = "Aina ya hati";
+"Document Type" = "Aina ya hati";
+"Name On Document" = "Jina kwenye waraka";
+"Document Number" = "Nambari ya hati";
+"License Holder Name" = "Jina la mmiliki wa leseni";
+"front Image" = "Picha ya mbele";
+"back Image" = "Back Image";
+"License Number" = "Nambari ya leseni";
+"Notifications not allowed" = "Arifa haziruhusiwi";
+"Gallery" = "Nyumba ya sanaa";
+"Wallet Activation" = "Uanzishaji wa Wallet";
+"KYC application submitted and pending review, we will let you know the status of your KYC via email and notification" = "Programu ya KYC iliyowasilishwa na inasubiri mapitio, tutakujulisha hali ya KYC yako kupitia barua pepe na taarifa";
+"Okay!" = "Sawa!";
+"Withdraw Requst Submitted Successfully" = "Kuondoa requstust iliyotolewa kwa mafanikio";
+"Transaction id" = "ID ya manunuzi";
+"WITHDRAWAL AMOUNT" = "Kiasi cha uondoaji";
+"Withdrawal Amount" = "Kiasi cha uondoaji";
+"Confirm" = "Thibitisha";
+"Pending KYC verification" = "Inasubiri uthibitisho wa KYC";
+"KYC Verification" = "Uhakikisho wa KYC";
+"No Bank Account" = "mpya";
+"ADD" = "Ongeza";
+"BANK ACCOUNTS" = "Akaunti ya benki";
+"Add" = "Ongeza";
+"Bank Accounts" = "Akaunti ya benki";
+"BALANCE AMOUNT" = "Kiasi cha usawa";
+"Balance Amount" = "Kiasi cha usawa";
+"WITHDRAW LOGS" = "Ondoa magogo";
+"Withdraw Logs" = "Ondoa magogo";
+"Pending" = "Inasubiri";
+"No Withdrawal Logs" = "Hakuna magogo ya uondoaji";
+"Withdrawal Logs" = "magogo ya uondoaji";
+"Select any of the payment receiving method to withdraw the money." = "Chagua njia yoyote ya kupokea malipo ili kutoa pesa.";
+"Withdraw Methods" = "Njia za kujiondoa";
+"Notes" = "Vidokezo";
+"Photo ID" = "Kitambulisho cha picha";
+"Last Name" = "Jina la familia";
+"Date of Birth" = "Tarehe ya kuzaliwa";
+"SSN" = "SSN";
+"Address" = "Anwani";
+"City" = "Mji";
+"State" = "Jimbo";
+"Zipcode" = "Namba ya Posta";
+"Country" = "Nchi";
+"Business Website" = "Tovuti ya Biashara";
+"Business Category" = "Jamii ya Biashara";
+
+
+// UpdateStatusViewController
+"Status can't be empty" = "Hali haiwezi kuwa tupu";
+"Status must have atleast 4 charecters" = "Hali lazima iwe na chaza 4";
+
+// Setting Page
+"Change Language" = "Badilisha lugha";
+"Choose your language" = "Chagua lugha yako";
+"INVITE" = "Mwaliko";
+"FOLLOW PEOPLE" = "Fuata watu";
+"Invite" = "Mwaliko";
+"Follow People" = "Fuata watu";
+"SETTINGS" = "Mipangilio";
+"Settings" = "Mipangilio";
+"SUPPORT" = "Msaada";
+"ABOUT" = "Kuhusu";
+"Support" = "Msaada";
+"About" = "Kuhusu";
+"Subscription Settings" = "Mipangilio ya usajili";
+"Request has already been made to this user" = "Ombi tayari imefanywa kwa mtumiaji huyu";
+"You already subscribed this user" = "Tayari umesajiliwa mtumiaji huyu";
+"This fee is taken by the processor to transfer the money and for any currency conversion that might be necessary" = "Ada hii inachukuliwa na processor kuhamisha fedha na kwa uongofu wowote wa sarafu ambayo inaweza kuwa muhimu";
+"the monthly subscription cost" = "gharama ya usajili wa kila mwezi";
+"Set monthly value" = "mpya";
+"You will get" = "Utapata";
+"App will get" = "Programu itapata";
+"My Subscriptions" = "Usajili wangu";
+"Enter Business User Name" = "Ingiza jina la mtumiaji wa biashara";
+"Active" = "Inayotumika";
+"Cancelled" = "Imefutwa";
+"Remove" = "Ondoa";
+"Renew" = "Upya";
+"Subscription cancelled on" = "Usajili umefuta";
+"active till" = "Active TILL";
+"coins charged on the" = "sarafu kushtakiwa juu ya";
+"of every month" = "ya kila mwezi";
+"No active subscriptions yet" = "Hakuna usajili wa kazi bado";
+"No cancelled subscriptions yet" = "Hakuna usajili wa kufutwa bado";
+"Invite Friends" = "Paribisha marafiki";
+"Facebook Friends" = "Facebook Marafiki";
+"Find Contacts" = "Pata anwani";
+"Data Uses" = "Matumizi ya data";
+"Blocked Users" = "Watumiaji waliozuiwa";
+"Report a Problem" = "Ripoti tatizo";
+"About" = "Kuhusu";
+"Money" = "Pesa";
+"Privacy Policy" = "Sera ya faragha";
+"Star Pages Terms and Conditions" = "Kurasa za Nyota Masharti na Masharti";
+"Thank you for submitting your request" = "Asante kwa kuwasilisha ombi lako";
+"Our review team will go through your application and you will recieve an email to confirm if your profile has been accepted or denied" = "Timu yetu ya ukaguzi itapita kupitia programu yako na utapata barua pepe ili kuthibitisha ikiwa wasifu wako umekubaliwa au kukataliwa";
+"Log Out" = "Ingia nje";
+"Hey" = "Hey";
+"I'm using" = "Ninatumia";
+"join me on" = "Jiunge na mimi";
+"This cool new social app" = "Programu hii mpya ya kijamii";
+"Oops" = "Oops";
+"Failed to send Mail" = "Imeshindwa kutuma barua";
+"Mail sent" = "Barua imetumwa";
+"Mail services are not available" = "Huduma za barua hazipatikani";
+"year ago" = "mpya";
+"month ago" = "mwezi uliopita";
+"months ago" = "miezi iliyopita";
+"days ago" = "siku zilizopita";
+"day ago" = "Siku iliyopita";
+"hours ago" = "masaa yaliyopita";
+"hour ago" = "saa iliyopita";
+"minutes ago" = "dakika zilizopita";
+"minute ago" = "dakika iliyopita";
+"a moment ago" = "wakati uliopita";
+"seconds ago" = "sekunde iliyopita";
+"second ago" = "Pili iliyopita";
+"weeks ago" = "wiki zilizopita";
+"week ago" = "wiki iliyopita";
+"Approved" = "Imeidhinishwa";
+"Apply for verify badge that appears next to a" = "Omba kwa kuthibitisha beji inayoonekana karibu na A";
+"account's name to indicate that the account is the authentic presence of a notable Public figure,celebrity,global brand or entity it Represents" = "Jina la akaunti ili kuonyesha kwamba akaunti ni uwepo halisi wa takwimu ya umma inayojulikana, mtu Mashuhuri, brand ya kimataifa au chombo kinachowakilisha";
+"Submitting a request for verification does not guarantee that your account will be verified" = "Kuwasilisha ombi la kuthibitisha haidhibitishi kwamba akaunti yako itahakikishiwa";
+"Verify Category" = "Thibitisha jamii";
+"Please attach your photo of ID" = "Tafadhali ambatisha picha yako ya ID";
+"Choose file" = "Chagua faili";
+"We require a government-issued photo ID that shows your name and date of birth (e.g driver's lilcense,passport or national identification card) of official business documents (tax filling ,recent utility bill, article of incorporation) in order to review your request." = "Tunahitaji Kitambulisho cha Picha kilichotolewa na Serikali kinachoonyesha jina lako na tarehe ya kuzaliwa (Lilcense ya EG ya dereva, pasipoti au kadi ya kitambulisho cha kitaifa) ya nyaraka za biashara rasmi (kujaza kodi, muswada wa matumizi ya hivi karibuni, makala ya kuingizwa) ili kuchunguza ombi lako.";
+"Star terms and conditions for verify profile" = "Masharti na Masharti ya Star ya kuthibitisha Profaili";
+"Verify Profile" = "Thibitisha Profaili";
+"for a verify user" = "Kwa mtumiaji wa kuthibitisha";
+"Star terms and conditions" = "Masharti na Masharti ya Nyota";
+"star terms and conditions" = "Masharti na Masharti ya Nyota";
+"pending" = "Inasubiri";
+"approved" = "Imeidhinishwa";
+"Please select the image Source" = "Tafadhali chagua chanzo cha picha";
+"Loging Out" = "Ingia nje";
+"Are you sure you want to log out" = "Una uhakika unataka kuingia nje";
+"Are you sure you want to delete Account" = "Una uhakika unataka kufuta akaunti";
+"Logging Out" = "Kuingia nje";
+"Edit or remove any information that you do not wish to display" = "Hariri au uondoe maelezo yoyote ambayo hutaki kuonyesha";
+"People will be able to email" = "Watu wataweza barua pepe";
+"call and get directions to your Business from new button and links on your profile" = "mpya";
+"Go to Settings and allow" = "Nenda kwenye Mipangilio na Ruhusu";
+"with us" = "na sisi";
+"Business Number" = "Idadi ya Biashara";
+"Search Results" = "Matokeo ya Utafutaji";
+"Search Address" = "Anwani ya Utafutaji";
+"No Results Found" = "Hakuna matokeo yaliyopatikana";
+"Current Location" = "Eneo la sasa";
+"Use my current location" = "Tumia eneo langu la sasa";
+"Submit" = "Tuma";
+"Search Countries" = "Nchi za Utafutaji";
+"Select Countries" = "Chagua nchi";
+"for your smartphone.Download it today from" = "Kwa smartphone yako.Kuondoa leo kutoka";
+"Are you sure you want to change language" = "Kwa smartphone yako.Kuondoa leo kutoka";
+"Japanese" = "Kijapani";
+"Your new password cannot be the same as your current password" = "Nenosiri lako jipya haliwezi kuwa sawa na nenosiri lako la sasa";
+"Dark Mode" = "Mode ya giza";
+"Theme" = "Mandhari";
+
+// Chat Screen
+"Chats" = "Mazungumzo";
+"chat" = "kuzungumza";
+"You have got an image" = "Una picha";
+"You sent an image" = "Umetuma picha";
+"You have got a video" = "Una video";
+"You sent a video" = "Umetuma video";
+"You have got a location" = "Una nafasi";
+"You sent a location" = "Ulimtuma mahali";
+"You have got a contact" = "Una kuwasiliana na";
+"You sent a contact" = "Umetuma mawasiliano";
+"You have got an audio" = "Una redio";
+"You sent an audio" = "Umetuma sauti";
+"You have got a sticker" = "Una sticker";
+"You sent a sticker" = "Umetuma sticker";
+"You have got a doodle" = "Una doodle";
+"You sent a doodle" = "Umetuma Doodle";
+"You have got a gif" = "mpya";
+"You sent a gif" = "Umetuma GIF";
+"You have got a document" = "Una hati";
+"You sent a document" = "Umetuma hati";
+"You have got a post" = "Una post";
+"You sent a post" = "Umetuma chapisho";
+"You missed a call" = "Umekosa simu";
+"You missed an audio call" = "Umekosa simu ya sauti";
+"You missed a video call" = "Umekosa simu ya video";
+"You sent a payment" = "Umetuma malipo";
+"You have got a payment" = "Una malipo";
+"This message was deleted" = "Ujumbe huu ulifutwa";
+"You created group" = "Uliunda Group";
+"created group" = "iliunda kikundi";
+"Created" = "Imeundwa";
+"Delete Chat" = "Futa mazungumzo";
+"kyc and does not have an active wallet" = "KYC na hawana mkoba wa kazi";
+"Sorry you cannot send any payment to this user as this user has not completed" = "Samahani huwezi kutuma malipo yoyote kwa mtumiaji huyu kama mtumiaji huyu hajakamilika";
+"his" = "Wake";
+"her" = "yeye";
+"Please provide Camera permission" = "Tafadhali kutoa idhini ya kamera";
+"Please provide Audio permission" = "Tafadhali kutoa idhini ya sauti";
+"give Camera permission" = "kutoa idhini ya kamera";
+"Goto" = "Enda kwa";
+"give Audio permission" = "kutoa idhini ya sauti";
+"Please enable the phone contact permissions for" = "Tafadhali kuwezesha ruhusa ya mawasiliano ya simu";
+"at the following path" = "kwa njia zifuatazo";
+"Enable contact sharing" = "Wezesha ushirikiano wa kuwasiliana";
+"You cannot message stars directly" = "Huwezi ujumbe wa nyota moja kwa moja";
+"Current Balance" = "Mizani ya sasa";
+"minimum amount" = "kiasi cha chini";
+"will receive" = "atapokea";
+"Insufficient balance" = "Usawa wa kutosha";
+"to" = "kwa";
+"Sent" = "Imetumwa";
+"Received" = "Imepokea";
+"tranfer" = "mpya";
+"Add to Existing Contact" = "Ongeza kwenye anwani iliyopo";
+"Contact Details" = "Maelezo ya Mawasiliano";
+"You paid" = "Ulipaza";
+"Slide to cancel" = "Slide kwa kufuta";
+"Map" = "Ramani";
+"Hybrid" = "Hybrid";
+"Satelite" = "Satelite";
+
+"Group Info" = "Maelezo ya Kikundi";
+"Admin" = "Admin";
+"Select Participants" = "Chagua washiriki";
+"Add to existing Group" = "Ongeza kwenye kikundi kilichopo";
+"None" = "Hakuna";
+"Add" = "Ongeza";
+"Message Info" = "Maelezo ya ujumbe";
+"Tap here to change" = "Gonga hapa kubadili";
+"Camera Roll" = "Kamera roll";
+"No albums" = "Hakuna albamu";
+"You added" = "Umeongeza";
+"added" = "Aliongeza";
+"You removed" = "Umeondoa";
+"removed" = "Imeondolewa";
+"You made" = "Umefanya";
+"group admin" = "Kundi la Admin";
+"made" = "alifanya";
+"You changed the subject to" = "Ulibadilisha jambo hilo";
+"changed the subject to" = "iliyopita somo";
+"changed this group's icon" = "Ilibadilisha icon ya kikundi hiki";
+"You left" = "Uliondoka";
+"left" = "kushoto";
+"Call" = "Wito";
+"You are added in a group" = "Umeongezwa katika kikundi";
+"You created a group" = "Umeunda kikundi";
+"You added to a secret chat" = "Uliongeza kwenye mazungumzo ya siri";
+"You created a secret chat" = "Umeunda mazungumzo ya siri";
+"Delete for Everyone" = "mpya";
+"Delete for Me" = "Futa kwa ajili yangu";
+"Your not allowed to share message with" = "Yako hairuhusiwi kushiriki ujumbe na";
+"Sorry you cannot send any payment to this user as this user has not completed his/her kyc and does not have an active wallet" = "Samahani huwezi kutuma malipo yoyote kwa mtumiaji huyu kama mtumiaji huyu hajakamilisha KYC yake na hawana mkoba wa kazi";
+"Recent updates" = "Sasisho la hivi karibuni";
+"Viewed updates" = "Updates zilizoonekana";
+"Tap to add story update" = "Gonga ili kuongeza Mwisho wa Hadithi";
+"My story" = "Hadithi yangu";
+"New Friends" = "Marafiki wapya";
+"Fetching Chats" = "Kuchunguza mazungumzo";
+"Create New Group" = "Unda kikundi kipya";
+"Contacts" = "Mawasiliano";
+"Deleting" = "Kufuta";
+"You cannot delete the group" = "Huwezi kufuta kikundi";
+"My Story" = "Hadithi yangu";
+"Star Pages" = "Kurasa za nyota";
+"LastSeen" = "Mara ya mwisho kuonekana";
+"you can't send message" = "Huwezi kutuma ujumbe";
+"to this user" = "Kwa mtumiaji huyu";
+"Reply" = "Jibu";
+"Copy" = "Nakili";
+"Delete messsage" = "Futa MessSage";
+"Destruct timer set to" = "Kuharibu timer kuweka kwa";
+"Audio call at" = "Simu ya sauti At";
+"Duration" = "Muda";
+"Video call at" = "Piga simu kwa video";
+"Missed audio call at" = "Imepoteza simu ya sauti";
+"Missed video call at" = "Imepoteza simu ya video";
+"Blocked contacts will no longer be able to call you or send you messages" = "Mawasiliano yaliyozuiwa hayataweza kukuita au kutuma ujumbe";
+"Please complete your kyc to start sending payments" = "Tafadhali jaza KYC yako kuanza kutuma malipo";
+"The receiver has to complete their kyc for you to send them money" = "Mpokeaji anahitaji kukamilisha KYC yao ili kuwapeleka pesa";
+"Camera is not available in your device" = "Kamera haipatikani kwenye kifaa chako";
+"Message" = "Ujumbe";
+"Typing" = "Kuandika";
+"Online" = "Online";
+"Offline" = "Offline";
+"Unknown" = "mpya";
+"No Number" = "Hakuna idadi";
+"Can't send video greater than 50MB" = "Haiwezi kutuma video kubwa kuliko 50MB";
+"Messenger for your smartphone" = "Mtume kwa smartphone yako";
+"Download it today from App Store" = "Pakua leo kutoka kwenye duka la programu";
+"No internet connection" = "Hakuna uhusiano wa internet";
+"You have no active chats" = "Huna mazungumzo ya kazi";
+"Single" = "Single";
+"Group" = "Kikundi";
+"Send a payment to" = "Tuma malipo kwa";
+"Add Note" = "Ongeza kumbuka";
+"Delete this story update" = "Futa Hadithi hii ya Mwisho";
+"It will also be deleted for everyone who received it" = "Pia itafutwa kwa kila mtu aliyepokea";
+
+// PostDetailsViewController
+"Reported" = "Iliripotiwa";
+"Thank you for your feedback" = "Asante kwa maoni yako";
+"The post has been successfully reported" = "Chapisho limeripotiwa kwa ufanisi";
+// MARK:- Home StoryBoard
+"Viewers" = "Watazamaji";
+"please confirm if you are sure you want to delete this post" = "Tafadhali Thibitisha ikiwa una uhakika unataka kufuta chapisho hili";
+"This action is not reversible" = "Hatua hii haipatikani";
+
+
+/* CreateChannelViewController */
+"channel name of atleast 3 character" = "Jina la Channel la Atleast Tabia 3";
+// Alerts Messages
+"Alerts" = "Tahadhari";
+"a category" = "Jamii";
+"Channel created successfully" = "Kituo kilichoundwa kwa mafanikio";
+// Discover View Controller
+"started following you" = "Ilianza kukufuata";
+"not following" = "si kufuata";
+
+
+// Social View Controller
+"Add to Your Story" = "Ongeza kwenye hadithi yako";
+
+
+// Group
+"Add Participant" = "Ongeza mshiriki";
+
+/* UserProfileViewController */
+"Your public user name" = "Jina lako la mtumiaji wa umma";
+"User upto 25 characters" = "mpya";
+"By default your profile privacy is public" = "Kwa default Faragha yako ya faragha ni ya umma";
+"tap to make it private" = "Gonga ili uifanye binafsi";
+
+// DiscoverPeopleViewController
+"Discover People" = "Kugundua watu";
+"Next" = "Ijayo";
+"Find Facebook Friends" = "Pata marafiki wa Facebook";
+"You chose which friend to follow" = "Ulichagua rafiki gani kufuata";
+"we will never post to facebook without your permission" = "Hatuwezi kamwe kuchapisha kwenye Facebook bila idhini yako";
+"Follow Facebook Friends" = "Fuata marafiki wa Facebook";
+
+// EntertainmentPostsViewController
+"There is no posts available" = "Hakuna posts inapatikana";
+
+// CurrentLocationListViewController
+"Nearby" = "Karibu";
+
+/* PlaceInfoViewController */
+"Price" = "Bei";
+
+/* SharePostViewController */
+"Share" = "Shiriki";
+"Done" = "Kufanyika";
+"DONE" = "Kufanyika";
+"No views yet" = "Hakuna maoni bado";
+
+// PostedByMusicViewController
+"Favourite" = "Favorite";
+"Videos" = "Video";
+// PostedByViewController
+"Posts tagged" = "Posts Tagged";
+"will show up here" = "itaonyesha hapa";
+
+// VNHCountryPicker
+"Choose a country" = "Chagua nchi";
+
+// AcceptOrDeleteViewController
+"There is no following activity" = "Hakuna shughuli zifuatazo";
+"Accept" = "Kukubali";
+"Deny" = "Kukataa";
+"Channel Request" = "Ombi la kituo";
+"Follow Request" = "Fuata ombi";
+"Edit Phone Number" = "Badilisha namba ya simu";
+
+// ReplyView
+"There is no follow activity" = "Hakuna shughuli ya kufuata";
+
+// ActivityTableViewCell
+"Follow Requests" = "Fuata maombi";
+"Accept or deny requests" = "Kukubali au kukataa maombi";
+"Subscription Request" = "Ombi la usajili";
+"Approve or ignore requests" = "Thibitisha au kupuuza maombi";
+
+// TextStoryViewController
+"Enter status" = "Ingiza hali";
+
+// BusinessEditContactOptionsViewController
+"Business Information" = "Maelezo ya biashara";
+
+// SwitchToBusinessViewController
+"Set up Your Business Account" = "Weka akaunti yako ya biashara";
+"Business Details" = "Maelezo ya Biashara";
+"People Will be able to email" = "Watu wataweza barua pepe";
+"call and get direction to your business from contact button and links on your profile" = "Piga simu na ufikie kwenye biashara yako kutoka kifungo cha kuwasiliana na viungo kwenye wasifu wako";
+"Edit or remove any information that you don't want to be displayed on City smart" = "Hariri au uondoe maelezo yoyote ambayo hutaki kuonyeshwa kwenye Jiji Smart";
+"You can always edit this at any time in setting" = "Unaweza daima kuhariri hii wakati wowote katika kuweka";
+
+// BusinessPhoneNumberEditViewController
+"Your Phone Number" = "Nambari ya simu yako";
+"NEXT" = "Ijayo";
+"Phone Number" = "Nambari ya simu";
+// UpdateStatusListViewController
+"Update Bio" = "Sasisha Bio";
+"Your current status" = "Hali yako ya sasa";
+"Select your current status" = "Chagua hali yako ya sasa";
+
+"EditPhoneNumberViewController" = "HaririPhonenumberViewController";
+// EditNumberVarificationViewController
+"Verifyi Phone Number" = "Nambari ya simu ya Veriyi";
+"Enter 4 digit varification code we sent to" = "Ingiza msimbo wa tofauti wa tarakimu 4 tulimtuma";
+"Enter 4 digit varification code we sent to " = "Ingiza msimbo wa tofauti wa tarakimu 4 tulimtuma";
+// CreateChannelViewController
+"Create Channel" = "Unda Channel";
+"Save" = "Hifadhi";
+
+"Upload Photo" = "Pakia picha";
+"Channel Name" = "Jina la Channel";
+"Select Category" = "mpya";
+"Private Channel" = "Kituo cha faragha";
+
+"Select" = "Chagua";
+
+// CallHistoryTableViewController
+"You have no calls" = "Huna wito";
+
+// SavedCollectionsViewController
+"Nothing saved yet" = "Hakuna kitu kilichohifadhiwa bado";
+"Save photos and videos that you want to see again" = "Hifadhi picha na video ambazo unataka kuona tena";
+"No one is notified" = "Hakuna mtu aliyeambiwa";
+"and only you can see what you’ve saved" = "Na tu unaweza kuona kile umehifadhiwa";
+"All Posts" = "Machapisho yote";
+"Select album" = "Chagua albamu";
+
+/* AddNewCollectionViewController */
+"Change Cover" = "Badilisha kifuniko";
+"Collection name" = "Jina la Ukusanyaji";
+"Manage" = "Dhibiti";
+"Add from bookmarks" = "Ongeza kutoka kwenye alama za alama";
+
+// CreatePostViewController
+"Write a caption" = "Andika maelezo";
+"Select category" = "Chagua Jamii";
+"Add to my channel" = "Ongeza kwenye kituo changu";
+"Allow Comments" = "Ruhusu maoni";
+"Allow Downloads" = "Ruhusu downloads";
+"Edit Post" = "Hariri Post";
+"contact" = "Mawasiliano";
+"Share To" = "Shiriki kwa";
+"Share to" = "Shiriki kwa";
+"Tag Location" = "Tag eneo";
+"Paid Post" = "Kulipwa post";
+"Business post details" = "Maelezo ya Chapisho la Biashara";
+"Select Location" = "Chagua mahali";
+"Choose your coin" = "Chagua sarafu yako";
+
+// StoryListViewController
+"Your story updates will disappear after 24 hours" = "Sasisho lako la hadithi litatoweka baada ya masaa 24";
+"My Stories" = "Hadithi zangu";
+"No stories" = "Hakuna hadithi";
+
+/* MobileConfigurationViewController */
+"Star Configuration" = "Configuration ya Nyota";
+// EmailConfigurationViewController
+"If disabled" = "Ikiwa imezimwa";
+"other users cannot contact you" = "Watumiaji wengine hawawezi kuwasiliana na wewe";
+
+// BookMarkedPostsViewController
+"Start Saving" = "Anza kuokoa";
+"Save photos and videos to your collection" = "Hifadhi picha na video kwenye mkusanyiko wako";
+"Add to Collection" = "Ongeza kwenye mkusanyiko";
+// SaveToCollectionViewController
+"Save To" = "Hifadhi kwa";
+"New Collection" = "Mkusanyiko mpya";
+
+// TrendingViewController
+"Explore" = "Kuchunguza";
+
+
+
+// WelcomeViewController
+"Log In" = "Ingia";
+// SignUpViewController
+"Sign Up" = "Jiandikisha";
+"Continue As Guest" = "Endelea kama Mgeni";
+"Select Language" = "Chagua lugha";
+"Get Started" = "Fungua";
+"Choose Your Language" = "Chagua lugha yako";
+
+// LoginViewController
+"Region" = "Eneo";
+"Welcome to" = "Karibu";
+"account on" = "Akaunti juu ya";
+"account" = "akaunti";
+"OR" = "Au";
+"Email address is not registered" = "Anwani ya barua pepe haijasajiliwa";
+"By Login" = "Kwa kuingia";
+"LOG IN" = "INGIA";
+"you agree to our" = "Unakubaliana na yetu";
+"Entered passwords do not match" = "Nywila zilizoingia hazifanani";
+// Sign up
+"SMS Code" = "Kanuni ya SMS";
+"Mobile number" = "Namba ya simu ya mkononi";
+"Enter Phone Number" = "mpya";
+"Login via OTP" = "Ingia kupitia OTP";
+"Login via Password" = "Ingia kupitia nenosiri";
+"Login via Phone Number" = "Ingia kupitia namba ya simu";
+"Manage your account" = "Dhibiti akaunti yako";
+"check notification" = "Angalia taarifa";
+"comment on videos and more" = "Maoni juu ya video na zaidi";
+"Enter the correct password for" = "Ingiza nenosiri sahihi kwa";
+"ID/UserName" = "ID / Jina la mtumiaji";
+"Password" = "Nenosiri";
+"Login via" = "Ingia kupitia";
+"By Signup" = "Kwa kuingia";
+"Forgot password" = "Umesahau nywila";
+"Not a member yet" = "Si mwanachama bado";
+"Phone number not registered" = "Nambari ya simu haijasajiliwa";
+"a valid phone number" = "Nambari ya simu halali";
+"Please enter the registered email address to which we can send you the verification code" = "Tafadhali ingiza anwani ya barua pepe iliyosajiliwa ambayo tunaweza kukupeleka msimbo wa kuthibitisha";
+"You have entered same phone number 3 or more times" = "Umeingia namba ya simu moja au mara zaidi";
+"Please try a new number" = "Tafadhali jaribu nambari mpya";
+"Abuse of device" = "Ubaya wa kifaa";
+"duplicate" = "duplicate";
+"You don't have sufficient balance to make payment" = "Huna usawa wa kutosha ili kulipa malipo";
+"session Expired" = "kikao cha muda mrefu";
+"No Contacts found in" = "Hakuna anwani zilizopatikana katika";
+"Something went wrong" = "Kitu kilichokosa";
+"No Contact Found" = "Hakuna mawasiliano yaliyopatikana";
+"Setup failed" = "Kuweka Imeshindwa";
+"Setup canceled" = "Kuweka kufutwa";
+
+// ForgotPasswordViewController
+"Email Verification" = "Uhakikisho wa barua pepe";
+"the registered email address to which we can send you the verification code" = "Anwani ya barua pepe iliyosajiliwa ambayo tunaweza kukupeleka msimbo wa kuthibitisha";
+// ResetPasswordViewController
+"Reset Password" = "Rekebisha nenosiri";
+"Set New Password" = "Weka nenosiri mpya";
+"Confirm Password" = "Thibitisha nenosiri";
+"Current password" = "Nenosiri la sasa";
+"New password" = "mpya";
+"Re-enter new password" = "Rejesha tena nenosiri mpya";
+"The confirm password does not match the password set" = "Nenosiri la kuthibitisha hailingani na kuweka nenosiri";
+"Set new password for your account" = "Weka nenosiri jipya kwa akaunti yako";
+"The password you will set will be changed for your account" = "Neno la siri utaweka litabadilishwa kwa akaunti yako";
+"Enter the phone number you registered with and we shall send you a verification code to reset your password" = "Ingiza namba ya simu uliyosajiliwa na tutakutumia msimbo wa kuthibitisha ili upya nenosiri lako";
+"with a new email id or register as a new user" = "na id mpya ya barua pepe au kujiandikisha kama mtumiaji mpya";
+"Enter New Password" = "Ingiza nenosiri mpya";
+"Send Code" = "Tuma msimbo";
+"Login" = "Ingia";
+"Enter the email address you registered with and we shall send you the  instructions to reset your password" = "Ingiza anwani ya barua pepe uliyosajiliwa na tutakutumia maelekezo ya kuweka upya nenosiri lako";
+"We have sent you an email with the instructions to set a new password" = "Tumekupeleka barua pepe na maelekezo ya kuweka nenosiri mpya";
+"please look out for this email" = "Tafadhali angalia barua pepe hii";
+"the link will be valid only 60 minutes" = "Kiungo kitakuwa sahihi tu dakika 60";
+"Check Your Mail" = "Angalia barua yako";
+
+// PhoneNumberViewController
+"Forgot Password" = "Umesahau nywila";
+"will send you an SMS to verify the phone number that you enter below" = "itakutumia SMS ili kuthibitisha namba ya simu unayoingia chini";
+"phone number" = "nambari ya simu";
+
+// AddContactsViewController
+"None of your contacts are on" = "Hakuna anwani yako yoyote";
+"Invite them to" = "Waalike kwao";
+"FIND FRIENDS" = "KUPATA MARAFIKI";
+"Find Friends" = "Kupata Marafiki";
+"Add Contacts" = "Ongeza anwani";
+"Skip" = "Ruka";
+"Available" = "Inapatikana";
+"Busy" = "Shughuli";
+"At School" = "Shuleni";
+"At work" = "Kazini";
+"Battery about to die" = "Betri kuhusu kufa";
+"Can't talk" = "Hawezi kuzungumza";
+"only" = "Tu";
+"In a metting" = "Katika metting";
+"Sleeping" = "Kulala";
+"Urgent calls only" = "Wito wa haraka tu";
+"Please allow the app to access your contacts through the Settings" = "Tafadhali kuruhusu programu kufikia anwani zako kupitia mipangilio";
+"More Actions" = "mpya";
+
+// FriendRequestViewController
+"Send Request" = "Tuma ombi";
+"Requests i sent" = "Maombi niliyotuma";
+"Friend Requests" = "Maombi ya Rafiki";
+
+"Public" = "Umma";
+"Private" = "Privat";
+"Accept the" = "Kukubali";
+"Terms Of Service and Privacy Policy" = "Masharti ya Huduma na Sera ya Faragha";
+"Permission Denied" = "Ruhusa imekataliwa";
+"Already a Member" = "Tayari mwanachama";
+
+// VerifyOTPViewController
+"Enter verification code" = "Ingiza msimbo wa kuthibitisha";
+"To complete your phone number verification" = "Ili kukamilisha uthibitishaji wa namba yako ya simu";
+"the 4-digit verification code" = "Kanuni ya uhakiki wa tarakimu nne";
+"Resend" = "Tuma tena";
+// ExploreStarPagesViewController
+"Top 10 Most Influential Stars" = "Nyota 10 maarufu zaidi";
+"Top 50 Best Actors" = "Watendaji bora zaidi ya 50";
+"Top 50 Best Actresses" = "Waigizaji bora zaidi wa 50";
+
+// Helper
+"This user is a Private User" = "Mtumiaji huyu ni Mtumiaji wa Kibinafsi";
+"Download Will be available in your device gallery shortly" = "Pakua itapatikana kwenye nyumba ya sanaa ya kifaa chako muda mfupi";
+"download completed" = "Pakua kukamilika";
+"Video download failed" = "Video Download Imeshindwa";
+"off" = "off";
+"Second" = "Pili";
+"Seconds" = "Sekunde";
+"Minute" = "Dakika";
+"Minutes" = "Dakika";
+"Hour" = "Saa";
+"Hours" = "Masaa";
+"Day" = "Siku";
+"Days" = "Siku";
+"Week" = "Wiki";
+"1" = "1";
+"2" = "2";
+"3" = "3";
+"4" = "4";
+"5" = "5";
+"6" = "6";
+"7" = "7";
+"8" = "8";
+"9" = "9";
+"10" = "10";
+"15" = "15";
+"30" = "30";
+
+// BlockedUsersViewController
+"You have not blocked any users yet" = "Hukuzuia watumiaji wowote bado";
+"Unblock" = "Fungua";
+// RequestStarProfileViewController
+"Terms and Conditions for verify profile" = "Masharti na Masharti ya kuthibitisha Profaili";
+"Chat" = "Kuzungumza";
+
+/* BusinessAddressViewController */
+"Please add a valid address so people can navigate to your location in maps" = "Tafadhali ongeza anwani sahihi ili watu waweze kwenda kwenye eneo lako kwenye ramani";
+"Remove Address" = "Ondoa anwani";
+
+// QrCodeViewControllerx
+"Scan the QR Code to add me on" = "Scan code ya QR ili kuongeza mimi";
+
+// QrScannerViewController
+"QR Code" = "Kanuni ya QR";
+
+// InviteContactsViewController
+"Invite Contact" = "Paribisha kuwasiliana na";
+"Invite" = "Mwaliko";
+"for your smartphone" = "Kwa smartphone yako";
+"Download it today from" = "Pakua leo kutoka";
+// CreateBusinessProfileViewController
+"BUSINESS PROFILE" = "Profaili ya Biashara";
+"Add a phone number" = "Ongeza namba ya simu";
+"email address or location so that a customer can reach you directly by clicking a button on your profile" = "Anwani ya barua pepe au eneo ili mteja afikie moja kwa moja kwa kubonyeza kifungo kwenye wasifu wako";
+"Create New Account" = "Unda akaunti mpya";
+"INSIGHTS" = "MAFUNZO";
+"PRODUCTS" = "Bidhaa";
+"SERVICES" = "Huduma";
+"Learn about your followers and get insights on how your posts are performing" = "mpya";
+"Post products and services and allow your customers to buy them by a simple click" = "Bidhaa na huduma na kuruhusu wateja wako kununua kwa click rahisi";
+
+// VerificationViewController
+"Enter OTP Sent on your registered phone number" = "Ingiza OTP imetumwa kwenye nambari yako ya simu iliyosajiliwa";
+"Resend OTP" = "Rejesha OTP";
+
+"Uploading  Image " = "Kupakia picha";
+"Trending" = "Trending";
+"No post to show" = "Hakuna chapisho cha kuonyesha";
+"You have not followed anyone Click on the Find people to follow button to see them here" = "Hujafuatilia mtu yeyote bonyeza watu wa Tafuta kufuata kifungo kuwaona hapa";
+"subscribe this post for" = "Jiandikishe chapisho hili";
+"View all" = "Tazama zote";
+"Saved to" = "Imehifadhiwa kwa";
+"Veiw Saved" = "Veiw imehifadhiwa";
+"Report Post" = "Ripoti ya Post";
+"Delete" = "Futa";
+"comments" = "Maoni";
+"Liked by " = "Walipenda na";
+"Check out this post on" = "Angalia chapisho hili";
+"Check out this profile on" = "Angalia wasifu huu";
+"app" = "App";
+
+// MARK:- live storyBoard
+"Live Users" = "Watumiaji wa moja kwa moja";
+"No live users found" = "Watumiaji wa kuishi";
+"Please check after some time" = "Hakuna watumiaji wanaoishi waliopatikana";
+"You don't have any viewers yet" = "Tafadhali angalia wakati fulani";
+"No live users found
+Please check after some time" = "Huna watazamaji wowote bado";
+"Go live" = "Nenda kuishi";
+"You are live now" = "Unaishi sasa";
+"Start Streaming" = "Anza Streaming";
+"Could not connect" = "Haikuweza kuunganisha";
+"Not enough coins" = "Si sarafu za kutosha";
+"please rechange and try again" = "Tafadhali rechange na jaribu tena";
+"Choose Currency" = "Chagua sarafu";
+"Chat here" = "mpya";
+"Live" = "Kuishi";
+"Categories" = "Jamii";
+"Gift Box" = "Sanduku la Kipawa";
+"Money Earned" = "Fedha zilizopatikana";
+"View count" = "Tazama hesabu";
+"hello" = "Hello";
+"Connecting to" = "Kuunganisha hadi";
+"Check for more details" = "Angalia maelezo zaidi";
+"Mode" = "Mode";
+"Your balance" = "Usawa wako";
+"Live Stream Ended" = "Mkondo wa kuishi ulimalizika";
+"Live stream ended" = "Mkondo wa kuishi ulimalizika";
+"Live video ended" = "Video ya kuishi imekamilika";
+"Coins" = "Sarafu";
+"Coin" = "Sarafu";
+"Views" = "Maoni";
+"Gifts" = "Zawadi";
+"Live Time :" = "Kuishi wakati";
+"Save your video under your profile for your followers to watch" = "Hifadhi video yako chini ya wasifu wako kwa wafuasi wako kuangalia";
+"Live video paused" = "Video ya kuishi imesimama";
+"Connecting to live stream" = "Kuunganisha kwenye mkondo wa kuishi";
+"Your broadcast will start soon" = "Matangazo yako yataanza hivi karibuni";
+"You are live now!" = "Unaishi sasa!";
+"End" = "Mwisho";
+"End Live Video" = "Mwisho video ya kuishi";
+"When you delete this collection" = "Unapofuta mkusanyiko huu";
+"the photos and videos will still be saved" = "Picha na video zitahifadhiwa bado";
+"Are you sure you want to delete last segment" = "Una uhakika unataka kufuta sehemu ya mwisho";
+"Reshoot" = "Reshoot";
+"Image Saved" = "Image imehifadhiwa";
+"Image successfully saved to Photos library" = "Image imehifadhiwa kwa mafanikio kwenye picha za maktaba";
+"Snap cover photo" = "Piga picha ya kifuniko";
+"We will display your snap as your live stream cover photo" = "Tutaonyesha snap yako kama picha yako ya kuishi ya mkondo";
+"Live on" = "Live On";
+"We will notify your followers so that they will not miss this live session" = "Tutajulisha wafuasi wako ili wasikose kikao hiki cha kuishi";
+"Start Live Stream" = "mpya";
+
+// WalletCustomeAlertViewController
+"Wallet is not created please create wallet to transfer the money" = "Wallet haikuundwa Tafadhali tengeneza mkoba ili uhamishe pesa";
+"Create" = "Unda";
+
+// Contact Info
+"Contact Info" = "Maelezo ya mawasiliano";
+
+// MediaCollectionViewController
+"Media" = "Vyombo vya habari";
+"Links" = "Viungo";
+// EditSubjectTableViewController
+"Subject" = "Somo";
+"Group Name" = "Jina la kikundi";
+"mobile" = "rununu";
+"Send" = "Tuma";
+
+// FavoriteTableViewController
+"New Secret Chat" = "Mazungumzo mapya ya siri";
+"by User Name" = "kwa jina la mtumiaji";
+"Add Participants" = "Ongeza washiriki";
+// CreatnewGroupViewController
+"New Group" = "Kikundi kipya";
+"Enter Group Name" = "Ingiza jina la kikundi";
+"Please provide a group subject and optional group icon" = "Tafadhali kutoa somo la kikundi na icon ya kikundi cha hiari";
+"edit" = "hariri";
+"PARTICIPANTS:" = "Washiriki:";
+"256" = "256";
+"Delete Photo" = "Futa picha";
+"Creating" = "Kujenga";
+
+// GroupChatDeliveryStatusCVCell
+"remaining" = "iliyobaki";
+"Read by" = "Soma By";
+"Delivered to" = "Imetolewa kwa";
+"Read" = "Soma";
+"Deliverd" = "Msaidizi";
+
+// ContactInfoTableViewController
+"Report Spam" = "mpya";
+"Report spam this contact" = "Ripoti Spam Mawasiliano hii";
+"Block Contact" = "Kuzuia Mawasiliano";
+"Create New Contact" = "Unda Mawasiliano Mpya";
+"View Profile" = "Angalia Profaili";
+"Last Seen" = "mara ya mwisho kuonekana";
+"last seen" = "mara ya mwisho kuonekana";
+"Block" = "Zuia";
+"Your Last Seen is" = "Yako ya mwisho inaonekana";
+"Do you want to" = "Unataka";
+"Disable" = "Zimaza";
+"Enable" = "Wezesha";
+"id" = "ID";
+"profilePic" = "Profilepic";
+"firstName" = "jina la kwanza";
+"lastName" = "jina la familia";
+"userName" = "Jina la mtumiaji";
+"status" = "hali";
+"Unblock Contact" = "Fungua anwani";
+
+// DataUsageTableViewController
+"Wi-Fi" = "Wi-Fi";
+"Never" = "Kamwe";
+"Wi-Fi and Cellular" = "Wi-Fi na Cellular";
+"Photos" = "Picha";
+"Audio" = "Audio";
+"Network Usage" = "Matumizi ya mtandao";
+"Storage Usage" = "Matumizi ya kuhifadhi";
+"MEDIA AUTO - DOWNLOAD" = "Vyombo vya habari - Pakua";
+
+"Post" = "Post";
+"Transfer" = "Uhamisho";
+// TransferToFriendViewController
+"Transfer To Friend" = "Uhamisho kwa rafiki";
+"Paying" = "Kulipa";
+"Payment" = "Malipo";
+"Pay to" = "Kulipa kwa";
+"Pay Now" = "LIPA sasa";
+"Transaction Details" = "mpya";
+"Transaction Id" = "ID ya manunuzi";
+"From" = "Kutoka";
+"To" = "Kwa";
+"Payment will be refunded if not confirmed within 24 hours" = "Malipo yatarejeshwa ikiwa haijathibitishwa ndani ya masaa 24";
+
+
+// GroupInfoTableViewController
+"Export Chat" = "Ongea nje ya mazungumzo";
+"Clear Chat" = "Futa chat";
+"Created by" = "Imetengenezwa na";
+"Created by You" = "Imeundwa na wewe";
+"Today" = "Leo";
+"Yesterday" = "Jana";
+"you are no longer participant in this group" = "Hunashiriki tena katika kundi hili";
+"Exit Group" = "Toka kikundi";
+"Delete Group" = "Futa kikundi";
+"Exit" = "Utgång";
+"Delete messages" = "Futa ujumbe";
+"Delete all messages" = "Futa ujumbe wote";
+"Without Media" = "Bila vyombo vya habari";
+"Group member info" = "Maelezo ya Mwanachama wa Kikundi";
+"Remove from Group" = "Ondoa kutoka kwa kikundi";
+"Remove From Admin" = "Ondoa kutoka kwa admin";
+"Make an Admin" = "Fanya admin";
+"Removing" = "Kuondoa";
+"Loading" = "Inapakia";
+"Updating" = "Uppdatering";
+"Downloading " = "Kupakua";
+"You" = "Wewe";
+"Message Chat" = "Mazungumzo ya ujumbe";
+"here is message chat history please find Attachment" = "Hapa ni historia ya mazungumzo ya ujumbe tafadhali pata kiambatisho";
+
+
+/* MARK:- Camera Storyboard */
+"Add a sound" = "Ongeza sauti";
+"Add a Sound" = "Ongeza sauti";
+"Shoot a video" = "Piga video";
+"Grant Camera access to shoot" = "Ruhusu upatikanaji wa kamera kwa risasi";
+"Allow access to camera" = "Ruhusu upatikanaji wa kamera";
+"Allow access to gallery" = "mpya";
+"Grant gallery access to pick photo and video" = "Ruhusu nyumba ya sanaa upatikanaji wa kuchagua picha na video";
+"Allow access to microphone" = "Ruhusu upatikanaji wa kipaza sauti";
+"font" = "font";
+"Mask" = "Mask";
+"Masks" = "Masks";
+"Effects" = "Athari";
+"Clear All" = "Futa wote";
+"You do not have followed anyone" = "Fuata watumiaji wengine ili kuona machapisho yao hapa";
+"Normal Camera" = "Kamera ya kawaida";
+"AR Camera" = "Kamera ya ar";
+"Timer" = "Kipima muda";
+"Adjust" = "Kurekebisha";
+"Highlights" = "Mambo muhimu";
+"Shadows" = "Shadows";
+"Saturation" = "Kueneza";
+"Contrast" = "Tofauti";
+"Blur" = "Blur";
+"Temperature" = "Joto";
+"Brightness" = "Mwangaza";
+"Vignette" = "Vignette";
+"Mute" = "Nyamazisha";
+"SHARE" = "Shiriki";
+"Effect" = "Athari";
+"Filters" = "Filters";
+"Filter" = "Futa";
+"Clarity" = "Uwazi";
+"Clear" = "Futa";
+"Clarendon" = "Clarendon";
+"Inkwell" = "Inkwell";
+"Sutro" = "Sutro";
+"Lofi" = "LoFi";
+"Earlybird" = "MapemaBird";
+"Oslo" = "Oslo";
+"Ginza" = "mpya";
+"Dogpatch" = "Dogpatch";
+"Sharpen" = "Punguza";
+"Hefe" = "Hefe";
+"Aden" = "Aden";
+"Moon" = "Mwezi";
+"Nashville" = "Nashville";
+"Perpetua" = "Perpetua";
+"Lark" = "Lark";
+"HOT SONGS" = "Nyimbo za Moto";
+"MY FAVOURITES" = "Mapendekezo yangu";
+"DUB WITH THIS SOUND" = "Dub na sauti hii";
+"Selection of dubbing sound cancelled" = "Uchaguzi wa sauti ya dubbing kufutwa";
+"Your Story" = "Hadithi yako";
+"Custom Sound" = "Sauti ya kawaida";
+"Video Saved" = "Video imehifadhiwa";
+"Video successfully saved to Photos library" = "Video imehifadhiwa kwa mafanikio kwenye picha za maktaba";
+"Failed" = "Imeshindwa";
+"Video Failed to save in Photos library" = "Video imeshindwa kuokoa kwenye maktaba ya picha";
+"Albums" = "Albamu";
+"Photo" = "Picha";
+"15s" = "15s";
+"60s" = "60s";
+"Library" = "Maktaba";
+"No Audio Found" = "Hakuna sauti iliyopatikana";
+"Normal" = "Kawaida";
+"Mono" = "Mono";
+"Tonal" = "Tonal";
+"Noir" = "Noir";
+"Fade" = "Fade";
+"Chrome" = "Chrome";
+"Process" = "Mchakato";
+"Instant" = "Papo";
+"Sepia" = "Sepia";
+"Tone" = "mpya";
+"Linear" = "Linear";
+"N" = "N";
+"M" = "M";
+"T" = "T";
+"F" = "F";
+"P" = "P";
+"I" = "I";
+"S" = "S";
+"Edit Photo" = "Badilisha picha";
+
+
+// MARK:- CallKit StoryBoard
+"Voice Call" = "Wito wa sauti";
+"is busy on other call" = "ni busy juu ya simu nyingine";
+"call not answered" = "Wito haujibu";
+"call ended" = "Piga simu kumalizika";
+"Incoming Video Call" = "Simu ya video inayoingia";
+"Incoming Audio Call" = "Simu ya video inayoingia";
+"Calling" = "Wito";
+"Video Call" = "Wito wa Video";
+
+// MARK:- Strings
+"token" = "token";
+"authorization" = "Uidhinishaji";
+"lang" = "Lang";
+"postsViewers" = "PostsVievers";
+"Cancel" = "Futa";
+"business category" = "Jamii ya Biashara";
+"Website" = "Tovuti";
+"your transfer money succesfully" = "Fedha yako ya uhamisho kwa ufanisi";
+"correct Amout" = "Sahihi amout";
+
+"Thank you for submitting your requestOur review team will go through your application and you will recieve an email to confirm if your profile has been accepted or denied" = "Asante kwa kuwasilisha timu yako ya mapitio ya ombi itaenda kupitia programu yako na utapata barua pepe ili kuthibitisha ikiwa wasifu wako umekubaliwa au kukataliwa";
+"Ok" = "Sawa";
+"OK" = "Sawa";
+"Warning" = "Onyo";
+"Error" = "Hitilafu";
+"Address cannot be empty" = "mpya";
+"please fill all required fields" = "Tafadhali jaza mashamba yote yanayotakiwa";
+"Full name should be More than three characters" = "Jina kamili lazima iwe zaidi ya wahusika watatu";
+"business name" = "Jina la biashara";
+
+"country Code" = "Kanuni ya Nchi";
+"street" = "Anwani";
+"city" = "Mji";
+"zipcode" = "namba ya Posta";
+"category" = "Jamii";
+"website" = "Tovuti";
+"business bio" = "Biashara Bio";
+"id proof" = "Uthibitisho wa ID";
+"Are you sure you want to un-block this user" = "Una uhakika unataka kuzuia mtumiaji huyu";
+"Something Went wrong" = "Kitu kilichokosa";
+"correct OTP" = "sahihi otp";
+"We have successfully Updated your Phone Number" = "Tumefanikiwa kuboresha namba yako ya simu";
+"We have successfully updated your email address" = "Tumefanikiwa kufanikisha anwani yako ya barua pepe";
+"Correct Otp" = "Sahihi otp";
+"The verification code has been resent to" = "Msimbo wa kuthibitisha umekuwa hasira kwa";
+"The verification code has been resent" = "Msimbo wa kuthibitisha umekuwa hasira";
+"please check your inbox" = "Tafadhali angalia kikasha chako cha kikasha";
+"If you have not received the verification code" = "Ikiwa haujapokea msimbo wa kuthibitisha";
+"please get a new one by clicking on the RESEND button" = "Tafadhali pata mpya kwa kubonyeza kifungo cha Resend";
+"Request Sent Successfully" = "Ombi lilipelekwa kwa mafanikio";
+"Location Service Disabled" = "Huduma ya Mahali imezimwa";
+"To re-enable" = "Ili uwezesha tena";
+"please go to Settings and turn on Location Service for this app" = "Tafadhali nenda kwenye mipangilio na ugeuke huduma ya eneo kwa programu hii";
+"Profile needs to be public for the business setup to happen successfully" = "Profaili inahitaji kuwa ya umma kwa kuanzisha biashara ili kutokea kwa mafanikio";
+"Report User" = "Ripoti mtumiaji";
+"This profile has been deleted" = "Wasifu huu umefutwa";
+"Mobile number is not registered" = "Nambari ya simu haijasajiliwa";
+"Do you want to Sign up with this number" = "Je! Unataka kujiandikisha na nambari hii";
+"Change" = "Mabadiliko";
+"Signup" = "Kujiandikisha";
+"Otp sent" = "OTP imetumwa";
+"Otp verified succesfully" = "OTP imethibitishwa kwa ufanisi";
+"Remote stream is no longer available" = "mpya";
+"Caution!" = "Tahadhari!";
+"Dismiss" = "Futa";
+"Delete Collection" = "Futa mkusanyiko";
+"Change Password" = "Badilisha neno la siri";
+"Report A Problem" = "Ripoti tatizo";
+"Report a problem" = "Ripoti tatizo";
+"viewers" = "Watazamaji";
+
+// Navigation Titles
+"Withdraw Money" = "Ondoa pesa";
+"Transaction History" = "Historia ya Shughuli";
+"Payment Security" = "Usalama wa malipo";
+"Help Center" = "Kituo cha Usaidizi";
+"Cards" = "Kadi";
+"Debit Card" = "Kadi ya Debit";
+"Credit Card" = "Kadi ya mkopo";
+"Net Banking" = "Benki ya Net";
+
+// camera Alert strings
+"Choose Source" = "Chagua chanzo";
+"the image Source" = "Chanzo cha picha";
+"Camera" = "Kamera";
+"Photo and Video Library" = "Maktaba ya Picha na Video";
+"Photo Library" = "Picha ya Maktaba";
+"Saved Album" = "ALBUM iliyohifadhiwa";
+"Channel" =  "Kituo";
+"Giphy" = "Giphy";
+"Image" = "Picha";
+"Video" = "Video";
+"Contact" = "Mawasiliano";
+"Sticker" = "Sticker";
+"Doodle" = "Doodle";
+"Document" = "Nyaraka";
+"Documents" = "Nyaraka";
+"Location" = "Mahali";
+
+// Business buttons
+"a business button text" = "Nakala ya kifungo cha biashara";
+
+
+// settingsTitles
+
+"Balance" = "Mizani";
+"Get Verified Profile" = "Pata maelezo ya kuthibitishwa";
+"Business Profile" = "Profaili ya Biashara";
+"Switch to business profile" = "Badilisha kwenye Profaili ya Biashara";
+"Switch to personal profile" = "Badilisha kwenye wasifu wa kibinafsi";
+"Business Configuration" = "Configuration ya biashara";
+"Blocked Contacts" = "Mawasiliano yaliyozuiwa";
+"Invite Contacts" = "Paribisha anwani";
+"General" = "Mkuu";
+"Help" = "Msaada";
+"Feedback" = "Maoni";
+"Services" = "Huduma";
+"Logout" = "Ingia";
+"Verified Configuration" = "Configuration imethibitishwa";
+
+/* settingsHeaderTitles */
+"Account" = "Akaunti";
+"Support" = "Msaada";
+"Referral Code" = "Kanuni ya Rufaa";
+"Enter Your Name*" = "Ingiza jina lako *";
+"Enter User Name*" = "Ingiza jina la mtumiaji *";
+"Enter Password*" = "Ingiza nenosiri *";
+"Enter Referral Code*" = "Ingiza msimbo wa rufaa *";
+"Enter your email*" = "Ingiza barua pepe yako *";
+"Confirm your password*" = "Thibitisha nenosiri lako *";
+"Add Money" = "Chagua sarafu";
+"Saved" = "Ongeza pesa";
+"Terms And Conditions" = "Sheria na Masharti";
+"Help and Feedback" = "Msaada na maoni";
+"Verification" = "Uthibitishaji";
+"My QR Code" = "Kanuni yangu ya QR";
+"Setup Business Profile" = "Setup Profaili ya Biashara";
+"Create Collection" = "Unda mkusanyiko";
+"Edit Collection" = "Hariri ukusanyaji";
+"Add Link" = "Ongeza kiungo";
+"Link here" = "mpya";
+"Add Price" = "Ongeza bei";
+"Action Button" = "Kitufe cha Action";
+// PermissionMessage
+"Permission denied" = "Ruhusa imekataliwa";
+"camera permission" = "Ruhusa ya kamera";
+"gallery permission" = "Nyumba ya kibali";
+"microphone permission" = "idhini ya kipaza sauti";
+
+// FollowListStrings
+"followList" = "Orodha";
+"New Message" = "Ujumbe mpya";
+"Secret Chat" = "Mazungumzo ya siri";
+"Forward To" = "Mbele";
+
+
+// ContactInfoStrings
+"Thank you for your feedback The user has been successfully reported" = "Asante kwa maoni yako mtumiaji ameripotiwa kwa ufanisi";
+
+
+
+
+// / Alert Messages
+"If you want to Switch to business profile" = "Ikiwa unataka kubadili maelezo ya biashara";
+"Make sure your account should be public account" = "Hakikisha akaunti yako inapaswa kuwa akaunti ya umma";
+"any linked business account" = "Akaunti yoyote ya biashara inayohusishwa";
+"This email id is not linked with any" = "Kitambulisho hiki cha barua pepe hakihusishwa na yeyote";
+"please register your business by clicking on the Register Business button" = "Tafadhali kujiandikisha biashara yako kwa kubonyeza kifungo cha biashara ya kujiandikisha";
+"UnBlocked" = "Imeondolewa";
+"Unfriend" = "Unfriend";
+"blocked" = "imefungwa";
+"Success" = "Mafanikio";
+"Yes" = "Ndiyo";
+"No" = "Hapana";
+"Register Now" = "Jiandikishe sasa";
+"Switch To Personal Profile" = "Badilisha kwenye wasifu wa kibinafsi";
+"Switch To Business Profile" = "Badilisha kwenye Profaili ya Biashara";
+
+"masklayer" = "masklayer";
+"emailId" = "barua pepe ya barua pepe";
+
+
+"Edit Profile" = "Badilisha profile";
+"Remove Photo" = "Ondoa picha";
+"your Name" = "jina lako";
+"Your device doesn't support Camera" = "Kifaa chako hakisaidia kamera";
+"other option" = "mpya";
+"If you switch to the private account" = "Ikiwa unabadilisha kwenye akaunti binafsi";
+"your business account would no longer be active" = "Akaunti yako ya biashara haitakuwa hai";
+"Business bio cannot be empty" = "Biashara Bio haiwezi kuwa tupu";
+
+"private" = "Privat";
+"profileCoverImage" = "profilecoverImage";
+"BusinessName" = "Biashara ya Biashara";
+"BusinessAddress" = "Anwani ya Biashara";
+"BusinessWebsite" = "Tovuti ya Biashara";
+"bussinessEmail" = "Barua pepe ya Bussiness";
+"bussinessPhone" = "Simu ya Bussiness";
+"Bussiness Phone" = "Simu ya Bussiness";
+"Bussiness Email" = "Barua pepe ya Bussiness";
+"bussinessCountryCode" = "Msimbo wa nchi bussiness";
+"bussinessCategoryId" = "Bussiness JamiiID";
+"bussinessBio" = "Biografia ya Bussiness";
+"Contact Options" = "Chaguzi za mawasiliano";
+
+"CallingCodes" = "Nambari za simu";
+"dial_code" = "Piga msimbo";
+"plist" = "Orodha";
+"code" = "Kanuni";
+"isVisible" = "inaonekana";
+
+
+// MARK:- FollowViewController Strings
+"No Comments yet!" = "Hakuna maoni bado!";
+"No Likes yet!" = "Hakuna kupenda bado!";
+
+/* / Alert Strings */
+"Verifying" = "Kuthibitisha";
+"numberChanged" = "idadi";
+"Your mobile number has been changed successfully" = "Nambari yako ya simu imebadilishwa kwa mafanikio";
+"Sending" = "Inatuma";
+"Loading filters" = "Inapakia filters";
+"Adding to story" = "Kuongeza kwa hadithi";
+"Updating profile" = "Uppdatering profile";
+"Downloading" = "Kupakua";
+"Syncing contacts" = "Kusawazisha anwani";
+"Exporting" = "Kuuza nje";
+"otp" = "mpya";
+"image" = "Picha";
+
+
+"email id" = "ID ya barua pepe";
+
+
+
+// MARK:- Create Post Strings
+"Post type" = "Aina ya chapisho";
+"Link" = "LINK";
+"Link Copied" = "Kiungo kilichokosa";
+"Action button" = "Kitufe cha Action";
+"SignUp" = "Soma zaidi";
+"Buy now" = "Nunua Sasa";
+"url" = "URL";
+"Buy Now" = "Nunua Sasa";
+"Shop Now" = "Duka sasa";
+"Book" = "Kitabu";
+"Product Type" = "Aina ya bidhaa";
+"Regular" = "Mara kwa mara";
+"Maximum of 100 characters" = "Upeo wa wahusika 100";
+"Please enter link" = "Tafadhali ingiza kiungo";
+"Please choose button text" = "Tafadhali chagua maandishi ya kifungo";
+"Privacy Settings" = "Mipangilio ya faragha";
+
+// PaymentStatus
+"Payment pending" = "Malipo inasubiri";
+"Payment accepted" = "Malipo ya kukubaliwa";
+"Payment denied" = "Malipo yalikataa";
+"Payment canceled" = "Malipo yamefutwa";
+"Payment timeout" = "Muda wa malipo";
+
+
+// TransferConfirmationMessage
+"cancel" = "Futa";
+"accept" = "kukubali";
+"reject" = "kukataa";
+"delete" = "Futa";
+
+// Error Message
+"Enter valid phone number" = "Ingiza namba ya simu halali";
+"Username should be more than three characters" = "Jina la mtumiaji linapaswa kuwa zaidi ya wahusika watatu";
+"email" = "mpya";
+"password" = "Nenosiri";
+"Please confirm your password" = "Tafadhali thibitisha nenosiri lako";
+"Password and Confirm password does not match" = "Nenosiri na kuthibitisha nenosiri hailingani";
+"referal code" = "Kanuni ya Rejea";
+"terms and conditions" = "sheria na Masharti";
+"Internal Server Error" = "Hitilafu ya ndani ya seva";

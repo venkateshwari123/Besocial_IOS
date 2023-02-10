@@ -1,0 +1,1591 @@
+"Profile updated" = "プロフィール更新済み";
+"last seen" = "最後に見たのは";
+// Reusables
+"Please enter" = "入力してください";
+"Please accept" = "同意してください";
+"Please select" = "選択してください";
+"Please upload" = "アップロードしてください";
+"Please choose" = "選択してください";
+"Please" = "してください";
+"You do not have" = "ありません";
+"Are you sure want to" = "してもよろしいですか";
+"this transaction" = "このトランザクション";
+"I agree to the" = "に同意します";
+"Search" = "検索";
+"Edit" = "編集";
+"valid" = "有効";
+"already exists" = "既に存在します";
+"Entered" = "入力された";
+"User" = "ユーザー";
+"Successfully" = "成功";
+"a new" = "新規";
+"try again" = "再度お試しください";
+"new" = "新";
+"This" = "この";
+"Login with" = "でログイン";
+"is not" = "ではありません";
+"registered on" = "に登録";
+"Reset" = "リセット";
+"Check out" = "チェックアウト";
+"Are you sure you want to" = "してもよろしいですか";
+"delete this collection" = "このコレクションを削除する";
+"Transaction" = "トランザクション";
+"ago" = "前";
+"Ago" = "前";
+"Enter" = "入力";
+"enter" = "入力";
+"check" = "チェック";
+"confirm" = "確認";
+
+// Welcome View Conreoller
+"Tap" = "タップする";
+"Agree" = "同意する";
+"Continue" = "続ける";
+"to accept the" = "受け入れる";
+"Terms of Service" = "利用規約";
+"Terms Of Service" = "利用規約";
+"Privice Policy" = "プライバシーポリシー";
+"and" = "と";
+
+// Phone Number View Controller
+"Check Internet Connection" = "インターネット接続をご確認ください";
+"Your phone number is not correct" = "電話番号をご確認下さい";
+"Phone number is too long" = "電話番号が長すぎます";
+
+// Verifyi OTP
+"your OTP first" = "ワンタイムパスワード";
+"Verification code" = "認証コード";
+"has been sent to" = "に送信されました";
+"Didn't get code" = "コードを取得できませんでした";
+"invalid" = "無効な";
+"OTP" = "ワンタイムパスワード";
+"expired" = "期限切れ";
+"has been send to" = "に送信されました";
+"The verificaiton code has been resent to" = "認証コードはに再送されました";
+
+// Dubly Home Page
+"Uploading  Video" = "動画アップロード中";
+"Uploading  Image" = "写真アップロード中";
+"Follow User" = "ユーザーをフォローする";
+"followed anyone" = "誰かをフォロー";
+"Follow some users to see their posts here" = "ユーザーをフォローすると、ここに投稿が表示されます";
+"Find people to follow" = "フォローする人を探す";
+"Save to Collection" = "コレクションに保存";
+"Save to collection" = "コレクションに保存";
+"Post removed from collection" = "コレクションから投稿が削除されました";
+"View Saved" = "保存を見る";
+"View" = "閲覧";
+"tips" = "チップ";
+"Liked by" = "いいね";
+"No Plans Yet" = "まだ計画はありません";
+"coin plans" = "
+コインプラン";
+"Xclusive Post" = "エクスクルーシブポスト";
+"Unlock this post for" = "この投稿のロックを解除する";
+"Subscribe for" = "購読する";
+"Following" = "フォロー中";
+"For You" = "あなたのために";
+"Xclusive" = "エクスクルーシブ";
+"Bookmark" = "お気に入り";
+"Bookmarked" = "お気に入り";
+"Duet" = "デュエット";
+"Forward" = "前方";
+"Download" = "ダウンロード済み";
+"Gif" = "GIF";
+"Copy Link" = "リンクをコピーする";
+"Share Post" = "投稿をシェア";
+"share post" = "投稿をシェア";
+"More" = "もっと";
+"Share Profile" = "プロフィールを共有";
+"CopyLink" = "リンクをコピーする";
+"Record" = "記録";
+"EditPost" = "投稿編集";
+"DeletePost" = "投稿削除";
+"Report" = "報告";
+"Follow" = "フォローする";
+"Comments" = "コメント";
+"Use Audio" = "音声を使う";
+"Send Tip" = "ヒントを送信";
+"Get More" = "多くを得る";
+"Get more" = "多くを得る";
+"Tip Amount" = "チップ金額";
+"Sent Tip Successfully" = "ヒントを正常に送信しました";
+"Insufficient coins" = "コインが足りない";
+"please recharge" = "充電してください";
+"Add Coins" = "コインを追加する";
+"Tip sent to" = "
+に送信されたヒント";
+"Subscription to" = "へのサブスクリプション";
+"failed due to lack of coin balance" = "コインバランス不足で失敗";
+"you will not be able to enjoy unlimited access to all of" = "すべてに無制限にアクセスすることはできません";
+"content" = "コンテンツ";
+"You will have to subscribe to" = "あなたは購読する必要があります";
+"again to gain access to their content" = "再びコンテンツへアクセスするために";
+"You have successfully purchased this post" = "この投稿を正常に購入しました";
+"Thank you for subscribing to" = "購読していただきありがとうございます";
+"No Comments yet" = "まだコメントはありません";
+"No Likes yet" = "まだ「いいね」はありません";
+"subcribers" = "加入者";
+"Facebook" = "フェイスブック";
+"Instagram" = "インスタグラム";
+"Deeplink" = "ディープリンク";
+"You have already cancelled the subscription" = "すでにサブスクリプションをキャンセルしました";
+"Your current billing cycle ends on" = "現在の請求サイクルはで終了します";
+"so subscription will remain active till then and it will stop there after" = "そのため、サブスクリプションはそれまでアクティブのままで、その後停止します";
+"Post needs to be unlocked first to enable custom action" = "カスタムアクションを有効にするには、最初に投稿のロックを解除する必要があります";
+
+// Picoadda HomePage
+"years" = "年";
+"year" = "年";
+"months" = "月";
+"month" = "月";
+"weeks" = "週";
+"week" = "週間";
+"days" = "日";
+"hours" = "時間";
+"hour" = "時間";
+"minutes" = "分";
+"minute" = "分";
+"seconds" = "秒";
+"second" = "秒";
+"Comments are disabled for this post" = "この投稿へのコメントは無効になっています";
+"Now you are following" = "フォローしています";
+"More Options" = "より多くのオプション";
+"Delete Post" = "投稿を削除する";
+"Downloading is disabled for this post" = "この投稿のダウンロードは無効になっています";
+"Add Story" = "ストーリーに追加";
+"You have not followed anyone" = "誰からもフォローされていません";
+"Find friends to follow" = "フォローする友達を探す";
+
+// DublyFollowViewController
+"Likes" = "いいね";
+"No user is following you" = "あなたをフォローしているユーザーはいません";
+"You are not following any user" = "あなたはどのユーザーもフォローしていません";
+"You have not any subscribers" = "You have not any subscribers";
+"following" = "フォロー中";
+"followers" = "フォロワー";
+"People" = "人物";
+"Write a comment" = "コメントする";
+
+// Explore Page
+"There is no trending post" = "投稿はありません";
+"people" = "人物";
+"hashtags" = "ハッシュタグ";
+"place" = "場所";
+"Hashtag" = "ハッシュタグ";
+"Places" = "場所";
+"posts" = "投稿";
+"Public posts" = "公開投稿";
+"Request" = "リクエスト";
+"Requested" = "リクエストした";
+"Subscribe" = "申し込む";
+"Subscribed" = "購読済み";
+"known as" = "として知られている";
+"Known as" = "として知られている";
+
+// MARK:- Profile Page
+"Activity" = "アクティビティー";
+"Subscribers" = "サブスクライバー";
+"Posts" = "投稿";
+"Followers" = "フォロワー";
+"No posts to show" = "表示する投稿はありません";
+"No purchased posts to show" = "表示する購入済みの投稿はありません";
+"No liked posts to show" = "表示するのが好きな投稿はありません";
+"No tagged posts to show" = "表示するタグ付けされた投稿はありません";
+"No stream videos to show" = "表示するストリーム動画はありません";
+"You have not created any channel" = "チャンネルを作成していません";
+"No stories to show" = "表示するストーリーはありません";
+"Subscribe to" = "申し込む";
+"for" = "にとって";
+"Cancel Subscription" = "サブスクリプションをキャンセルする";
+"Read Less" = "続きを読む";
+"Read More" = "続きを読む";
+"This Account is Private" = "このアカウントはプライベートです";
+"Follow this account to see their photos and videos" = "このアカウントをフォローして、写真や動画をご覧ください";
+"Change Photo" = "写真変更";
+"Bio" = "自己紹介";
+"Private Information" = "個人情報";
+"Public Business Information" = "公開ビジネス情報";
+"Contact options" = "コンタクトオプション";
+"Business Bio" = "ビジネス紹介";
+"Private Account" = "プライベートアカウント";
+"To switch to a business account" = "ビジネスアカウントに切り替える";
+"your account must be Public" = "アカウントは公開されている必要があります";
+"Category" = "カテゴリー";
+"User Status" = "ユーザーステータス";
+"No users found" = "ユーザーが見つかりません";
+"Setting" = "設定";
+"User reported successfully" = "ユーザーが正常に報告しました";
+"This number is taken by other user please try again with different number" = "この番号は他のユーザーが既に取得しています。別の番号でもう一度お試しください";
+"Take Photo" = "写真を撮影する";
+"Choose Photo" = "写真を選択する";
+"Uploading" = "アップロード中";
+"Alert" = "警告";
+"Name" = "名前";
+"Username" = "ユーザー名";
+"Status" = "状態";
+"Email Address" = "メールアドレス";
+"email address" = "メールアドレス";
+"Contact Number" = "連絡先番号";
+"Business About" = "ビジネスについて";
+"Business User Name" = "ビジネスユーザー名";
+"Business Name" = "
+商号";
+"Business Email" = "ビジネスメール";
+"Business Phone" = "ビジネス用電話機";
+"Business UserName" = "ビジネスユーザー名";
+"business username" = "ビジネスユーザー名";
+"Business Location" = "
+事業所";
+"About Business" = "ビジネスについて";
+"First Name" = "ファーストネーム";
+"Email" = "
+Eメール";
+"Phone" = "
+電話";
+"User Name" = "ユーザー名";
+"Full Name" = "フルネーム";
+"Known As" = "として知られている";
+"Enter Password" = "パスワードを入力する";
+"Account Holder's Name" = "アカウント所有者の名前";
+"IFSC Code" = "
+IFSCコード";
+"ifsc code" = "ifsc code";
+"Amount" = "額";
+"Street Address" = "住所";
+"City/Town" = "市/町";
+"Zip Code" = "郵便番号";
+"viaMobile" = "viaMobile";
+"viaEmail" = "メールで";
+"Verified" = "確認済み";
+"verified" = "確認済み";
+"Confirm and verify" = "確認して確認する";
+"Sent On Email" = "メールで送信";
+"We have send you the link to" = "リンクをお送りしました";
+"mobile no" = "
+モバイルいいえ";
+"different" = "違う";
+"Not verified" = "検証されていない";
+"is already registered" = "すでに登録されています";
+"new business username" = "新しいビジネスユーザー名";
+"about the business" = "ビジネスについて";
+"About The Business" = "ビジネスについて";
+"Edit Bio" = "バイオを編集";
+"business website" = "ビジネスウェブサイト";
+"The confirm password does not match the new password entered" = "確認パスワードが、入力された新しいパスワードと一致しません";
+"Password changed successfully" = "パスワードは正常に変更されました";
+"User Not Found" = "ユーザーが見つかりません";
+"Exceed Maximum Number Of Selection" = "選択の最大数を超えています";
+
+// Coin Wallet
+"Buy Coins" = "コインを買う";
+"My Balance" = "私のバランス";
+"Select Plan" = "プランを選択";
+"Transactions" = "トランザクション";
+"All" = "全て";
+"Credit" = "クレジット";
+"Debit" = "
+デビット";
+"No transactions yet" = "まだ取引はありません";
+"Trans ID" = "トランスID";
+"Coin Transactions" = "
+コイン取引";
+
+// Wallet
+"Wallet" = "財布";
+"wallet" = "財布";
+"Recharge" = "充電する";
+"Withdraw" = "撤退";
+"Sorry" = "申し訳ございません";
+"KYC" = "KYC";
+"this device has no camera" = "お使いのデバイスにはカメラ機能がありません";
+"Recent Transactions" = "
+最近の取引";
+"All Transactions" = "全取引";
+"Pending Transactions" = "保留中";
+"Debit Transactions" = "デビット取引";
+"Credit Transactions" = "クレジット取引";
+"Welcome to the" = "へようこそ";
+"Tap Agree to active your wallet" = "タップして同意しをレットを有効にしてください";
+"Use your wallet balance to spend and send your cash securely using your" = "ウォレットの残高を使用して";
+"Add Your Bank Account" = "銀行口座を追加する";
+"Select Card" = "カードを選択";
+"Are you sure you want to remove this card" = "このカードを削除してもよろしいですか";
+"Add Card" = "カードを追加";
+"advertisement" = "広告";
+"Please fill mandatory fields" = "
+必須フィールドに入力してください";
+"Info" = "情報";
+"DocumentId should be 9 characters" = "DocumentIdは9文字である必要があります";
+"SSN should be last 4 digits of documentId" = "SSNはdocumentIdの最後の4桁である必要があります";
+"Add Stripe Account" = "Stripeアカウントを追加する";
+"Choose image" = "Choose image";
+"You don't have camera" = "あなたはカメラを持っていません";
+"No Saved Cards" = "保存されたカードはありません";
+"Saved Cards" = "
+保存されたカード";
+"Wallet Balance" = "ウォレットバランス";
+"Amount to be Paid" = "支払われる金額";
+"Secure checkout" = "安全なチェックアウト";
+"Choose any option to pay" = "支払うオプションを選択してください";
+"Pay" = "支払い
+";
+"Account Number" = "
+口座番号";
+"account number" = "口座番号";
+"Nick Name" = "Nick Name";
+"Account Holder Name" = "口座名義";
+"Routing Number" = "
+銀行コード";
+"Account Holer Name" = "アカウントホラー名";
+"Bank Accounts" = "銀行口座";
+"Suggestion" = "
+提案";
+"Delete Account" = "アカウントを削除する";
+"I Agree" = "同意します";
+"Complete Identification" = "完全な識別";
+"Upload Doc" = "ドキュメントのアップロード";
+"Front Side" = "表側";
+"Back Side" = "裏側";
+"Verify" = "確認";
+"KYC Application" = "KYCアプリケーション";
+"document type" = "標準文書";
+"Document Type" = "ドキュメントタイプ";
+"Name On Document" = "ドキュメント上の名前";
+"Document Number" = "書類番号";
+"License Holder Name" = "ライセンス所有者名";
+"front Image" = "フロント画像";
+"back Image" = "戻る画像";
+"License Number" = "ライセンス番号";
+"Notifications not allowed" = "通知は許可されていません";
+"Gallery" = "
+ギャラリー";
+"Wallet Activation" = "ウォレットのアクティベーション";
+"KYC application submitted and pending review, we will let you know the status of your KYC via email and notification" = "KYC申請書が提出され、審査待ちです。KYCのステータスをメールと通知でお知らせします。";
+"Okay!" = "わかった！";
+"Withdraw Requst Submitted Successfully" = "正常に送信された要求の撤回";
+"Transaction id" = "トランザクションID";
+"WITHDRAWAL AMOUNT" = "引き出し金額";
+"Confirm" = "確認";
+"Pending KYC verification" = "保留中のKYC検証";
+"KYC Verification" = "KYC検証";
+"No Bank Account" = "銀行口座なし";
+"ADD" = "追加";
+"BANK ACCOUNTS" = "銀行口座";
+"BALANCE AMOUNT" = "残高";
+"WITHDRAW LOGS" = "ログを撤回する";
+"Pending" = "保留中";
+"No Withdrawal Logs" = "引き出しログなし";
+"Notes" = "ノート";
+"Photo ID" = "写真付き身分証明書";
+"Last Name" = "苗字";
+"Date of Birth" = "生年月日";
+"SSN" = "SSN";
+"Address" = "住所";
+"City" = "市";
+"State" = "州";
+"Zipcode" = "郵便番号";
+"Country" = "国";
+"Business Website" = "
+ビジネスウェブサイト";
+"Business Category" = "ビジネスカテゴリ";
+
+
+// UpdateStatusViewController
+"Status can't be empty" = "ステータスが空欄です";
+"Status must have atleast 4 charecters" = "ステータスには少なくとも4文字が必要です";
+
+// Setting Page
+"Change Language" = "言語を変更する";
+"Choose your language" = "言語を選択してください";
+/* Setting Page */
+"INVITE" = "招待";
+"FOLLOW PEOPLE" = "人々をフォローする";
+"SETTINGS" = "設定";
+"Settings" = "設定";
+"SUPPORT" = "ヘルプ";
+"ABOUT" = "だいたい";
+"Subscription Settings" = "サブスクリプション設定";
+"Request has already been made to this user" = "このユーザーにはすでにリクエストが行われています";
+"You already subscribed this user" = "あなたはすでにこのユーザーをフォローしています";
+"This fee is taken by the processor to transfer the money and for any currency conversion that might be necessary" = "この料金は、送金および必要となる可能性のある通貨換算のために処理者が負担します";
+"the monthly subscription cost" = "毎月のサブスクリプションコスト";
+"Set monthly value" = "月額設定";
+"You will get" = "あなたは得るでしょう";
+"App will get" = "アプリは取得します";
+"My Subscriptions" = "私のサブスクリプション";
+"Enter Business User Name" = "ビジネスユーザー名を入力してください";
+"Active" = "アクティブ";
+"Cancelled" = "キャンセル";
+"Remove" = "削除する";
+"Renew" = "更新";
+"Subscription cancelled on" = "サブスクリプションがキャンセルされました";
+"active till" = "までアクティブ";
+"coins charged on the" = "に請求されたコイン";
+"of every month" = "毎月の";
+"No active subscriptions yet" = "まだアクティブなサブスクリプションはありません";
+"No cancelled subscriptions yet" = "キャンセルされたサブスクリプションはまだありません";
+"Invite Friends" = "友達を招待";
+"Facebook Friends" = "Facebookの友達";
+"Find Contacts" = "連絡先を探す";
+"Data Uses" = "データ使用量";
+"Blocked Users" = "ブロックユーザー";
+"Report a Problem" = "問題を通報";
+"About" = "だいたい";
+"Money" = "お金";
+"Privacy Policy" = "プライバシーポリシー";
+"Star Pages Terms and Conditions" = "スターページの利用規約";
+"Thank you for submitting your request" = "リクエストを送信していただきありがとうございます";
+"Our review team will go through your application and you will recieve an email to confirm if your profile has been accepted or denied" = "レビューチームがあなたの申請を受け付けました。プロフィールが承認されたか拒否されたかを確認するためにはメールをご確認ください";
+"Log Out" = "ログアウト";
+"Hey" = "おい";
+"I'm using" = "のユーザーです";
+"join me on" = "参加してください";
+"This cool new social app" = "このクールな新しいソーシャルアプリ";
+"Oops" = "おっとっと";
+"Failed to send Mail" = "メールの送信に失敗しました";
+"Mail sent" = "メールが送信されました";
+"Mail services are not available" = "メールサービスはご利用いただけません";
+"year ago" = "1年前";
+"month ago" = "1ヶ月前";
+"months ago" = "数か月前";
+"days ago" = "数日前";
+"day ago" = "1日前";
+"hours ago" = "数時間前";
+"hour ago" = "1時間前";
+"minutes ago" = "数分前";
+"minute ago" = "1分前";
+"a moment ago" = "少し前";
+"seconds ago" = "数秒前";
+"second ago" = "1秒前";
+"weeks ago" = "数週間前";
+"week ago" = "1週間前";
+"Approved" = "承認済み";
+"Apply for verify badge that appears next to a" = "の横に表示される確認バッジを申請する";
+"account's name to indicate that the account is the authentic presence of a notable Public figure,celebrity,global brand or entity it Represents" = "アカウントが著名な公人、有名人、グローバルブランド、またはそれが表すエンティティの本物の存在であることを示すアカウントの名前";
+"Submitting a request for verification does not guarantee that your account will be verified" = "確認のリクエストを申請しても、必ずしもアカウントが承認されるとは限りません";
+"Verify Category" = "カテゴリを確認する";
+"Please attach your photo of ID" = "身分証明書の写真を添付し​​てください";
+"Choose file" = "ファイル選択";
+"We require a government-issued photo ID that shows your name and date of birth (e.g driver's lilcense,passport or national identification card) of official business documents (tax filling ,recent utility bill, article of incorporation) in order to review your request." = "リクエストを承認するには、公的書類（納税、最近の公共料金の請求書、定款）の名前と生年月日（運転免許証、パスポート、身分証明書など）を示す政府発行の写真付き身分証明書が必要です。";
+"Star terms and conditions for verify profile" = "プロフィール承認のためのスター利用規約";
+"Verify Profile" = "プロフィール承認";
+"for a verify user" = "承認ユーザー向け";
+"Star terms and conditions" = "スターの利用規約";
+"star terms and conditions" = "スターの利用規約";
+"pending" = "保留中";
+"approved" = "承認済み";
+"Please select the image Source" = "画像を選択してください";
+"Loging Out" = "ログアウト";
+"Are you sure you want to log out" = "ログアウトしてもよろしいですか";
+"Are you sure you want to delete Account" = "アカウントを削除してもよろしいですか";
+"Logging Out" = "ログアウト";
+"Edit or remove any information that you do not wish to display" = "表示したくない情報を編集または削除します";
+"People will be able to email" = "メールを送ることができるようになります";
+"call and get directions to your Business from new button and links on your profile" = "プロフィールのボタンとリンクから連絡が可能です";
+"Go to Settings and allow" = "設定から許可してください";
+"with us" = "私達と一緒に";
+"Business Number" = "事業番号";
+"Search Results" = "検索結果";
+"Search Address" = "検索アドレス";
+"No Results Found" = "結果が見つかりません";
+"Current Location" = "現在地";
+"Use my current location" = "現在地を使用する";
+"Submit" = "送信";
+"Search Countries" = "検索国";
+"Select Countries" = "国を選択";
+"for your smartphone.Download it today from" = "スマートフォン用。今すぐダウンロード";
+"Are you sure you want to change language" = "言語を変更してもよろしいですか";
+"Japanese" = "日本";
+"Your new password cannot be the same as your current password" = "新しいパスワードを現在のパスワードと同じにすることはできません";
+"Dark Mode" = "ダークモード";
+"Theme" = "テーマ";
+
+// Chat Screen
+"Chats" = "猫";
+"chat" = "猫";
+"You have got an image" = "あなたは画像を持っています";
+"You sent an image" = "あなたはイメージを感じます";
+"You have got a video" = "あなたはビデオを持っています";
+"You sent a video" = "あなたはビデオを感じます";
+"You have got a location" = "あなたは場所を持っています";
+"You sent a location" = "あなたは場所を感じます";
+"You have got a contact" = "連絡先があります";
+"You sent a contact" = "あなたは接触を感じます";
+"You have got an audio" = "あなたはオーディオを持っています";
+"You sent an audio" = "あなたはオーディオを感じます";
+"You have got a sticker" = "あなたはステッカーを持っています";
+"You sent a sticker" = "ステッカーを感じます";
+"You have got a doodle" = "あなたは落書きを持っています";
+"You sent a doodle" = "あなたは落書きを感じます";
+"You have got a gif" = "あなたはgifを持っています";
+"You sent a gif" = "あなたはgifを感じます";
+"You have got a document" = "あなたは文書を持っています";
+"You sent a document" = "
+あなたは文書を感じます";
+"You have got a post" = "投稿があります";
+"You sent a post" = "あなたは投稿を感じます";
+"You missed a call" = "あなたは電話に出られませんでした";
+"You missed an audio call" = "音声通話に出られませんでした";
+"You missed a video call" = "ビデオハングアウトに失敗しました";
+"You sent a payment" = "あなたは支払いを感じます";
+"You have got a payment" = "お支払いがあります";
+"This message was deleted" = "
+このメッセージは削除されました";
+"You created group" = "グループを作成しました";
+"created group" = "作成されたグループ";
+"Created" = "Created";
+"Delete Chat" = "
+チャットを削除する";
+"kyc and does not have an active wallet" = "kycであり、アクティブなウォレットがありません";
+"Sorry you cannot send any payment to this user as this user has not completed" = "このユーザーは完了していないため、申し訳ありませんが、このユーザーに支払いを送信することはできません";
+"his" = "彼の";
+"her" = "彼女";
+"Please provide Camera permission" = "カメラの許可を与えてください";
+"Please provide Audio permission" = "オーディオ許可を提供してください";
+"give Camera permission" = "カメラに許可を与える";
+"Goto" = "後藤";
+"give Audio permission" = "オーディオの許可を与える";
+"Please enable the phone contact permissions for" = "の電話連絡許可を有効にしてください";
+"at the following path" = "次のパスで";
+"Enable contact sharing" = "連絡先の共有を有効にする";
+"You cannot message stars directly" = "星に直接メッセージを送ることはできません";
+"Current Balance" = "経常収支";
+"minimum amount" = "最低金額";
+"will receive" = "受け取る";
+"Insufficient balance" = "残高不足です";
+"to" = "に";
+"Sent" = "送信しました";
+"Received" = "受信しました";
+"tranfer" = "転送";
+"Add to Existing Contact" = "既存のコンタクトに追加";
+"Contact Details" = "コンタクト詳細";
+"You paid" = "支払い済み";
+"Slide to cancel" = "スライドしてキャンセル";
+"Map" = "マップ";
+"Hybrid" = "ハイブリッド";
+"Satelite" = "
+衛生";
+
+"Group Info" = "グループの情報";
+"Admin" = "管理者";
+"Select Participants" = "参加者を選ぶ";
+"Add to existing Group" = "既存のグループに追加";
+"None" = "なし";
+"Add" = "追加";
+"Message Info" = "メッセージ情報";
+"Tap here to change" = "ここをタップして変更";
+"Camera Roll" = "カメラロール";
+"No albums" = "アルバムはありません";
+"You added" = "追加しました";
+"added" = "追加した";
+"You removed" = "削除しました";
+"removed" = "しました";
+"You made" = "あなたが作った";
+"group admin" = "グループ管理者";
+"made" = "作る";
+"You changed the subject to" = "件名をに変更しました";
+"changed the subject to" = "件名をに変更しました";
+"changed this group's icon" = "このグループのアイコンを変更しました";
+"You left" = "あなたは去った";
+"left" = "左";
+"You missed a call" = "あなたは電話に出られませんでした";
+"Call" = "電話";
+"You are added in a group" = "あなたはグループに追加されます";
+"You created a group" = "グループを作成しました";
+"You added to a secret chat" = "
+秘密のチャットに追加しました";
+"You created a secret chat" = "あなたは秘密のチャットを作成しました";
+"Delete for Everyone" = "全員削除";
+"Delete for Me" = "私のために削除";
+"Your not allowed to share message with" = "とメッセージを共有することは許可されていません";
+"Sorry you cannot send any payment to this user as this user has not completed his/her kyc and does not have an active wallet" = "
+このユーザーはkycを完了しておらず、アクティブなウォレットを持っていないため、申し訳ありませんが、このユーザーに支払いを送信することはできません。";
+"Recent updates" = "最近の更新";
+"Viewed updates" = "表示された更新";
+"Tap to add story update" = "タップしてストーリーの更新を追加";
+"My story" = "私の物語";
+"New Friends" = "新しい友達";
+"Fetching Chats" = "猫をフェッチする";
+"Create New Group" = "新しいグループを作成する";
+"Contacts" = "連絡先";
+"Deleting" = "削除";
+"You cannot delete the group" = "グループを削除することはできません";
+"My Story" = "私の物語";
+"Star Pages" = "スターページ";
+"LastSeen" = "最後に見たのは";
+"you can't send message" = "メッセージを送信できません";
+"to this user" = "このユーザーに";
+"Reply" = "返事";
+"Copy" = "コピー";
+"Delete messsage" = "メッセージを削除する";
+"Destruct timer set to" = "に設定された破壊タイマー";
+"Audio call at" = "での音声通話";
+"Duration" = "間隔";
+"Video call at" = "でのビデオ通話";
+"Missed audio call at" = "で音声通話を逃した";
+"Missed video call at" = "
+でビデオハングアウトを逃した";
+"Blocked contacts will no longer be able to call you or send you messages" = "ブロックされた連絡先は、あなたに電話したりメッセージを送信したりできなくなります";
+"Please complete your kyc to start sending payments" = "kycを完了して、支払いの送信を開始してください";
+"The receiver has to complete their kyc for you to send them money" = "あなたが彼らにお金を送るために、受信者は彼らのkycを完了する必要があります";
+"Camera is not available in your device" = "お使いのデバイスでカメラを使用できません";
+"Message" = "メッセージ";
+"Typing" = "
+タイピング";
+"Online" = "
+オンライン";
+"Offline" = "オフライン";
+"Unknown" = "わからない";
+"No Number" = "番号なし";
+"Can't send video greater than 50MB" = "50MBを超える動画を送信することはできません";
+"Messenger for your smartphone" = "
+スマートフォン用メッセンジャー";
+"Download it today from App Store" = "今すぐAppStoreからダウンロードしてください";
+"No internet connection" = "インターネットに接続できません";
+"You have no active chats" = "アクティブなチャットはありません";
+"Single" = "単独";
+"Group" = "グループ";
+"Send a payment to" = "に支払いを送る";
+"Add Note" = "ノートに追加する";
+"Delete this story update" = "このストーリーの更新を削除する";
+"It will also be deleted for everyone who received it" = "受け取ったすべての人から削除されます";
+
+// PostDetailsViewController
+"Reported" = "報告";
+"Thank you for your feedback" = "ご意見ありがとうございます";
+"The post has been successfully reported" = "投稿は正常に報告されました";
+// MARK:- Home StoryBoard
+"Viewers" = "視聴者";
+"please confirm if you are sure you want to delete this post" = "この投稿を削除してもよいかどうかを確認してください";
+"This action is not reversible" = "このアクションは元に戻せません";
+
+
+/* CreateChannelViewController */
+"channel name of atleast 3 character" = "少なくとも3文字のチャンネル名";
+// Alerts Messages
+"Alerts" = "警告";
+"a category" = "カテゴリー";
+"Channel created successfully" = "Channelが正常に作成されました";
+// Discover View Controller
+"started following you" = "あなたをフォローし始めました";
+"not following" = "フォローしていません";
+
+
+// Social View Controller
+"Add to Your Story" = "ストーリーに追加";
+
+
+// Group
+"Add Participant" = "参加者を追加";
+
+/* UserProfileViewController */
+"Your public user name" = "公開ユーザー名";
+"User upto 25 characters" = "25文字までのユーザー名";
+"By default your profile privacy is public" = "デフォルトでは、プロフィールは公開されています";
+"tap to make it private" = "タップしてプライベート設定にします";
+
+// DiscoverPeopleViewController
+"Discover People" = "ユーザー検索";
+"Next" = "次へ";
+"Find Facebook Friends" = "Facebook友達を検索";
+"You chose which friend to follow" = "フォローする友達を選択しました";
+"we will never post to facebook without your permission" = "許可なしにFacebookに投稿することは決してありません";
+"Follow Facebook Friends" = "Facebookの友達をフォローする";
+
+// EntertainmentPostsViewController
+"There is no posts available" = "投稿はありません";
+
+// CurrentLocationListViewController
+"Nearby" = "付近";
+
+/* PlaceInfoViewController */
+"Price" = "価格";
+
+/* SharePostViewController */
+"Share" = "シェア";
+"Done" = "完了";
+"DONE" = "完了";
+"No views yet" = "まだ閲覧されていません";
+
+// PostedByMusicViewController
+"Favourite" = "お気に入り";
+"Videos" = "動画";
+// PostedByViewController
+"Posts tagged" = "タグ付けされた投稿";
+"will show up here" = "ここに表示されます";
+
+// VNHCountryPicker
+"Choose a country" = "
+国を選ぶ";
+
+// AcceptOrDeleteViewController
+"There is no following activity" = "以下の活動はありません";
+"Accept" = "許可";
+"Deny" = "拒否";
+"Channel Request" = "Channelリクエスト";
+"Follow Request" = "フォローリクエスト";
+"Edit Phone Number" = "電話番号変更";
+
+// ReplyView
+"There is no follow activity" = "フォロー活動はありません";
+
+// ActivityTableViewCell
+"Follow Requests" = "フォローリクエスト";
+"Accept or deny requests" = "リクエストを受け入れるか拒否する";
+"Subscription Request" = "サブスクリプションリクエスト";
+"Approve or ignore requests" = "リクエストを承認または無視する";
+
+// TextStoryViewController
+"Enter status" = "ステータスを入力";
+
+// BusinessEditContactOptionsViewController
+"Business Information" = "ビジネス情報";
+
+// SwitchToBusinessViewController
+"Set up Your Business Account" = "ビジネスアカウントを設定する";
+"Business Details" = "
+事業内容";
+"People Will be able to email" = "メールで連絡できるようになります";
+"call and get direction to your business from contact button and links on your profile" = "連絡先ボタンとプロフィールのリンクから連絡可能になります";
+"Edit or remove any information that you don't want to be displayed on City smart" = "Citysmartに表示したくない情報を編集または削除します";
+"You can always edit this at any time in setting" = "設定でいつでも編集できます";
+
+// BusinessPhoneNumberEditViewController
+"Your Phone Number" = "あなたの電話番号";
+"NEXT" = "次";
+"Phone Number" = "電話番号";
+// UpdateStatusListViewController
+"Update Bio" = "
+バイオを更新";
+"Your current status" = "現在のステータス";
+"Select your current status" = "現在のステータスを選択";
+
+"EditPhoneNumberViewController" = "電話番号変更";
+// EditNumberVarificationViewController
+"Verifyi Phone Number" = "電話番号認証";
+"Enter 4 digit varification code we sent to" = "送信した4桁の認証コードを入力してください";
+"Enter 4 digit varification code we sent to " = "送信した4桁の認証コードを入力してください";
+// CreateChannelViewController
+"Create Channel" = "チャネルを作成する";
+"Save" = "保存";
+
+"Upload Photo" = "写真アップロード";
+"Channel Name" = "チャネル名";
+"Select Category" = "カテゴリー選択";
+"Private Channel" = "プライベートChannel";
+
+"Select" = "選択";
+
+// CallHistoryTableViewController
+"You have no calls" = "電話はありません";
+
+// SavedCollectionsViewController
+"Nothing saved yet" = "何も保存されていません";
+"Save photos and videos that you want to see again" = "もう一度見たい写真や動画を保存";
+"No one is notified" = "誰にも通知されません";
+"and only you can see what you’ve saved" = "保存したものを見ることができるのはあなただけです";
+"All Posts" = "すべての投稿";
+"Select album" = "アルバムを選択";
+
+/* AddNewCollectionViewController */
+"Change Cover" = "カバー写真変更";
+"Collection name" = "コレクション名";
+"Manage" = "管理";
+"Add from bookmarks" = "お気に入りから追加";
+
+// CreatePostViewController
+"Write a caption" = "キャプション入力";
+"Select category" = "カテゴリー選択";
+"Add to my channel" = "自分のchannelに追加";
+"Allow Comments" = "コメントを許可";
+"Allow Downloads" = "ダウンロード許可";
+"Edit Post" = "投稿の編集";
+"contact" = "contact";
+"Share To" = "共有";
+"Share to" = "共有";
+"Tag Location" = "場所";
+"Paid Post" = "
+有料投稿";
+"Business post details" = "ビジネス投稿の詳細";
+"Select Location" = "場所を選択";
+"Choose your coin" = "あなたのコーナーを選択してください";
+
+// StoryListViewController
+"Your story updates will disappear after 24 hours" = "ストーリーは24時間後に消えます";
+"My Stories" = "マイストーリー";
+"No stories" = "ストーリーはありません";
+
+/* MobileConfigurationViewController */
+"Star Configuration" = "
+スター構成";
+// EmailConfigurationViewController
+"If disabled" = "無効になっている場合";
+"other users cannot contact you" = "他のユーザーはあなたに連絡できません";
+
+// BookMarkedPostsViewController
+"Start Saving" = "保存を開始します";
+"Save photos and videos to your collection" = "写真や動画をコレクションに保存する";
+"Add to Collection" = "コレクションに追加";
+// SaveToCollectionViewController
+"Save To" = "保存";
+"New Collection" = "新規コレクション";
+
+// TrendingViewController
+"Explore" = "探す";
+
+
+
+// WelcomeViewController
+"Log In" = "ログイン";
+// SignUpViewController
+"Sign Up" = "新規登録";
+"Continue As Guest" = "ゲストとして続行";
+"Select Language" = "言語を選択する";
+"Get Started" = "はじめに";
+"Choose Your Language" = "言語を選択してください";
+
+// LoginViewController
+"Region" = "再ログイン";
+"Welcome to" = "ようこそ";
+"account on" = "アカウント";
+"account" = "アカウント";
+"OR" = "
+ゴールド";
+"Email address is not registered" = "メールアドレスが登録されていません";
+"By Login" = "ログインで";
+"LOG IN" = "ログイン";
+"you agree to our" = "に同意します";
+"Entered passwords do not match" = "入力したパスワードが一致しません";
+// Sign up
+"SMS Code" = "SMSコード";
+"Mobile number" = "携帯電話番号";
+"Enter Phone Number" = "電話番号を入力してください";
+"Login via OTP" = "ワンタイムパスワードでログイン";
+"Login via Password" = "パスワードでログイン";
+"Login via Phone Number" = "電話番号でログイン";
+"Manage your account" = "アカウントを管理する";
+"check notification" = "通知を確認してください";
+"comment on videos and more" = "動画などにコメントする";
+"Enter the correct password for" = "の正しいパスワードを入力してください";
+"ID/UserName" = "ID/ユーザー名";
+"Password" = "パスワード";
+"Login via" = "でログイン";
+"By Signup" = "登録で";
+"Forgot password" = "パスワードをお忘れの方";
+"Not a member yet" = "まだ登録されていません";
+"Phone number not registered" = "この電話番号は登録されていません";
+"a valid phone number" = "有効な電話番号";
+"Please enter the registered email address to which we can send you the verification code" = "認証コードを送信できる登録済みのメールアドレスを入力してください";
+"You have entered same phone number 3 or more times" = "同じ電話番号を3回以上入力しました";
+"Please try a new number" = "新しい番号をお試しください";
+"Abuse of device" = "デバイスの悪用";
+"duplicate" = "重複";
+"You don't have sufficient balance to make payment" = "お支払いに十分な残高がありません";
+"session Expired" = "セッションの有効期限が切れ";
+"No Contacts found in" = "コンタクトが見つかりません";
+"Something went wrong" = "不明なエラー";
+"No Contact Found" = "コンタクトが見つかりません";
+"Setup failed" = "セットアップに失敗しました";
+"Setup canceled" = "セットアップを中止しました";
+
+// ForgotPasswordViewController
+"Email Verification" = "メール認証";
+"the registered email address to which we can send you the verification code" = "確認コードを送信できる登録済みのメールアドレス";
+// ResetPasswordViewController
+"Reset Password" = "パスワードを再設定する";
+"Set New Password" = "新しいパスワードを設定する";
+"Confirm Password" = "確認用パスワード";
+"Current password" = "現在のパスワード";
+"New password" = "新しいパスワード";
+"Re-enter new password" = "新しいパスワード再入力";
+"The confirm password does not match the password set" = "確認用パスワードが一致しません";
+"Set new password for your account" = "アカウントに新しいパスワードを設定する";
+"The password you will set will be changed for your account" = "設定するパスワードはアカウント用に変更されます";
+"Enter the phone number you registered with and we shall send you a verification code to reset your password" = "登録した電話番号を入力すると、パスワードをリセットするための確認コードが送信されます";
+"with a new email id or register as a new user" = "新しいメールIDを使用するか、新しいユーザーとして登録します";
+"Enter New Password" = "新しいパスワードを入力してください";
+"Send Code" = "コードを送信";
+"Login" = "ログイン";
+"Enter the email address you registered with and we shall send you the  instructions to reset your password" = "登録したメールアドレスを入力してください。パスワードをリセットする手順をお送りします。";
+"We have sent you an email with the instructions to set a new password" = "新しいパスワードを設定する手順が記載されたメールを送信しました";
+"please look out for this email" = "このメールを確認してください";
+"the link will be valid only 60 minutes" = "リンクは60分のみ有効です";
+"Check Your Mail" = "メールをチェックしてください";
+
+// PhoneNumberViewController
+"Forgot Password" = "パスワードをお忘れの方";
+"will send you an SMS to verify the phone number that you enter below" = "以下に入力した電話番号を確認するためにSMSを送信します";
+"phone number" = "電話番号";
+
+// AddContactsViewController
+"None of your contacts are on" = "連絡先はありません";
+"Invite them to" = "招待する";
+"FIND FRIENDS" = "友達検索";
+"Add Contacts" = "連絡先を追加";
+"Skip" = "先へ進む";
+"Available" = "使用中";
+"Busy" = "多忙中";
+"At School" = "勉強中";
+"At work" = "仕事中";
+"Battery about to die" = "バッテリー切れ";
+"Can't talk" = "話せません";
+"only" = "オンリー";
+"In a metting" = "会議中";
+"Sleeping" = "就寝中";
+"Urgent calls only" = "緊急連絡のみ";
+"Please allow the app to access your contacts through the Settings" = "アプリが設定から連絡先にアクセスすることを許可してください";
+"More Actions" = "その他のアクション";
+
+// FriendRequestViewController
+"Send Request" = "リクエストを送信";
+"Requests i sent" = "送信したリクエスト";
+"Friend Requests" = "友達リクエスト";
+
+"Public" = "公開";
+"Private" = "非公開";
+"Accept the" = "受け入れる";
+"Terms Of Service and Privacy Policy" = "利用規約とプライバシーポリシー";
+"Permission Denied" = "権限がありません";
+"Already a Member" = "すでにメンバー登録しています";
+
+// VerifyOTPViewController
+"Enter verification code" = "認証コード入力";
+"To complete your phone number verification" = "電話番号認証を完了するために";
+"the 4-digit verification code" = "4桁の認証コード";
+"Resend" = "再送信";
+// ExploreStarPagesViewController
+"Top 10 Most Influential Stars" = "最も影響力のあるスタートップ10";
+"Top 50 Best Actors" = "ベストアクタートップ50";
+"Top 50 Best Actresses" = "ベストアクトレストップ50";
+
+// Helper
+"Download Will be available in your device gallery shortly" = "ダウンロードはまもなくデバイスギャラリーで利用可能になります";
+"download completed" = "ダウンロードが完了しました";
+"Video download failed" = "動画のダウンロードに失敗しました";
+"off" = "オフ";
+"Second" = "秒";
+"Seconds" = "秒";
+"Minute" = "分";
+"Minutes" = "分";
+"Hour" = "時間";
+"Hours" = "時間";
+"Day" = "日";
+"Days" = "日";
+"Week" = "週間";
+"1" = "1";
+"2" = "2";
+"3" = "3";
+"4" = "4";
+"5" = "5";
+"6" = "6";
+"7" = "7";
+"8" = "8";
+"9" = "9";
+"10" = "10";
+"15" = "15";
+"30" = "30";
+
+// BlockedUsersViewController
+"You have not blocked any users yet" = "まだブロックしたユーザーはいません";
+"Unblock" = "ブロック解除";
+// RequestStarProfileViewController
+"Terms and Conditions for verify profile" = "プロフィールを確認するための利用規約";
+"Chat" = "チャット";
+
+/* BusinessAddressViewController */
+"Please add a valid address so people can navigate to your location in maps" = "有効な住所を追加して、他のユーザーが地図であなたの場所に移動できるようにしてください";
+"Remove Address" = "住所を削除";
+
+// QrCodeViewControllerx
+"Scan the QR Code to add me on" = "QRコードをスキャンして追加してください";
+
+// QrScannerViewController
+"QR Code" = "QRコード";
+
+// InviteContactsViewController
+"Invite Contact" = "コンタクトを招待";
+"Invite" = "招待";
+"for your smartphone" = "スマートフォン用";
+"Download it today from" = "から今すぐダウンロードしてください";
+// CreateBusinessProfileViewController
+"BUSINESS PROFILE" = "ビジネスプロファイル";
+"Add a phone number" = "
+電話番号を追加する";
+"email address or location so that a customer can reach you directly by clicking a button on your profile" = "顧客があなたのプロフィールのボタンをクリックして直接あなたに連絡できるようにするためのメールアドレスまたは場所";
+"Create New Account" = "新しいアカウントを作成する";
+"INSIGHTS" = "洞察";
+"PRODUCTS" = "製品";
+"SERVICES" = "
+サービス";
+"Learn about your followers and get insights on how your posts are performing" = "フォロワーについて学び、投稿のパフォーマンスに関する洞察を得る";
+"Post products and services and allow your customers to buy them by a simple click" = "
+製品やサービスを投稿し、クリックするだけで顧客が購入できるようにします";
+
+// VerificationViewController
+"Enter OTP Sent on your registered phone number" = "登録した電話番号に送信されたワンタイムパスワードを入力します";
+"Resend OTP" = "ワンタイムパスワードを再送信します";
+
+"Uploading  Image " = "写真アップロード中";
+"Trending" = "最新の";
+"No post to show" = "表示する投稿はありません";
+"You have not followed anyone Click on the Find people to follow button to see them here" = "誰もフォローしていません[フォローする人を検索]ボタンをクリックして、ここに表示します";
+"subscribe this post for" = "この投稿を読む";
+"View all" = "すべて表示";
+"Saved to" = "保存先";
+"Veiw Saved" = "保存を見る";
+"Report Post" = "投稿を報告する";
+"Delete" = "削除";
+"comments" = "コメント";
+"Liked by " = "いいね";
+"Check out this post on" = "投稿をチェックしてください";
+"Check out this profile on" = "投稿をチェックしてください";
+"app" = "アプリ";
+
+// MARK:- live storyBoard
+"Live Users" = "ライブユーザー";
+"No live users found" = "ライブユーザーが見つかりません";
+"Please check after some time" = "しばらくしてから確認してください";
+"You don't have any viewers yet" = "まだ視聴者がいません";
+"No live users found
+Please check after some time" = "ライブユーザーが見つかりません
+しばらくしてから確認してください";
+"Go live" = "ライブ配信する";
+"You are live now" = "ライブ配信中";
+"Start Streaming" = "ストリーミングを開始する";
+"Could not connect" = "接続できません";
+"Not enough coins" = "コイン不足";
+"please rechange and try again" = "チャージしてからやり直してください";
+"Choose Currency" = "通貨を選択";
+"Chat here" = "チャット中";
+"Live" = "ライブ";
+"Categories" = "カテゴリー";
+"Gift Box" = "ギフト用の箱";
+"Money Earned" = "稼いだお金";
+"View count" = "閲覧数";
+"hello" = "こんにちは";
+"Connecting to" = "に接続中";
+"Check for more details" = "もっと詳しく見る";
+"Mode" = "モード";
+"Your balance" = "Your balance";
+"Live Stream Ended" = "ライブストリームが終了しました";
+"Live stream ended" = "ライブ配信終了";
+"Live video ended" = "ライブ動画終了";
+"Coins" = "コーナー";
+"Coin" = "
+コーナー";
+"Views" = "閲覧者";
+"Gifts" = "ギフト";
+"Live Time :" = "ライブ時間：";
+"Save your video under your profile for your followers to watch" = "フォロワーが視聴できるように、プロフィールの下に動画を保存します";
+"Live video paused" = "ライブビデオが一時停止しました";
+"Connecting to live stream" = "ライブストリームに接続しています";
+"Your broadcast will start soon" = "あなたの配信はまもなく始まります";
+"You are live now!" = "現在ライブ中";
+"End" = "終了";
+"End Live Video" = "ライブ動画終了";
+"When you delete this collection" = "このコレクションを削除すると";
+"the photos and videos will still be saved" = "写真と動画は引き続き保存されます";
+"Are you sure you want to delete last segment" = "最後のセグメントを削除してもよろしいですか";
+"Reshoot" = "再撮影";
+"Image Saved" = "保存した画像";
+"Image successfully saved to Photos library" = "画像がフォトライブラリに正常に保存されました";
+"Snap cover photo" = "スナップカバー写真";
+"We will display your snap as your live stream cover photo" = "スナップをライブストリームのカバー写真として表示します";
+"Live on" = "ライブ中";
+"We will notify your followers so that they will not miss this live session" = "このライブセッションを見逃さないように、フォロワーに通知します";
+"Start Live Stream" = "ライブストリームを開始する";
+
+// WalletCustomeAlertViewController
+"Wallet is not created please create wallet to transfer the money" = "ウォレットが作成されていませんウォレットを作成して送金してください";
+"Create" = "作成";
+
+// Contact Info
+"Contact Info" = "連絡先情報";
+
+// MediaCollectionViewController
+"Media" = "メディア";
+"Links" = "リンク";
+// EditSubjectTableViewController
+"Subject" = "主題";
+"Group Name" = "グループ名";
+"mobile" = "モバイル";
+"Send" = "送信";
+
+// FavoriteTableViewController
+"New Secret Chat" = "新しい秘密のチャット";
+"by User Name" = "ユーザー名別";
+"Add Participants" = "参加者を追加する";
+// CreatnewGroupViewController
+"New Group" = "新しい集団";
+"Enter Group Name" = "グループ名を入力してください";
+"Please provide a group subject and optional group icon" = "グループの件名とオプションのグループアイコンを入力してください";
+"edit" = "編集";
+"PARTICIPANTS:" = "参加者：";
+"256" = "二百五十六";
+"Delete Photo" = "
+写真を削除する";
+"Creating" = "作成";
+
+// GroupChatDeliveryStatusCVCell
+"remaining" = "残り";
+"Read by" = "
+読む人";
+"Delivered to" = "に配信";
+"Read" = "読んだ";
+"Deliverd" = "配信";
+
+// ContactInfoTableViewController
+"Report Spam" = "スパム報告";
+"Report spam this contact" = "このコンタクトをスパムを報告する";
+"Block Contact" = "コンタクトをブロックする";
+"Create New Contact" = "新しいコンタクトを作成する";
+"View Profile" = "プロフィールを見る";
+"Last Seen" = "直近の閲覧";
+"Block" = "ブロック";
+"Your Last Seen is" = "直近の閲覧は";
+"Do you want to" = "にしますか？";
+"Disable" = "無効";
+"Enable" = "有効";
+"id" = "id";
+"profilePic" = "プロフィール写真";
+"firstName" = "名";
+"lastName" = "性";
+"userName" = "ユーザー名";
+"status" = "ステータス";
+"Unblock Contact" = "コンタクトのブロックを解除する";
+
+// DataUsageTableViewController
+"Wi-Fi" = "Wi-Fi";
+"Never" = "一度もない";
+"Wi-Fi and Cellular" = "Wi-Fiと電波";
+"Photos" = "写真";
+"Audio" = "音声";
+"Network Usage" = "ネットワーク使用量";
+"Storage Usage" = "ストレージ使用量";
+"MEDIA AUTO - DOWNLOAD" = "メディア自動ダウンロード";
+
+"Post" = "投稿";
+"Transfer" = "転送";
+// TransferToFriendViewController
+"Transfer To Friend" = "友達に転送";
+"Paying" = "支払い";
+"Payment" = "支払い";
+"Pay to" = "
+に支払います";
+"Pay Now" = "今払う";
+"Transaction Details" = "取引の詳細";
+"Transaction Id" = "トランザクションID";
+"From" = "から";
+"To" = "に";
+"Payment will be refunded if not confirmed within 24 hours" = "24時間以内に確認されない場合、支払いは返金されます";
+
+
+// GroupInfoTableViewController
+"Export Chat" = "チャットのエクスポート";
+"Clear Chat" = "クリアチャット";
+"Created by" = "によって作成された";
+"Created by You" = "あなたが作成した";
+"Today" = "今日";
+"Yesterday" = "昨日";
+"you are no longer participant in this group" = "あなたはもうこのグループに参加していません";
+"Exit Group" = "出口グループ";
+"Delete Group" = "グループを削除";
+"Exit" = "
+出口";
+"Delete messages" = "メッセージを削除する";
+"Delete all messages" = "すべてのメッセージを削除する";
+"Without Media" = "
+メディアなし";
+"Group member info" = "グループメンバー情報";
+"Remove from Group" = "グループから削除";
+"Remove From Admin" = "
+管理者から削除";
+"Make an Admin" = "管理者にする";
+"Removing" = "削除";
+"Loading" = "
+読み込み中";
+"Updating" = "更新";
+"Downloading " = "Downloading ";
+"You" = "君は";
+"Message Chat" = "メッセージチャット";
+"here is message chat history please find Attachment" = "ここにメッセージチャットの履歴があります添付ファイルを見つけてください";
+
+
+/* MARK:- Camera Storyboard */
+"Add a sound" = "音声を追加する";
+"Add a Sound" = "音声を追加する";
+"Shoot a video" = "動画を撮影する";
+"Grant Camera access to shoot" = "カメラに撮影へのアクセスを許可する";
+"Allow access to camera" = "カメラへのアクセスを許可する";
+"Allow access to gallery" = "ギャラリーへのアクセスを許可する";
+"Grant gallery access to pick photo and video" = "写真とビデオを選択するためのギャラリーアクセスを許可する";
+"Allow access to microphone" = "マイクへのアクセスを許可する";
+"font" = "フォント";
+"Mask" = "マスク";
+"Masks" = "マスク";
+"Effects" = "エフェクト";
+"Clear All" = "全て元に戻す";
+"You do not have followed anyone" = "あなたは誰もフォローしていません";
+"Normal Camera" = "通常のカメラ";
+"AR Camera" = "ARカメラ";
+"Timer" = "タイマー";
+"Adjust" = "調整";
+"Highlights" = "ハイライト";
+"Shadows" = "シャドウ";
+"Saturation" = "補正";
+"Contrast" = "コントラスト";
+"Blur" = "ぼかし";
+"Temperature" = "温かみ";
+"Brightness" = "明るさ";
+"Vignette" = "ビネット";
+"Mute" = "ミュート";
+"SHARE" = "シェア";
+"Effect" = "エフェクト";
+"Filters" = "フィルター";
+"Filter" = "フィルター";
+"Clarity" = "クリア";
+"Clear" = "クリア";
+"Clarendon" = "クラレンドン";
+"Inkwell" = "インク壺";
+"Sutro" = "インク壺";
+"Lofi" = "ロフィ";
+"Earlybird" = "
+アーリーバード";
+"Oslo" = "オスロ";
+"Ginza" = "銀座";
+"Dogpatch" = "
+ドッグパッチ";
+"Sharpen" = "シャープ";
+"Hefe" = "ヘフェ";
+"Aden" = "アデン";
+"Moon" = "ムーン";
+"Nashville" = "ナッシュビル";
+"Perpetua" = "パーペチュア";
+"Lark" = "ラーク";
+"HOT SONGS" = "流行曲";
+"MY FAVOURITES" = "お気に入り";
+"DUB WITH THIS SOUND" = "この音を使用する";
+"Selection of dubbing sound cancelled" = "音の選択をキャンセル";
+"Your Story" = "あなたのストーリー";
+"Custom Sound" = "カスタムサウンド";
+"Video Saved" = "保存された動画";
+"Video successfully saved to Photos library" = "動画がフォトライブラリに正常に保存されました";
+"Failed" = "失敗";
+"Video Failed to save in Photos library" = "動画をフォトライブラリに保存できませんでした";
+"Albums" = "アルバム";
+"Photo" = "写真";
+"15s" = "15秒";
+"60s" = "60秒";
+"Library" = "ライブラリー";
+"No Audio Found" = "音声が見つかりません";
+"Normal" = "元画像";
+"Mono" = "白黒";
+"Tonal" = "色調";
+"Noir" = "ノワール";
+"Fade" = "フェード";
+"Chrome" = "クローム";
+"Process" = "プロセス";
+"Instant" = "インスタント";
+"Sepia" = "
+セピア";
+"Tone" = "
+調子";
+"Linear" = "線形";
+"N" = "NS";
+"M" = "NS";
+"T" = "NS";
+"F" = "NS";
+"C" = "NS";
+"P" = "P";
+"I" = "I";
+"S" = "S";
+"Edit Photo" = "写真編集";
+
+
+// MARK:- CallKit StoryBoard
+"Voice Call" = "音声電話";
+"is busy on other call" = "他の通話で忙しい";
+"call not answered" = "電話に出られない";
+"call ended" = "
+通話が終了しました";
+"Incoming Video Call" = "着信ビデオ通話";
+"Incoming Audio Call" = "着信オーディオコール";
+"Calling" = "呼び出し";
+"Video Call" = "ビデオ通話";
+
+// MARK:- Strings
+"token" = "トークン";
+"authorization" = "承認";
+"lang" = "言語";
+"postsViewers" = "投稿の閲覧者";
+"Public Account" = "公開アカウント";
+"Cancel" = "キャンセル";
+"business category" = "ビジネスカテゴリー";
+"Website" = "ウェブサイト";
+"your transfer money succesfully" = "送金に成功しました";
+"correct Amout" = "正しい金額";
+
+"Thank you for submitting your requestOur review team will go through your application and you will recieve an email to confirm if your profile has been accepted or denied" = "リクエストを送信していただきありがとうございますレビューチームが申し込みを処理し、プロフィールが承認されたか拒否されたかを確認するメールを受け取ります";
+"Ok" = "わかった";
+"OK" = "わかった";
+"Warning" = "警告";
+"Error" = "エラー";
+"Address cannot be empty" = "住所空欄は許可されていません";
+"please fill all required fields" = "必須項目を埋めてください";
+"Full name should be More than three characters" = "フルネームは3文字以上である必要があります";
+"business name" = "ビジネス名";
+
+"country Code" = "国コード";
+"street" = "番地";
+"city" = "市町村";
+"zipcode" = "郵便番号";
+"category" = "カテゴリー";
+"website" = "ウェブサイト";
+"business bio" = "ビジネス紹介";
+"id proof" = "身分証明";
+"Are you sure you want to un-block this user" = "このユーザーのブロックを解除してもよろしいですか";
+"Something Went wrong" = "不明なエラー";
+"correct OTP" = "正しいワンタイムパスワード";
+"We have successfully Updated your Phone Number" = "電話番号の更新に成功しました";
+"We have successfully updated your email address" = "メールアドレスが正常に更新されました";
+"Correct Otp" = "正しいワンタイムパスワード";
+"The verification code has been resent to" = "認証コードはに再送されました";
+"The verification code has been resent" = "認証コードは再送されました";
+"please check your inbox" = "受信トレイを確認してください";
+"If you have not received the verification code" = "認証コードを受け取っていない場合";
+"please get a new one by clicking on the RESEND button" = "[再送信]ボタンをクリックして、最新のコードを入手してください";
+"Request Sent Successfully" = "リクエストは正常に送信されました";
+"Added as friend successfully" = "友達として正常に追加されました";
+"Location Service Disabled" = "位置情報サービスが無効です";
+"To re-enable" = "再度有効にするには";
+"please go to Settings and turn on Location Service for this app" = "[設定]に移動して、このアプリの位置情報サービスをオンにしてください";
+"Profile needs to be public for the business setup to happen successfully" = "ビジネスのセットアップを成功させるには、プロファイルを公開する必要があります";
+"Report User" = "レポートユーザー";
+"This profile has been deleted" = "このプロフィールは削除されました";
+"Mobile number is not registered" = "携帯電話番号が登録されていません";
+"Do you want to Sign up with this number" = "この番号で登録しますか";
+"Change" = "変更";
+"Signup" = "登録";
+"Otp sent" = "ワンタイムパスワード送信";
+"Otp verified succesfully" = "ワンタイムパスワード認証成功";
+"Remote stream is no longer available" = "リモートストリームは利用できなくなりました";
+"Caution!" = "注意！";
+"Dismiss" = "取消し";
+"Delete Collection" = "コレクション削除";
+"Change Password" = "パスワード変更";
+"Report A Problem" = "問題を報告";
+"Report a problem" = "問題を報告";
+"viewers" = "閲覧者";
+
+// Navigation Titles
+"Withdraw Money" = "お金を引き出す";
+"Transaction History" = "取引履歴";
+"Payment Security" = "支払いのセキュリティ";
+"Help Center" = "サポートセンター";
+"Cards" = "カード";
+"Debit Card" = "デビットカード";
+"Credit Card" = "クレジットカード";
+"Net Banking" = "ネットバンキング";
+
+// camera Alert strings
+"Choose Source" = "ファイル選択";
+"the image Source" = "画像";
+"Camera" = "カメラ";
+"Photo and Video Library" = "写真や動画のライブラリー";
+"Photo Library" = "フォトライブラリー";
+"Saved Album" = "保存されたアルバム";
+"Channel" =  "チャネル";
+"Giphy" = "Giphy";
+"Image" = "写真";
+"Video" = "動画";
+"Contact" = "コンタクト";
+"Sticker" = "ステッカー";
+"Doodle" = "いたずら書き";
+"Document" = "書類";
+"Documents" = "
+ドキュメント";
+"Location" = "位置";
+
+// Business buttons
+"a business button text" = "ビジネスボタンのテキスト";
+
+
+// settingsTitles
+
+"Balance" = "バランス";
+"Get Verified Profile" = "確認済みのプロファイルを取得する";
+"Business Profile" = "ビジネスプロフィール";
+"Switch to business profile" = "ビジネスプロフィールに切り替える";
+"Switch to personal profile" = "個人プロファイルに切り替える";
+"Business Configuration" = "ビジネス構成";
+"Blocked Contacts" = "ブロックしたコンタクト";
+"Invite Contacts" = "コンタクトを招待";
+"General" = "全般";
+"Help" = "ヘルプ";
+"Feedback" = "フィードバック";
+"Services" = "サービス";
+"Logout" = "ログアウト";
+"Verified Configuration" = "認証済みの構成";
+
+/* settingsHeaderTitles */
+"Account" = "アカウント";
+"Support" = "サポート";
+"Referral Code" = "紹介コード";
+"Enter Your Name*" = "名前を入力";
+"Enter User Name*" = "ユーザー名を入力";
+"Enter Password*" = "パスワードを入力";
+"Enter Referral Code*" = "紹介コードを入力";
+"Enter your email*" = "メールアドレスを入力";
+"Confirm your password*" = "確認用のパスワードを入力";
+"Add Money" = "お金を追加する";
+"Saved" = "保存しました";
+"Terms And Conditions" = "規約と条件";
+"Help and Feedback" = "ヘルプとフィードバック";
+"Verification" = "認証";
+"My QR Code" = "自分のQRコード";
+"Setup Business Profile" = "ビジネスプロフィールをセットアップする";
+"Create Collection" = "コレクション作成";
+"Edit Collection" = "コレクション編集";
+"Add Link" = "リンクを追加";
+"Link here" = "ここにリンク";
+"Add Price" = "価格を追加";
+"Action Button" = "アクションボタン";
+// PermissionMessage
+"Permission denied" = "権限がありません";
+"camera permission" = "カメラへのアクセス権限";
+"gallery permission" = "ギャラリーへのアクセス権限";
+"microphone permission" = "マイクへのアクセス権限";
+
+// FollowListStrings
+"followList" = "フォロー一覧";
+"New Message" = "新しいメッセージ";
+"Secret Chat" = "シークレットチャット";
+"Forward To" = "送信先";
+
+
+// ContactInfoStrings
+"Thank you for your feedback The user has been successfully reported" = "フィードバックをありがとうございますユーザーは正常に報告されました";
+
+
+
+
+// / Alert Messages
+"If you want to Switch to business profile" = "ビジネスプロファイルに切り替える場合";
+"Make sure your account should be public account" = "アカウントが公開アカウントであることを確認してください";
+"any linked business account" = "リンクされたビジネスアカウント";
+"This email id is not linked with any" = "このメールIDはどのメールIDともリンクされていません";
+"please register your business by clicking on the Register Business button" = "[ビジネスの登録]ボタンをクリックして、ビジネスを登録してください";
+"UnBlocked" = "ブロック解除";
+"Unfriend" = "友達を外す";
+"blocked" = "ブロックされた";
+"Success" = "成功";
+"Yes" = "はい";
+"No" = "いいえ";
+"Register Now" = "今すぐ登録";
+"Switch To Personal Profile" = "個人プロファイルに切り替える";
+"Switch To Business Profile" = "ビジネスプロファイルに切り替える";
+
+"masklayer" = "マスクレイヤー";
+"emailId" = "メールID";
+
+
+"Edit Profile" = "プロフィール編集";
+"Remove Photo" = "写真を削除";
+"your Name" = "名前";
+"Your device doesn't support Camera" = "お使いのデバイスはカメラをサポートしていません";
+"other option" = "他のオプション";
+"If you switch to the private account" = "プライベートアカウントに切り替える場合";
+"your business account would no longer be active" = "あなたのビジネスアカウントはもうアクティブではありません";
+"Business bio cannot be empty" = "ビジネスのbioは空欄にすることはできません";
+
+"private" = "プライベート";
+"profileCoverImage" = "プロフィールカバー画像";
+"BusinessName" = "商号";
+"BusinessAddress" = "
+職場の住所";
+"BusinessWebsite" = "BusinessWebsite";
+"bussinessEmail" = "bussinessEmail";
+"bussinessPhone" = "ビジネス用の電話";
+"Bussiness Phone" = "ビジネス用の電話";
+"Bussiness Email" = "ビジネス用メール";
+"bussinessCountryCode" = "bussinessCountryCode";
+"bussinessCategoryId" = "bussinessCategoryId";
+"bussinessBio" = "bussinessBio";
+"Contact Options" = "Contact Options";
+
+"CallingCodes" = "CallingCodes";
+"dial_code" = "dial_code";
+"plist" = "plist";
+"code" = "コード化";
+"isVisible" = "isVisible";
+
+
+// MARK:- FollowViewController Strings
+"No Comments yet!" = "コメントはまだありません";
+"No Likes yet!" = "「いいね」はまだありません";
+
+/* / Alert Strings */
+"Verifying" = "認証中";
+"numberChanged" = "番号が変更されました";
+"Your mobile number has been changed successfully" = "あなたの携帯電話番号は正常に変更されました";
+"Sending" = "送信中";
+"Loading filters" = "フィルタの読み込み中";
+"Adding to story" = "ストーリーに追加";
+"Updating profile" = "プロフィール更新中";
+"Downloading" = "ダウンロード中";
+"Syncing contacts" = "コンタクト同期中";
+"Exporting" = "エクスポート中";
+"otp" = "ワンタイムパスワード";
+"image" = "画像";
+
+
+"email id" = "メールID";
+
+
+
+// MARK:- Create Post Strings
+"Post type" = "投稿タイプ";
+"Link" = "
+リンク";
+"Link Copied" = "リンクコピー";
+"Action button" = "アクションボタン";
+"SignUp" = "登録";
+"Buy now" = "今買う";
+"url" = "URL";
+"Buy Now" = "Buy Now";
+"Shop Now" = "
+今すぐ購入";
+"Book" = "本";
+"Product Type" = "製品型";
+"Regular" = "レギュラー";
+"Maximum of 100 characters" = "最大100文字";
+"Please enter link" = "リンクを入力してください";
+"Please choose button text" = "ボタンのテキストを選択してください";
+"Privacy Settings" = "個人情報設定";
+
+// PaymentStatus
+"Payment pending" = "支払い保留中";
+"Payment accepted" = "支払いを受け付けました";
+"Payment denied" = "支払いが拒否されました";
+"Payment canceled" = "支払いがキャンセルされました";
+"Payment timeout" = "支払いタイムアウト";
+
+
+// TransferConfirmationMessage
+"cancel" = "キャンセル";
+"accept" = "受け入れる";
+"reject" = "拒否する";
+"delete" = "削除する";
+
+// Error Message
+"Enter valid phone number" = "有効な電話番号を入力してください";
+"Username should be more than three characters" = "ユーザー名は3文字以上にする必要があります";
+"email" = "メール";
+"password" = "パスワード";
+"Please confirm your password" = "パスワードを確認してください";
+"Password and Confirm password does not match" = "パスワードと確認用パスワードが一致しません";
+"referal code" = "紹介コード";
+"terms and conditions" = "規約と条件";
+"Internal Server Error" = "内部サーバーエラー";
+"Hey! Check out this post on" = "投稿をチェックしてください";

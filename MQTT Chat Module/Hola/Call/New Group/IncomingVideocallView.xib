@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Century Gothic.ttf">
+            <string>CenturyGothic</string>
+        </array>
+        <array key="CenturyGothic-Black.ttf">
+            <string>CenturyGothic-Black</string>
+        </array>
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IncomingVideocallView" customModule="VybesClub" customModuleProvider="target">
+            <connections>
+                <outlet property="acceptlbl" destination="p4t-zm-GRh" id="6lf-j4-VCV"/>
+                <outlet property="callAcceptBtn" destination="edM-Xy-ZO3" id="RH3-Hf-qak"/>
+                <outlet property="callEndBtn" destination="TAf-d5-ksg" id="F2Q-Jx-Y9j"/>
+                <outlet property="calling_status" destination="uYn-rW-goL" id="TUA-ZT-scc"/>
+                <outlet property="calling_userName" destination="uNM-7d-LXf" id="52U-HD-05D"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="fvH-PN-mjz"/>
+                <outlet property="declineLbl" destination="HcA-Tt-oop" id="UK1-Zj-86Q"/>
+                <outlet property="endBtnConstantY" destination="GCO-KF-FZS" id="Gqw-hh-aER"/>
+                <outlet property="endVcall_btn" destination="ogb-U9-4yg" id="yoX-cw-DyG"/>
+                <outlet property="incomingVidLbl" destination="QFk-wV-UYD" id="jAA-OU-BNK"/>
+                <outlet property="localViewConstantY" destination="ALY-vq-iED" id="1YQ-KZ-3Zs"/>
+                <outlet property="muteBtn" destination="4F1-AO-wAy" id="bte-ML-ABt"/>
+                <outlet property="switch_btn" destination="0BN-fC-k49" id="NfK-wh-q3l"/>
+                <outlet property="userImageView" destination="TYr-dM-usb" id="uiT-Hx-t4L"/>
+                <outlet property="userName" destination="mRH-xz-j27" id="0KR-lM-PMH"/>
+                <outlet property="videoCallIcon" destination="4NI-Pg-oeL" id="ckQ-hs-Nqw"/>
+                <outlet property="videoCallLbl" destination="5yS-zb-Yao" id="iDn-9e-y4H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRd-Ew-7i8" customClass="RTCEAGLVideoView">
+                    <rect key="frame" x="-40" y="0.0" width="494" height="896"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qt5-ZY-dDw" customClass="RTCCameraPreviewView">
+                    <rect key="frame" x="274" y="50" width="120" height="120"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Qt5-ZY-dDw" secondAttribute="height" multiplier="1:1" id="aBq-IZ-EvD"/>
+                        <constraint firstAttribute="height" constant="120" id="z5c-p0-y3Y"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAf-d5-ksg">
+                    <rect key="frame" x="40" y="723" width="73" height="73"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="73" id="BG9-g6-WeM"/>
+                        <constraint firstAttribute="width" constant="73" id="UVV-yR-5lJ"/>
+                    </constraints>
+                    <state key="normal" image="videoCall_end"/>
+                    <connections>
+                        <action selector="endBtncliked:" destination="-1" eventType="touchUpInside" id="nbC-iw-TFd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4t-zm-GRh">
+                    <rect key="frame" x="305" y="805" width="65" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="gz8-8D-Hhr"/>
+                        <constraint firstAttribute="width" constant="65" id="leN-2f-UVI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic-Black" family="CenturyGothic" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcA-Tt-oop">
+                    <rect key="frame" x="47.5" y="805" width="58" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="gzw-H9-Kdw"/>
+                        <constraint firstAttribute="height" constant="21" id="hma-gj-YNa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic-Black" family="CenturyGothic" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edM-Xy-ZO3">
+                    <rect key="frame" x="301" y="723" width="73" height="73"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="73" id="YMM-kD-LCD"/>
+                        <constraint firstAttribute="width" constant="73" id="cQd-2D-DGv"/>
+                    </constraints>
+                    <state key="normal" image="videoCall_accept"/>
+                    <connections>
+                        <action selector="acceptBtnCliked:" destination="-1" eventType="touchUpInside" id="VMH-xS-NB5"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giphyDefaultlogo" translatesAutoresizingMaskIntoConstraints="NO" id="4NI-Pg-oeL">
+                    <rect key="frame" x="102" y="30" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="9DB-z2-STw"/>
+                        <constraint firstAttribute="width" constant="25" id="UWm-9z-sbM"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PicoAdda VIDEO CALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yS-zb-Yao">
+                    <rect key="frame" x="127" y="32" width="160" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="6BA-SE-yqP"/>
+                        <constraint firstAttribute="height" constant="21" id="HRR-GE-Ejc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jayesh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRH-xz-j27">
+                    <rect key="frame" x="16" y="70" width="388" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1bT-Bx-U6d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incoming Video Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFk-wV-UYD">
+                    <rect key="frame" x="16" y="115" width="383" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="qzY-3O-kCN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BN-fC-k49">
+                    <rect key="frame" x="25" y="761" width="85" height="85"/>
+                    <state key="normal" image="switch_Camera"/>
+                    <state key="highlighted" image="switch_Camera_off"/>
+                    <connections>
+                        <action selector="switchBtnCliked:" destination="-1" eventType="touchUpInside" id="NiK-fq-9py"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogb-U9-4yg">
+                    <rect key="frame" x="164.5" y="761" width="85" height="85"/>
+                    <state key="normal" image="end_videoCall"/>
+                    <state key="highlighted" image="end_videoCall_off"/>
+                    <connections>
+                        <action selector="endVideocallCliked:" destination="-1" eventType="touchUpInside" id="ktq-F1-uUG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F1-AO-wAy">
+                    <rect key="frame" x="304" y="761" width="85" height="85"/>
+                    <state key="normal" image="mute_videoCall"/>
+                    <state key="selected" image="mute_videoCall_off"/>
+                    <connections>
+                        <action selector="muteBtnCliked:" destination="-1" eventType="touchUpInside" id="mNZ-Ve-WK0"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="TYr-dM-usb">
+                    <rect key="frame" x="147" y="98" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="EJ2-KK-nwh"/>
+                        <constraint firstAttribute="width" constant="120" id="QyU-eY-dls"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jayesh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNM-7d-LXf">
+                    <rect key="frame" x="10" y="233" width="394" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="VBX-dJ-BXB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYn-rW-goL">
+                    <rect key="frame" x="10" y="268" width="394" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="tqo-yG-faP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.14234143499999999" green="0.59702837470000003" blue="0.92928904290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uNM-7d-LXf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="0Ej-7z-3f1"/>
+                <constraint firstItem="5yS-zb-Yao" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2hr-GG-5zS"/>
+                <constraint firstItem="hRd-Ew-7i8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-40" id="4dZ-E5-Gr1"/>
+                <constraint firstItem="QFk-wV-UYD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="5ZJ-uV-Rgp"/>
+                <constraint firstItem="TYr-dM-usb" firstAttribute="top" secondItem="5yS-zb-Yao" secondAttribute="bottom" constant="45" id="69y-XE-rCw"/>
+                <constraint firstAttribute="trailing" secondItem="Qt5-ZY-dDw" secondAttribute="trailing" constant="20" id="6bv-VG-9XN"/>
+                <constraint firstAttribute="trailing" secondItem="edM-Xy-ZO3" secondAttribute="trailing" constant="40" id="72b-Sr-STU"/>
+                <constraint firstItem="5yS-zb-Yao" firstAttribute="leading" secondItem="4NI-Pg-oeL" secondAttribute="trailing" id="9MD-Ph-xKH"/>
+                <constraint firstItem="Qt5-ZY-dDw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="ALY-vq-iED"/>
+                <constraint firstItem="5yS-zb-Yao" firstAttribute="centerY" secondItem="4NI-Pg-oeL" secondAttribute="centerY" id="COw-Mf-YS1"/>
+                <constraint firstItem="HcA-Tt-oop" firstAttribute="top" secondItem="TAf-d5-ksg" secondAttribute="bottom" constant="9" id="CfJ-Hj-7OM"/>
+                <constraint firstItem="uNM-7d-LXf" firstAttribute="top" secondItem="TYr-dM-usb" secondAttribute="bottom" constant="15" id="DMz-ey-33B"/>
+                <constraint firstItem="uYn-rW-goL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="EKV-Dl-kkd"/>
+                <constraint firstItem="ogb-U9-4yg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EUq-gD-gb6"/>
+                <constraint firstItem="TAf-d5-ksg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="Efr-Tk-cQW"/>
+                <constraint firstAttribute="bottom" secondItem="ogb-U9-4yg" secondAttribute="bottom" constant="50" id="GCO-KF-FZS"/>
+                <constraint firstAttribute="bottom" secondItem="hRd-Ew-7i8" secondAttribute="bottom" id="IM2-fh-HS3"/>
+                <constraint firstAttribute="trailing" secondItem="hRd-Ew-7i8" secondAttribute="trailing" constant="-40" id="M08-Wg-woD"/>
+                <constraint firstItem="4F1-AO-wAy" firstAttribute="centerY" secondItem="ogb-U9-4yg" secondAttribute="centerY" id="P3w-HI-csS"/>
+                <constraint firstItem="uNM-7d-LXf" firstAttribute="top" secondItem="QFk-wV-UYD" secondAttribute="bottom" constant="93" id="PCD-Fj-OuW"/>
+                <constraint firstAttribute="trailing" secondItem="uYn-rW-goL" secondAttribute="trailing" constant="10" id="PiX-rW-gQI"/>
+                <constraint firstItem="5yS-zb-Yao" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="Rb2-qt-SPd"/>
+                <constraint firstAttribute="trailing" secondItem="mRH-xz-j27" secondAttribute="trailing" constant="10" id="TcK-Wu-ldd"/>
+                <constraint firstAttribute="bottom" secondItem="TAf-d5-ksg" secondAttribute="bottom" constant="100" id="Vff-U4-9Vp"/>
+                <constraint firstItem="0BN-fC-k49" firstAttribute="centerY" secondItem="ogb-U9-4yg" secondAttribute="centerY" id="ZfK-nb-hm8"/>
+                <constraint firstItem="QFk-wV-UYD" firstAttribute="top" secondItem="mRH-xz-j27" secondAttribute="bottom" constant="15" id="apa-Gg-Mwv"/>
+                <constraint firstAttribute="trailing" secondItem="uNM-7d-LXf" secondAttribute="trailing" constant="10" id="bCf-k7-myh"/>
+                <constraint firstItem="hRd-Ew-7i8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="elw-Cj-afK"/>
+                <constraint firstItem="p4t-zm-GRh" firstAttribute="centerX" secondItem="edM-Xy-ZO3" secondAttribute="centerX" id="fhN-OM-sOH"/>
+                <constraint firstItem="mRH-xz-j27" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="g1I-g0-aBD"/>
+                <constraint firstItem="uYn-rW-goL" firstAttribute="top" secondItem="uNM-7d-LXf" secondAttribute="bottom" constant="10" id="hps-qr-3NK"/>
+                <constraint firstItem="0BN-fC-k49" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="jXH-28-tfy"/>
+                <constraint firstAttribute="trailing" secondItem="QFk-wV-UYD" secondAttribute="trailing" constant="15" id="jbv-Nt-eij"/>
+                <constraint firstAttribute="trailing" secondItem="4F1-AO-wAy" secondAttribute="trailing" constant="25" id="kVD-Dm-Nwr"/>
+                <constraint firstItem="TYr-dM-usb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="meB-CR-D69"/>
+                <constraint firstAttribute="bottom" secondItem="edM-Xy-ZO3" secondAttribute="bottom" constant="100" id="wDB-61-O8h"/>
+                <constraint firstItem="p4t-zm-GRh" firstAttribute="top" secondItem="edM-Xy-ZO3" secondAttribute="bottom" constant="9" id="xQQ-oS-3gZ"/>
+                <constraint firstItem="HcA-Tt-oop" firstAttribute="centerX" secondItem="TAf-d5-ksg" secondAttribute="centerX" id="yhE-3g-Wam"/>
+            </constraints>
+            <point key="canvasLocation" x="85.5" y="-19.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="download" width="257" height="257"/>
+        <image name="end_videoCall" width="85" height="85"/>
+        <image name="end_videoCall_off" width="85" height="85"/>
+        <image name="giphyDefaultlogo" width="512" height="512"/>
+        <image name="mute_videoCall" width="85" height="85"/>
+        <image name="mute_videoCall_off" width="85" height="85"/>
+        <image name="switch_Camera" width="85" height="85"/>
+        <image name="switch_Camera_off" width="85" height="85"/>
+        <image name="videoCall_accept" width="73" height="73"/>
+        <image name="videoCall_end" width="73" height="73"/>
+    </resources>
+</document>

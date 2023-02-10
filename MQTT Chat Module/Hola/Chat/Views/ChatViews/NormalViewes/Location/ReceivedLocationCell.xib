@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CenturyGothic-Regular.ttf">
+            <string>CenturyGothic-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReceivedLocationCell" id="gTV-IL-0wX" customClass="ReceivedLocationCell" customModule="VybesClub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="qkN-W2-d9E">
+                        <rect key="frame" x="2" y="162" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="4h1-Op-e8U"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadious">
+                                <real key="value" value="17.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IY9-N4-ofY">
+                        <rect key="frame" x="40" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DgL-bP-r7k">
+                                <rect key="frame" x="4" y="4" width="192" height="176"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LB-gd-z40">
+                                <rect key="frame" x="165.5" y="184" width="24.5" height="12"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic-Regular" family="CenturyGothic" pointSize="10"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X84-Ex-mBL">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="tapOnReceivedLocationCell:" destination="gTV-IL-0wX" eventType="touchUpInside" id="7gQ-yX-2If"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DgL-bP-r7k" firstAttribute="top" secondItem="IY9-N4-ofY" secondAttribute="top" constant="4" id="08T-nf-iYC"/>
+                            <constraint firstItem="DgL-bP-r7k" firstAttribute="leading" secondItem="IY9-N4-ofY" secondAttribute="leading" constant="4" id="54k-UK-bO2"/>
+                            <constraint firstAttribute="trailing" secondItem="8LB-gd-z40" secondAttribute="trailing" constant="10" id="Lin-4d-kV0"/>
+                            <constraint firstAttribute="trailing" secondItem="X84-Ex-mBL" secondAttribute="trailing" id="VyO-rr-wq2"/>
+                            <constraint firstAttribute="bottom" secondItem="X84-Ex-mBL" secondAttribute="bottom" id="Wb3-Cw-0An"/>
+                            <constraint firstAttribute="width" constant="200" id="aah-Dw-5nG"/>
+                            <constraint firstAttribute="bottom" secondItem="DgL-bP-r7k" secondAttribute="bottom" constant="20" id="bQN-Af-BRk"/>
+                            <constraint firstItem="X84-Ex-mBL" firstAttribute="top" secondItem="IY9-N4-ofY" secondAttribute="top" id="bte-IT-TOd"/>
+                            <constraint firstItem="X84-Ex-mBL" firstAttribute="leading" secondItem="IY9-N4-ofY" secondAttribute="leading" id="cz6-xa-4Xq"/>
+                            <constraint firstAttribute="height" constant="200" id="nbb-bl-WLQ"/>
+                            <constraint firstItem="8LB-gd-z40" firstAttribute="top" secondItem="DgL-bP-r7k" secondAttribute="bottom" constant="4" id="pTD-LH-taq"/>
+                            <constraint firstAttribute="trailing" secondItem="DgL-bP-r7k" secondAttribute="trailing" constant="4" id="vN7-NH-ThQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCK-oI-hzR">
+                        <rect key="frame" x="250" y="80" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Mm4-HF-1qb"/>
+                            <constraint firstAttribute="height" constant="40" id="WZN-IF-puA"/>
+                        </constraints>
+                        <state key="normal" image="forward_icon"/>
+                        <connections>
+                            <action selector="forwardButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="vtn-Rh-Veg"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="IY9-N4-ofY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="40" id="4uD-1o-CWY"/>
+                <constraint firstItem="qkN-W2-d9E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="AiW-K8-dsV"/>
+                <constraint firstItem="qkN-W2-d9E" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="162" id="HIm-p5-7XU"/>
+                <constraint firstItem="IY9-N4-ofY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="atS-Wf-bfr"/>
+                <constraint firstItem="dCK-oI-hzR" firstAttribute="leading" secondItem="IY9-N4-ofY" secondAttribute="trailing" constant="10" id="bcQ-DJ-SpS"/>
+                <constraint firstItem="qkN-W2-d9E" firstAttribute="width" secondItem="qkN-W2-d9E" secondAttribute="height" multiplier="1:1" id="hc9-xh-kc3"/>
+                <constraint firstItem="IY9-N4-ofY" firstAttribute="leading" secondItem="qkN-W2-d9E" secondAttribute="trailing" constant="3" id="rON-kT-wlW"/>
+                <constraint firstItem="dCK-oI-hzR" firstAttribute="centerY" secondItem="IY9-N4-ofY" secondAttribute="centerY" id="wxD-BO-qr7"/>
+            </constraints>
+            <size key="customSize" width="270" height="247"/>
+            <connections>
+                <outlet property="locationBtnOutlet" destination="X84-Ex-mBL" id="A1N-gg-zDC"/>
+                <outlet property="locationImageOutlet" destination="DgL-bP-r7k" id="IEe-7K-cR7"/>
+                <outlet property="senderImageView" destination="qkN-W2-d9E" id="LcC-UW-Jvu"/>
+                <outlet property="timeLabelOutlet" destination="8LB-gd-z40" id="1N1-0j-4pk"/>
+            </connections>
+            <point key="canvasLocation" x="144" y="151.12443778110946"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="defaultImage" width="62.5" height="62.5"/>
+        <image name="forward_icon" width="24" height="24"/>
+    </resources>
+</document>

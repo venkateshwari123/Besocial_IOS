@@ -1,0 +1,14 @@
+///* 
+//  InfoPlist.strings
+//  Picoadda
+//
+//  Created by Rahul Sharma on 19/08/21.
+//  Copyright © 2021 Rahul Sharma. All rights reserved.
+//*/
+//"NSAppleMusicUsageDescription" = "やあやあやあやあやあやあやあやあやあ" + ".";
+//"NSCameraUsageDescription" = "やあやあやあやあやあやあやあ" + ".";
+//"NSContactsUsageDescription" = "$(PRODUCT_NAME) やあやあやあやあ $(PRODUCT_NAME) やあやあやあやあやあ $(PRODUCT_NAME) やあやあやあ";
+//"NSLocationWhenInUseUsageDescription" = "やあやあやあやあ" + ".";
+//"NSMicrophoneUsageDescription" = "やあやあやあやあ" + ".";
+//"NSPhotoLibraryAddUsageDescription" = "やあやあやあやあ" + ".";
+//"NSPhotoLibraryUsageDescription" = "やあやあやあやあ" + ".";

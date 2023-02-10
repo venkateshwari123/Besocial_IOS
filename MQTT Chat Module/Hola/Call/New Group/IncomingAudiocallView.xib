@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CenturyGothic-Black.ttf">
+            <string>CenturyGothic-Black</string>
+        </array>
+        <array key="SF-UI-Display-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IncomingAudiocallView" customModule="VybesClub" customModuleProvider="target">
+            <connections>
+                <outlet property="acceptCall" destination="O4s-kw-Vug" id="UZU-Bx-gvL"/>
+                <outlet property="callTypelbl" destination="lfQ-YS-Ahc" id="pkM-91-d8S"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="83U-TT-TR6"/>
+                <outlet property="rejectCall" destination="ilW-lu-pcW" id="SC1-dp-CkW"/>
+                <outlet property="userImageView" destination="fPl-9o-LVA" id="kpc-lc-aUd"/>
+                <outlet property="userName" destination="nhA-IJ-5Wl" id="g2v-sI-i6e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilW-lu-pcW">
+                    <rect key="frame" x="78" y="737" width="73" height="73"/>
+                    <state key="normal" image="incoming_call"/>
+                    <connections>
+                        <action selector="rejectCallAction:" destination="-1" eventType="touchUpInside" id="NRo-tn-SPY"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fPl-9o-LVA">
+                    <rect key="frame" x="122" y="187" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fPl-9o-LVA" secondAttribute="height" multiplier="1:1" id="0as-D4-0JD"/>
+                        <constraint firstAttribute="height" constant="170" id="KNT-bU-Hk0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PicoAdda Audio Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-YS-Ahc">
+                    <rect key="frame" x="10" y="106" width="394" height="21"/>
+                    <fontDescription key="fontDescription" name="CenturyGothic-Black" family="CenturyGothic" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jayesh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhA-IJ-5Wl">
+                    <rect key="frame" x="10" y="60" width="394" height="41"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="35"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4s-kw-Vug">
+                    <rect key="frame" x="264" y="737" width="73" height="73"/>
+                    <state key="normal" image="incomig_accept">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acceptCallAction:" destination="-1" eventType="touchUpInside" id="XBe-Xx-Ygi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.14509803921568626" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fPl-9o-LVA" firstAttribute="centerX" secondItem="lfQ-YS-Ahc" secondAttribute="centerX" id="6ZR-ta-MQB"/>
+                <constraint firstItem="O4s-kw-Vug" firstAttribute="leading" secondItem="fPl-9o-LVA" secondAttribute="trailing" constant="-28" id="9Np-Ay-u0k"/>
+                <constraint firstItem="fPl-9o-LVA" firstAttribute="leading" secondItem="ilW-lu-pcW" secondAttribute="trailing" constant="-29" id="Gtp-Nn-zfB"/>
+                <constraint firstItem="lfQ-YS-Ahc" firstAttribute="top" secondItem="nhA-IJ-5Wl" secondAttribute="bottom" constant="5" id="J3b-Fe-UPB"/>
+                <constraint firstAttribute="bottom" secondItem="ilW-lu-pcW" secondAttribute="bottom" constant="86" id="K8q-4b-tOc"/>
+                <constraint firstAttribute="bottom" secondItem="O4s-kw-Vug" secondAttribute="bottom" constant="86" id="Lod-S4-OmF"/>
+                <constraint firstItem="nhA-IJ-5Wl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="U9o-xp-e6Q"/>
+                <constraint firstItem="lfQ-YS-Ahc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="UE8-uf-U5v"/>
+                <constraint firstItem="nhA-IJ-5Wl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="h93-Yw-a3r"/>
+                <constraint firstAttribute="trailing" secondItem="nhA-IJ-5Wl" secondAttribute="trailing" constant="10" id="kuE-ER-GJ4"/>
+                <constraint firstItem="fPl-9o-LVA" firstAttribute="top" secondItem="lfQ-YS-Ahc" secondAttribute="bottom" constant="60" id="qeT-if-7Yd"/>
+                <constraint firstAttribute="trailing" secondItem="lfQ-YS-Ahc" secondAttribute="trailing" constant="10" id="wVw-ye-tDa"/>
+            </constraints>
+            <point key="canvasLocation" x="169.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="incomig_accept" width="73" height="73"/>
+        <image name="incoming_call" width="73" height="73"/>
+    </resources>
+</document>
